@@ -22,7 +22,7 @@ export default async function brandChat(request){
   try{
     const response=await fetch('https://api.groq.com/openai/v1/chat/completions',{
       method:'POST',headers:{Authorization:`Bearer ${key}`,'Content-Type':'application/json'},
-      body:JSON.stringify({model:process.env.GROQ_MODEL||'llama-3.1-8b-instant',temperature:0.2,max_completion_tokens:700,messages:[{role:'system',content:systemInstructions+'\n\nREFERENCE DATA:\n'+context},...history.map(m=>({role:m.role,content:m.content})),{role:'user',content:question}]}),
+      body:JSON.stringify({model:process.env.GROQ_MODEL||'openai/gpt-oss-20b',temperature:0.2,max_completion_tokens:1200,...((process.env.GROQ_MODEL||'openai/gpt-oss-20b').startsWith('openai/gpt-oss-')?{reasoning_effort:'low'}:{}),messages:[{role:'system',content:systemInstructions+'\n\nREFERENCE DATA:\n'+context},...history.map(m=>({role:m.role,content:m.content})),{role:'user',content:question}]}),
       signal:AbortSignal.timeout(25000)
     });
     if(response.status===429)return reply({error:'The helper is busy. Please wait a moment and try again.'},429,{'Retry-After':'30'});

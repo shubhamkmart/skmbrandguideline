@@ -127,3 +127,33 @@
   .asset-card>div:nth-child(2) { min-width:0; padding:18px; }
   .asset-card h3 { overflow-wrap:anywhere; }
 }
+
+/* Palette samples preserve circular geometry at every breakpoint. */
+.mini-swatches { height:80px; }
+.mini-swatches span { width:clamp(36px,24%,72px); height:auto; aspect-ratio:1; flex:0 0 auto; }
+.type-showcase { display:flex; align-items:center; gap:35px; padding:25px 0 12px; }
+.type-showcase>span { font-size:120px; font-weight:650; line-height:1; letter-spacing:-.08em; color:#3d6948; }
+.type-showcase>p { font-size:30px; line-height:1.15; letter-spacing:-.04em; font-weight:550; color:#3d6948; }
+.type-proof { font-size:14px; line-height:1.7; margin:15px 0; color:#5d7650; }
+.type-specimen .alphabet { font-size:18px; margin:24px 0; letter-spacing:.01em; overflow-wrap:anywhere; }
+.type-controls { display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-top:20px; }
+.type-controls>div { min-width:0; }
+.type-controls label { margin:0 0 9px; font-size:11px; }
+.type-controls select { width:100%; min-height:44px; border:1px solid #bdcbb0; border-radius:5px; padding:9px 12px; font:inherit; font-size:16px; color:#214b32; background:#f9fbf4; }
+.type-controls input[type=range] { height:44px; padding:0; border:0; border-radius:0; background:transparent; accent-color:#3d6948; cursor:pointer; }
+.type-weight-samples { display:grid; grid-template-columns:1fr 1fr; gap:18px; padding-top:24px; border-top:1px solid #cfdbc1; }
+.type-weight-samples>div { min-width:0; }
+.type-weight-samples span { display:block; font-size:11px; color:#6c815c; margin-bottom:6px; }
+.type-weight-samples p { font-size:24px; color:#214b32; line-height:1.3; letter-spacing:-.04em; overflow-wrap:anywhere; }
+@media screen and (max-width:640px) {
+ .mini-swatches { height:72px; }
+ .mini-swatches span { width:38px; height:38px; }
+ .type-showcase { gap:22px; padding-top:25px; }
+ .type-showcase>span { font-size:86px; }
+ .type-showcase>p { font-size:23px; }
+ .type-proof { font-size:14px; }
+ .type-specimen .alphabet { font-size:16px; line-height:1.8; overflow-wrap:anywhere; word-break:break-all; }
+ .type-controls { grid-template-columns:1fr; gap:17px; }
+ .type-weight-samples { grid-template-columns:1fr; gap:20px; }
+ .type-weight-samples p { font-size:27px; }
+}
