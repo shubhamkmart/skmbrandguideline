@@ -3,7 +3,7 @@ import React,{useEffect,useRef,useState} from 'react';
 const storageKey='skm-companion-preferences';
 const activities=['wave','peek','stretch','dance','doze'];
 
-function BuddyArt(){return <svg viewBox="0 0 160 180" fill="none" aria-hidden="true">
+export function BuddyArt(){return <svg viewBox="0 0 160 180" fill="none" aria-hidden="true">
   <ellipse className="buddy-shadow" cx="80" cy="165" rx="39" ry="6" fill="#214B32" opacity=".14"/>
   <g className="buddy-character">
     <g className="buddy-leg buddy-leg-left"><path d="M61 143v14" stroke="#214B32" strokeWidth="7" strokeLinecap="round"/><path d="M61 156H49c-5 0-7 8-1 8h18v-5" fill="#FBFAF4" stroke="#214B32" strokeWidth="3" strokeLinejoin="round"/></g>
@@ -40,17 +40,17 @@ function SleepingRoom(){return <svg viewBox="0 0 100 90" fill="none" aria-hidden
   <text x="50" y="88" textAnchor="middle" fill="#214B32" fontSize="8" fontFamily="Inter, sans-serif" fontWeight="500">Wake buddy</text>
 </svg>}
 
-export function BrandCompanion(){
-  const [ready,setReady]=useState(false),[visible,setVisible]=useState(true),[reduced,setReduced]=useState(false),[away,setAway]=useState(false),[position,setPosition]=useState(null),[dragging,setDragging]=useState(false),[activity,setActivity]=useState('wave'),[hello,setHello]=useState(false);
-  const figure=useRef(null),settle=useRef(null),greeting=useRef(null),sequence=useRef(0),restore=useRef(null),play=useRef(null),root=useRef(null),drag=useRef(null),lastDrag=useRef(0);
+export function BrandCompanion({onAsk,chatOpen,triggerRef}){
+  const [ready,setReady]=useState(false),[visible,setVisible]=useState(true),[reduced,setReduced]=useState(false),[away,setAway]=useState(false),[position,setPosition]=useState(null),[dragging,setDragging]=useState(false),[activity,setActivity]=useState('wave');
+  const figure=useRef(null),settle=useRef(null),sequence=useRef(0),restore=useRef(null),play=useRef(null),root=useRef(null),drag=useRef(null),lastDrag=useRef(0);
   useEffect(()=>{
-    try{const saved=JSON.parse(localStorage.getItem(storageKey)||'null');if(saved){setVisible(saved.visible!==false);if(saved.position&&Number.isFinite(saved.position.x)&&Number.isFinite(saved.position.y))setPosition({x:Math.max(0,Math.min(1,saved.position.x)),y:Math.max(0,Math.min(1,saved.position.y))})}}catch{}
+    try{const saved=JSON.parse(localStorage.getItem(storageKey)||'null');if(saved){setVisible(saved.visible!==false);if(saved.position&&Number.isFinite(saved.position.x)&&Number.isFinite(saved.position.y))setPosition({x:saved.placement==='right-v1'?Math.max(0,Math.min(1,saved.position.x)):1,y:Math.max(0,Math.min(1,saved.position.y))})}}catch{}
     const preference=window.matchMedia('(prefers-reduced-motion: reduce)');
     const motion=()=>setReduced(preference.matches),visibility=()=>setAway(document.hidden);
     motion();visibility();setReady(true);preference.addEventListener('change',motion);document.addEventListener('visibilitychange',visibility);
-    return()=>{preference.removeEventListener('change',motion);document.removeEventListener('visibilitychange',visibility);clearTimeout(settle.current);clearTimeout(greeting.current)};
+    return()=>{preference.removeEventListener('change',motion);document.removeEventListener('visibilitychange',visibility);clearTimeout(settle.current)};
   },[]);
-  useEffect(()=>{if(ready&&!dragging)try{localStorage.setItem(storageKey,JSON.stringify({visible,position}))}catch{}},[ready,visible,position,dragging]);
+  useEffect(()=>{if(ready&&!dragging)try{localStorage.setItem(storageKey,JSON.stringify({visible,position,placement:'right-v1'}))}catch{}},[ready,visible,position,dragging]);
   function animate(next){clearTimeout(settle.current);setActivity(next);settle.current=setTimeout(()=>setActivity('idle'),next==='doze'?3500:2500)}
   useEffect(()=>{
     if(!ready||!visible||reduced||away){setActivity('idle');return}
@@ -65,7 +65,7 @@ export function BrandCompanion(){
     window.addEventListener('pointermove',look,{passive:true});return()=>{window.removeEventListener('pointermove',look);cancelAnimationFrame(frame)};
   },[ready,visible,reduced,away]);
   const react=()=>{if(!reduced)animate(['happy','peek','dance'][sequence.current++%3])};
-  function sayHello(){if(performance.now()-lastDrag.current<300)return;if(!reduced)animate('happy');setHello(true);clearTimeout(greeting.current);greeting.current=setTimeout(()=>setHello(false),2800)}
+  function askHelper(){if(performance.now()-lastDrag.current<300)return;if(!reduced)animate('happy');onAsk()}
   function moveTo(left,top,width,height){
     const availableX=Math.max(1,document.documentElement.clientWidth-width-16),availableY=Math.max(1,window.innerHeight-height-16);
     setPosition({x:Math.max(0,Math.min(1,(left-8)/availableX)),y:Math.max(0,Math.min(1,(top-8)/availableY))});
@@ -91,16 +91,15 @@ export function BrandCompanion(){
     const directions={ArrowLeft:[-20,0],ArrowRight:[20,0],ArrowUp:[0,-20],ArrowDown:[0,20]},step=directions[e.key];if(!step)return;
     e.preventDefault();e.stopPropagation();const box=root.current.getBoundingClientRect();moveTo(box.left+step[0],box.top+step[1],box.width,box.height);
   }
-  const location=position&&visible?{left:`calc(${position.x*100}% + ${8-16*position.x}px)`,top:`calc(${position.y*100}dvh + ${8-16*position.y}px)`,bottom:'auto',transform:`translate(${-position.x*100}%, ${-position.y*100}%)`}:undefined;
+  const location=position&&visible?{left:`calc(${position.x*100}% + ${8-16*position.x}px)`,top:`calc(${position.y*100}dvh + ${8-16*position.y}px)`,bottom:'auto',right:'auto',transform:`translate(${-position.x*100}%, ${-position.y*100}%)`}:undefined;
   if(!ready)return null;
-  return <aside ref={root} style={location} data-side={position?.x>.5?'right':'left'} data-high={position?.y<.25?'true':'false'} className={`skm-companion ${dragging?'is-dragging':''} ${away?'is-paused':''} ${!visible?'is-hidden':''}`} aria-label="Website companion" data-activity={activity}>
+  return <aside ref={root} style={location} data-side={!position||position.x>.5?'right':'left'} data-high={position?.y<.25?'true':'false'} className={`skm-companion ${dragging?'is-dragging':''} ${away?'is-paused':''} ${!visible?'is-hidden':''}`} aria-label="Website companion" data-activity={activity}>
     {visible?<>
-      {hello&&<span className="companion-hello" role="status">Hi, friend! <span aria-hidden="true">✦</span></span>}
-      <button type="button" ref={play} className="companion-play" aria-label="Say hello to your companion" title="Drag me around. Click to say hello!" aria-describedby="companion-instructions" onPointerDown={startDrag} onPointerMove={moveDrag} onPointerUp={endDrag} onPointerCancel={endDrag} onLostPointerCapture={()=>{drag.current=null;setDragging(false)}} onKeyDown={moveWithKeys} onPointerEnter={react} onFocus={react} onClick={sayHello}><span className="companion-figure" ref={figure}><BuddyArt/></span></button>
+      <button type="button" ref={el=>{play.current=el;triggerRef.current=el}} className="companion-play" aria-label="Ask the brand helper" title="Drag to move. Click to ask about the brand." aria-haspopup="dialog" aria-expanded={chatOpen} aria-controls="brand-helper-panel" aria-describedby="companion-instructions" onPointerDown={startDrag} onPointerMove={moveDrag} onPointerUp={endDrag} onPointerCancel={endDrag} onLostPointerCapture={()=>{drag.current=null;setDragging(false)}} onKeyDown={moveWithKeys} onPointerEnter={react} onFocus={react} onClick={askHelper}><span className="companion-figure" ref={figure}><BuddyArt/></span></button>
       <div className="companion-controls">
-        <button type="button" aria-label="Hide companion" title="Hide companion" onClick={()=>{setVisible(false);setHello(false);requestAnimationFrame(()=>restore.current?.focus())}}><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m6 6 8 8M6 14l8-8" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/></svg></button>
+        <button type="button" aria-label="Hide companion" title="Hide companion" onClick={()=>{setVisible(false);requestAnimationFrame(()=>restore.current?.focus())}}><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m6 6 8 8M6 14l8-8" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/></svg></button>
       </div>
-      <span id="companion-instructions" className="companion-instructions">Drag to move. Use arrow keys to reposition, or press Enter to say hello.</span>
+      <span id="companion-instructions" className="companion-instructions">Drag to move. Use arrow keys to reposition, or press Enter to ask the brand helper.</span>
     </>:<button type="button" ref={restore} className="companion-restore" aria-label="Bring companion outside" title="Buddy is sleeping. Click to bring it outside." onClick={()=>{setVisible(true);requestAnimationFrame(()=>play.current?.focus())}}><SleepingRoom/></button>}
   </aside>
 }

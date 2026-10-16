@@ -79,3 +79,5 @@ Sleeping-room refinement: dismiss always docks in the bottom-left at 10 px left
 and 8 px bottom, independent of the dragged position. Room is 76 × 72 px.
 Clicking Wake buddy restores the outside companion. Outside border and outline
 are 0 px. The only outside control is dismiss on hover/focus (accessible on touch).
+
+Character helper: sole launcher, now right-aligned by default; clicking opens the existing grounded chat. Close/Escape focus return, hide/wake and mobile composer at 320 px verified. Voice input uses browser SpeechRecognition, preserves draft and requires review before send. Permission-denied fallback verified; live audio transcription could not be tested because microphone access is denied in the test browser. Nine existing tests pass. Portable dependency-free widget includes demo, isolated styles, click integration event and cleanup API; click, keyboard movement, hide/wake and persisted dismissal verified.

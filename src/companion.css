@@ -92,3 +92,9 @@
 .room-zzz{animation:room-zzz 3s ease-in-out infinite}
 @keyframes room-breathe{0%,100%{transform:scaleY(1)}50%{transform:scaleY(1.035)}}
 @keyframes room-zzz{0%,100%{opacity:.35;transform:translateY(2px)}50%{opacity:1;transform:translateY(-2px)}}
+
+.companion-label{position:absolute;bottom:-3px;left:0;right:0;text-align:center;font-size:11px;font-weight:600;color:#214b32;line-height:1.4;text-shadow:0 1px 2px #fbfaf4}
+.brand-chat[data-open=true]~.skm-companion .companion-controls,.menu-open .skm-companion .companion-controls{visibility:hidden}
+
+.skm-companion:not(.is-hidden){left:auto;right:24px}
+@media(max-width:640px){.skm-companion:not(.is-hidden){left:auto;right:12px}}
