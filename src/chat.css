@@ -1,4 +1,5 @@
-.brand-chat{position:fixed;right:24px;bottom:max(20px,env(safe-area-inset-bottom));z-index:60;font-size:14px;line-height:1.6}
+.brand-chat{position:fixed;right:24px;bottom:max(20px,env(safe-area-inset-bottom));z-index:60;font-size:14px;line-height:1.6;pointer-events:none}
+.chat-panel,.chat-launcher{pointer-events:auto}
 .chat-launcher{display:flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:13px 20px;border:1px solid #567b47;border-radius:100px;background:#39823C;color:#fff;box-shadow:0 5px 25px #192c2033;font-size:14px;font-weight:600;transition:background 150ms,transform 150ms;margin-left:auto}
 .chat-launcher:hover{background:#315f3c;transform:translateY(-2px)}
 .chat-live-dot{width:6px;height:6px;background:#f3cb2d;border-radius:50%}

@@ -295,7 +295,8 @@
 .logo-donts ul{display:grid;gap:15px;margin:0;padding-left:20px;font-size:14px;line-height:1.8;color:#5d7352}
 @media screen and (max-width:640px){.logo-donts{grid-template-columns:1fr;padding:25px 22px;gap:24px}.logo-donts p,.logo-donts ul{font-size:15px}.logo-gallery .logo-version-title{font-size:17px}}
 
-.brand-chat{position:fixed;right:24px;bottom:max(20px,env(safe-area-inset-bottom));z-index:60;font-size:14px;line-height:1.6}
+.brand-chat{position:fixed;right:24px;bottom:max(20px,env(safe-area-inset-bottom));z-index:60;font-size:14px;line-height:1.6;pointer-events:none}
+.chat-panel,.chat-launcher{pointer-events:auto}
 .chat-launcher{display:flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:13px 20px;border:1px solid #567b47;border-radius:100px;background:#39823C;color:#fff;box-shadow:0 5px 25px #192c2033;font-size:14px;font-weight:600;transition:background 150ms,transform 150ms;margin-left:auto}
 .chat-launcher:hover{background:#315f3c;transform:translateY(-2px)}
 .chat-live-dot{width:6px;height:6px;background:#f3cb2d;border-radius:50%}
@@ -672,7 +673,7 @@ body.menu-open .brand-chat{visibility:hidden}
  .page-turner .edition-label{font-size:8px;line-height:1.5;padding:12px;letter-spacing:.04em}
 }
 
-.skm-companion{position:fixed;left:272px;bottom:max(12px,env(safe-area-inset-bottom));width:126px;height:162px;z-index:45;isolation:isolate;pointer-events:none}
+.skm-companion{position:fixed;left:272px;bottom:max(12px,env(safe-area-inset-bottom));width:126px;height:162px;z-index:55;isolation:isolate;pointer-events:none}
 .companion-controls{position:absolute;right:1px;top:1px;display:flex;gap:2px;z-index:2;pointer-events:auto}
 .companion-controls button{display:grid;place-items:center;position:relative;width:44px;height:44px;padding:14px;background:transparent;color:#214b32;border:0;border-radius:50%;cursor:pointer;transition:background 150ms,transform 150ms}
 .companion-controls button::before{content:'';position:absolute;inset:6px;background:#fbfaf4f2;border:1px solid #c7d8c6;border-radius:50%;box-shadow:0 2px 8px #192c2008}
@@ -743,6 +744,17 @@ body.menu-open .brand-chat{visibility:hidden}
 }
 @media(prefers-reduced-motion:reduce){.skm-companion *{animation:none!important;transition:none!important}.buddy-character{transform:none!important}}
 @media print{.skm-companion{display:none!important}}
+
+.companion-controls{opacity:0;visibility:visible;pointer-events:none;transform:translateY(3px);transition:opacity 150ms,transform 150ms}
+.skm-companion:hover .companion-controls,.skm-companion:focus-within .companion-controls{opacity:1;visibility:visible;transform:none;pointer-events:auto}
+.companion-play{touch-action:none;cursor:grab;user-select:none;-webkit-user-select:none}
+.skm-companion.is-dragging .companion-play{cursor:grabbing}
+.skm-companion.is-dragging .buddy-character{animation-play-state:paused}
+.companion-instructions{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+.skm-companion[data-side=right] .companion-hello{left:auto;right:0}
+.skm-companion[data-high=true] .companion-hello{bottom:auto;top:155px}
+@media(hover:none),(pointer:coarse){.companion-controls{opacity:1;visibility:visible;transform:none;pointer-events:auto}}
+@media screen and (max-width:640px){.skm-companion[data-high=true] .companion-hello{top:132px}}
 
 .visual-guide{margin:24px 0;padding:32px;background:#fff;border:1px solid #dae5dc;border-radius:4px;overflow:hidden}
 .visual-guide-heading{margin-bottom:28px}

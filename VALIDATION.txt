@@ -56,7 +56,7 @@ Mobile chapter navigation: shared 62 px segmented bar replaces tall cards.
 Mission, asset and release navigation checked with long chapter labels; no overflow.
 
 Companion: visible by default, five automatic activities, pointer tracking, hover
-reactions and a happy-hop greeting. Pause, hide, restore and cross-page preference
+reactions and a happy-hop greeting. Hide, restore and cross-page preference
 persistence verified. Reduced-motion disables animation. Hidden during menu/chat.
 44 px companion controls and no launcher overlap at the 320 px phone viewport.
 
@@ -67,3 +67,10 @@ or missing images. Drawer has one visible logo on mobile. Nine tests pass.
 
 Bag-only assets: both colors in supplied PNG and SVG files preserved byte-for-byte.
 PNG download tested in browser. Assets and brand knowledge include usage rules.
+
+Companion refinements: only a hover/focus dismiss control remains; touch devices
+keep it accessible. Mouse dragging, saved position after reload, keyboard movement
+and dismiss/restore verified. Normalized positions stay inside screen edges.
+The transparent chat container no longer intercepts the restore button.
+Touch uses Pointer Events and touch-action:none; direct touch simulation is not
+supported by the in-app browser.
