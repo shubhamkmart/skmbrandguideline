@@ -756,6 +756,18 @@ body.menu-open .brand-chat{visibility:hidden}
 @media(hover:none),(pointer:coarse){.companion-controls{opacity:1;visibility:visible;transform:none;pointer-events:auto}}
 @media screen and (max-width:640px){.skm-companion[data-high=true] .companion-hello{top:132px}}
 
+/* Dismissal returns the buddy to its little room, always at bottom-left. */
+.skm-companion.is-hidden{left:10px;right:auto;top:auto;bottom:max(8px,env(safe-area-inset-bottom));width:76px;height:72px;transform:none}
+.companion-restore{display:block;width:76px;height:72px;min-height:0;padding:0;border:0;border-radius:0;background:transparent;box-shadow:none}
+.companion-restore>svg{display:block;width:76px;height:72px}
+.companion-restore:hover{background:transparent}
+.companion-play,.companion-play:focus-visible{border:0;outline:0;box-shadow:none;background:transparent}
+.companion-play:focus-visible .companion-figure{filter:drop-shadow(0 0 4px #f3cb2d)}
+.room-sleeper{transform-origin:49px 63px;animation:room-breathe 4s ease-in-out infinite}
+.room-zzz{animation:room-zzz 3s ease-in-out infinite}
+@keyframes room-breathe{0%,100%{transform:scaleY(1)}50%{transform:scaleY(1.035)}}
+@keyframes room-zzz{0%,100%{opacity:.35;transform:translateY(2px)}50%{opacity:1;transform:translateY(-2px)}}
+
 .visual-guide{margin:24px 0;padding:32px;background:#fff;border:1px solid #dae5dc;border-radius:4px;overflow:hidden}
 .visual-guide-heading{margin-bottom:28px}
 .visual-guide-heading>span{display:block;font-size:10px;font-weight:600;letter-spacing:.13em;color:#537556}

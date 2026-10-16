@@ -74,3 +74,8 @@ and dismiss/restore verified. Normalized positions stay inside screen edges.
 The transparent chat container no longer intercepts the restore button.
 Touch uses Pointer Events and touch-action:none; direct touch simulation is not
 supported by the in-app browser.
+
+Sleeping-room refinement: dismiss always docks in the bottom-left at 10 px left
+and 8 px bottom, independent of the dragged position. Room is 76 × 72 px.
+Clicking Wake buddy restores the outside companion. Outside border and outline
+are 0 px. The only outside control is dismiss on hover/focus (accessible on touch).

@@ -24,6 +24,22 @@ function BuddyArt(){return <svg viewBox="0 0 160 180" fill="none" aria-hidden="t
   </g>
 </svg>}
 
+function SleepingRoom(){return <svg viewBox="0 0 100 90" fill="none" aria-hidden="true">
+  <ellipse cx="50" cy="78" rx="39" ry="5" fill="#214B32" opacity=".12"/>
+  <path d="M12 28 50 8l38 20v45H12z" fill="#FBFAF4" stroke="#214B32" strokeWidth="2" strokeLinejoin="round"/>
+  <path d="M6 29 50 5l44 24" stroke="#39823C" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round"/>
+  <path d="M21 35h58v36H21z" fill="#E1EDDC"/>
+  <path d="m21 35 12 8v28H21z" fill="#CDDEC8"/>
+  <circle cx="69" cy="37" r="7" fill="#F3CB2D"/><circle cx="72" cy="34" r="6" fill="#E1EDDC"/>
+  <path d="M28 64h48v8H28z" fill="#39823C"/><path d="M32 59h38a5 5 0 0 1 5 5H27a5 5 0 0 1 5-5Z" fill="#FBFAF4"/>
+  <g className="room-sleeper"><path d="M42 43v-7a7 7 0 0 1 14 0v7" stroke="#214B32" strokeWidth="3"/>
+  <rect x="35" y="41" width="28" height="22" rx="5" fill="#F3CB2D" stroke="#214B32" strokeWidth="1.5"/>
+  <path d="m40 49 3 2 3-2m6 0 3 2 3-2m-12 8q3 2 6 0" stroke="#214B32" strokeWidth="1.6" strokeLinecap="round"/>
+  <path d="M33 58q17-5 33 0v7H33z" fill="#F1F6F1" stroke="#B9CEAF"/>
+  </g><g className="room-zzz" fill="#214B32" fontFamily="Inter, sans-serif" fontWeight="700"><text x="60" y="28" fontSize="8">z</text><text x="69" y="20" fontSize="11">z</text></g>
+  <text x="50" y="88" textAnchor="middle" fill="#214B32" fontSize="8" fontFamily="Inter, sans-serif" fontWeight="500">Wake buddy</text>
+</svg>}
+
 export function BrandCompanion(){
   const [ready,setReady]=useState(false),[visible,setVisible]=useState(true),[reduced,setReduced]=useState(false),[away,setAway]=useState(false),[position,setPosition]=useState(null),[dragging,setDragging]=useState(false),[activity,setActivity]=useState('wave'),[hello,setHello]=useState(false);
   const figure=useRef(null),settle=useRef(null),greeting=useRef(null),sequence=useRef(0),restore=useRef(null),play=useRef(null),root=useRef(null),drag=useRef(null),lastDrag=useRef(0);
@@ -75,7 +91,7 @@ export function BrandCompanion(){
     const directions={ArrowLeft:[-20,0],ArrowRight:[20,0],ArrowUp:[0,-20],ArrowDown:[0,20]},step=directions[e.key];if(!step)return;
     e.preventDefault();e.stopPropagation();const box=root.current.getBoundingClientRect();moveTo(box.left+step[0],box.top+step[1],box.width,box.height);
   }
-  const location=position?{left:`calc(${position.x*100}% + ${8-16*position.x}px)`,top:`calc(${position.y*100}dvh + ${8-16*position.y}px)`,bottom:'auto',transform:`translate(${-position.x*100}%, ${-position.y*100}%)`}:undefined;
+  const location=position&&visible?{left:`calc(${position.x*100}% + ${8-16*position.x}px)`,top:`calc(${position.y*100}dvh + ${8-16*position.y}px)`,bottom:'auto',transform:`translate(${-position.x*100}%, ${-position.y*100}%)`}:undefined;
   if(!ready)return null;
   return <aside ref={root} style={location} data-side={position?.x>.5?'right':'left'} data-high={position?.y<.25?'true':'false'} className={`skm-companion ${dragging?'is-dragging':''} ${away?'is-paused':''} ${!visible?'is-hidden':''}`} aria-label="Website companion" data-activity={activity}>
     {visible?<>
@@ -85,6 +101,6 @@ export function BrandCompanion(){
         <button type="button" aria-label="Hide companion" title="Hide companion" onClick={()=>{setVisible(false);setHello(false);requestAnimationFrame(()=>restore.current?.focus())}}><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m6 6 8 8M6 14l8-8" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/></svg></button>
       </div>
       <span id="companion-instructions" className="companion-instructions">Drag to move. Use arrow keys to reposition, or press Enter to say hello.</span>
-    </>:<button type="button" ref={restore} className="companion-restore" onClick={()=>{setVisible(true);requestAnimationFrame(()=>play.current?.focus())}}><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.7"><path d="M7 8V6a5 5 0 0 1 10 0v2M4 8h16l-1 13H5z" strokeLinejoin="round"/><path d="M9 13h.01M15 13h.01M9 17q3 3 6 0" strokeLinecap="round"/></svg><span>Show buddy</span></button>}
+    </>:<button type="button" ref={restore} className="companion-restore" aria-label="Bring companion outside" title="Buddy is sleeping. Click to bring it outside." onClick={()=>{setVisible(true);requestAnimationFrame(()=>play.current?.focus())}}><SleepingRoom/></button>}
   </aside>
 }
