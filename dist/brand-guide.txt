@@ -24,7 +24,7 @@ Energetic: Gold accents, confident type and light wit when appropriate.
 Responsible: Accurate information and accountable service language.
 
 Two colors. One identity.
-Choose the yellow logo for Brand Green and the green logo for Brand Gold. Each color is available as an original boxed SVG and a transparent SVG. Keep every supplied mark unchanged.
+Choose the yellow logo for Brand Green and the green logo for Brand Gold. Each color is available as an original boxed SVG, a transparent SVG and a transparent PNG. Keep every supplied mark unchanged.
 Yellow transparent logo: Place it only on the solid Brand Green surface #39823C. Do not place it on gold, white, cream, black, photography, gradients or arbitrary colors.
 Green transparent logo: Place it only on the solid Brand Gold surface #F3CB2D. Do not place it on green, white, cream, black, photography, gradients or arbitrary colors.
 Original boxed logos: Keep their original background, artwork colors, effects and proportions. Use the complete boxed artwork when the surrounding interface is neutral.
@@ -198,6 +198,7 @@ The right starting files
 Download the original vector artwork, transparent yellow and green logos, proposed design tokens and editable digital layout templates. Templates use the original supplied mark without redrawing it.
 Originals: All four supplied SVG files retain their original paths, effects and colors. The transparent yellow and green variants are available as separate downloads.
 Template status: The feed, story and banner templates are proposed editable layouts. Check current platform crops and final copy before release.
+Transparent PNG and SVG downloads: Both transparent color versions are available as supplied 2160 × 2160 PNG files and SVG masters. Choose PNG for raster workflows and SVG for scalable digital layouts. The same background and placement rules apply to both formats.
 Transparent logo backgrounds: Yellow transparent: Brand Green #39823C only. Green transparent: Brand Gold #F3CB2D only. Keep each original boxed file on its supplied background.
 Naming: Use skm-campaign-name-channel-locale-v01. Keep a clear version and locale for every creative.
 

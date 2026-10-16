@@ -23,5 +23,5 @@
 - [Content strategy](/content/): Plan content around everyday needs, category discovery and digital confidence. The supplied mix is an initial planning hypothesis, not a performance benchmark.
 - [Notifications & email](/messages/): Use direct channels with care. Routine messages should be warm, brief and relevant, with readable content and a clear reason to exist.
 - [Developer tokens](/tokens/): Shubham K Mart developer tokens: color HEX values, Inter typography, spacing, corner radii, target sizes and motion timings in downloadable CSS and JSON.
-- [Asset library](/assets/): Download Shubham K Mart original and transparent SVG logos, CSS/JSON design tokens and editable digital templates. Includes exact logo background restrictions.
+- [Asset library](/assets/): Download Shubham K Mart original SVG logos and transparent PNG/SVG logos, CSS/JSON design tokens and editable digital templates. Includes exact logo background restrictions.
 - [Release checklist](/release/): Give every digital release a focused final review. Use the checklist below for the current session, then record the evidence with the release.

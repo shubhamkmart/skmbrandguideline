@@ -3,7 +3,7 @@ Validation completed 16 October 2026.
 PASS: React production build.
 PASS: All 20 chapters contain initial HTML content, unique titles and descriptions,
       one H1, semantic landmarks, real navigation links and parseable JSON-LD.
-PASS: 1,140 local link and asset references resolve to generated files.
+PASS: 1,153 local link and asset references resolve to generated files.
 PASS: Digital-only scope scan of every chapter's main content.
 PASS: Original SVG source hashes match the supplied files.
 PASS: Production configuration generates 20 self-canonical URLs and sitemap entries.
@@ -47,3 +47,7 @@ closes and responds to Escape. Header checked at 320, 390, 768 and 1024 px.
 Brand green unified with the supplied SVG artwork: #39823C. Navbar, sidebar,
 hero, primary panels, palette, CSS/JSON tokens, helper context and metadata agree.
 White-on-green contrast is 4.74:1; all nine tests and 20 chapter checks pass.
+
+Transparent PNG downloads: original 2160 × 2160 RGBA files preserved byte-for-byte.
+PNG and SVG options added to both transparent logo cards and logo gallery.
+PNG download tested in browser; all generated asset references resolve.
