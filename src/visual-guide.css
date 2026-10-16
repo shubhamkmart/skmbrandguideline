@@ -21,7 +21,7 @@
 .format-map figure{margin:0;min-width:0}
 .format-canvas{position:relative;background:#39823c;border:1px solid #39823c;border-radius:4px;overflow:hidden;width:100%;height:185px;padding:14px}
 .format-safe{position:relative;height:100%;border:1px dashed #ffffff9c;padding:7px;overflow:hidden}
-.format-logo{display:flex;align-items:center;justify-content:center;width:48px;height:40px;position:relative;z-index:1;background:#39823c;border:1px solid #f3cb2d;padding:3px}
+.format-logo{display:flex;align-items:center;justify-content:center;width:34px;height:45px;position:relative;z-index:1;background:transparent;border:0;padding:0}
 .format-logo>svg,.format-logo>img{display:block;width:100%;height:100%;object-fit:contain}
 .format-text-line{display:block;width:75%;height:5px;background:#f3cb2d;margin-top:18px;border-radius:1px}
 .format-text-line.short{width:50%;margin-top:7px}
@@ -40,7 +40,7 @@
 .format-banner .format-subject,.format-og .format-subject{height:60%}
 .format-app-banner{height:125px;padding:12px;background:#f3cb2d;border:1px solid #e0b720}
 .format-app-banner .format-safe{border-color:#214b3240}
-.format-app-banner .format-logo{background:#f3cb2d;border:1px solid #214b32}
+.format-app-banner .format-logo{background:transparent;border:0}
 .format-app-banner .format-text-line{background:#214b32}
 .format-app-banner .format-subject{border-color:#214b3233;background:#214b3212;height:60%}
 .format-map figcaption{padding-top:14px}

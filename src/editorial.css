@@ -6,7 +6,7 @@
  .workspace{margin-left:252px}
  .sidebar-brand{padding:28px 20px 24px;color:#fff;font-size:14px;gap:12px}
  .sidebar-brand small{color:#d2dfd1;font-size:11px;letter-spacing:0}
- .sidebar-brand .logo-art{width:42px;height:42px;border-radius:4px}
+ .sidebar-brand .logo-art{width:32px;height:42px;aspect-ratio:560/741;border-radius:0;background:transparent;border:0;display:block}
  .edition{color:#ccdbca;border-color:#ffffff24;padding:0 20px 23px;gap:7px;font-size:9px;white-space:nowrap}
  .edition>span:last-child{color:#d5e1d1;border-color:#ffffff38}
  .edition .tiny-dot{background:#f3cb2d}
@@ -51,12 +51,12 @@
  .hero-art::after{width:100%}
  .orbit{display:none}
  .brand-tile{width:86%;max-width:390px;aspect-ratio:1;background:transparent;box-shadow:none;border:0;border-radius:0;transform:none;margin:0;position:relative;z-index:1;display:flex;align-items:center;justify-content:center}
- .brand-tile .logo-art,.brand-tile .hero-brand-logo{width:min(280px,76%);height:auto;aspect-ratio:560/741;border-radius:0;transform:none;display:block;filter:drop-shadow(0 18px 36px rgba(33,75,50,0.28));transition:transform 220ms ease}
+ .brand-tile .logo-art,.brand-tile .hero-brand-logo{width:min(280px,76%);height:auto;aspect-ratio:560/741;border-radius:0;transform:none;display:block;filter:none;transition:transform 220ms ease}
  .brand-tile:hover .hero-brand-logo{transform:scale(1.04)}
- .clear-space-inner{background:#39823C;border-radius:12px;padding:28px 20px;display:flex;align-items:center;justify-content:center}
- .clear-space .logo-art{width:min(180px,85%);height:auto;aspect-ratio:560/741;display:block;filter:drop-shadow(0 12px 24px rgba(0,0,0,0.25))}
- .sidebar-logo-badge{width:42px;height:42px;background:#214b3240;border:1px solid #ffffff25;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
- .sidebar-logo-badge .sidebar-logo{width:25px;height:33px;aspect-ratio:560/741;display:block}
+ .clear-space-inner{background:#39823C;border:0;border-radius:0;padding:28px 20px;display:flex;align-items:center;justify-content:center}
+ .clear-space .logo-art{width:min(180px,85%);height:auto;aspect-ratio:560/741;display:block;filter:none}
+ .sidebar-logo-badge{display:flex;align-items:center;justify-content:center;background:transparent;border:0;border-radius:0;width:auto;height:auto;padding:0;flex-shrink:0}
+ .sidebar-logo-badge .sidebar-logo,.sidebar-logo{width:32px;height:42px;aspect-ratio:560/741;display:block;flex-shrink:0;filter:none;background:transparent;border:0;border-radius:0}
  .asset-thumb-logo{width:min(115px,68%);height:auto;aspect-ratio:560/741;display:block;filter:drop-shadow(0 10px 22px rgba(0,0,0,0.22));transition:transform 200ms ease}
  .asset-card:hover .asset-thumb-logo{transform:translateY(-4px) scale(1.05)}
  .floating-note{position:absolute;color:#214b32;border:0;background:none;box-shadow:none;transform:none;font-size:9px;letter-spacing:.08em;z-index:2}
@@ -265,8 +265,8 @@
  .sidebar .edition{padding-top:24px}
  .nav-backdrop{top:80px}
  .mobile-header .mobile-brand{display:flex;align-items:center;gap:12px;text-decoration:none;flex-shrink:0}
- .mobile-brand-badge{display:flex;align-items:center;justify-content:center;width:40px;height:40px;background:#214b3250;border:1px solid #ffffff30;border-radius:10px;flex-shrink:0}
- .mobile-brand-badge .mobile-logo-art{width:24px;height:32px;aspect-ratio:560/741;display:block}
+ .mobile-brand-badge{display:flex;align-items:center;justify-content:center;width:auto;height:auto;background:transparent;border:0;border-radius:0;padding:0;flex-shrink:0}
+ .mobile-brand-badge .mobile-logo-art,.mobile-logo-art{width:28px;height:37px;aspect-ratio:560/741;display:block;filter:none;background:transparent;border:0;border-radius:0}
  .mobile-brand-title{font-size:16px;font-weight:800;letter-spacing:-.02em;color:#ffffff}
  .mobile-header button{position:relative;width:48px;height:48px;min-height:48px;border:1px solid #f3cb2d80;background:#214b3230;border-radius:8px;display:flex;align-items:center;justify-content:center;transition:background 150ms,border-color 150ms}
  .mobile-header button:hover,.mobile-header button[aria-expanded=true]{background:#39823C;border-color:#f3cb2d}
