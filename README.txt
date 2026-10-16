@@ -20,6 +20,12 @@ src/styles.css: responsive styling and print layout.
 npm run check validates the built chapters and local asset/link targets.
 
 PUBLIC HOSTING / CRAWLABILITY
+Netlify: connect this repository with its base directory at the repository root.
+The included netlify.toml builds the site and publishes dist automatically.
+Netlify's main site URL supplies canonical URLs and the sitemap automatically;
+SITE_URL can override it when an explicit production origin is needed.
+For manual Netlify uploads, upload dist, not the project folder.
+
 All chapter copy and navigation appear in the initial HTML without JavaScript.
 Every chapter has a URL, title, description, H1 and CreativeWork structured data.
 Real anchor links connect all chapters. robots.txt permits crawling.

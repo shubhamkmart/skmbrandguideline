@@ -15,7 +15,7 @@ await cp('node_modules/@fontsource-variable/inter/files/inter-latin-wght-normal.
 await cp('node_modules/@fontsource-variable/inter/LICENSE','dist/assets/Inter-LICENSE.txt');
 await writeFile('dist/assets/skm-tokens-v1.json',JSON.stringify(tokens,null,2));
 await writeFile('dist/assets/skm-tokens-v1.css',tokenCSS);
-const rawOrigin=process.env.SITE_URL;
+const rawOrigin=process.env.SITE_URL || (process.env.NETLIFY === 'true' ? process.env.URL : undefined);
 let origin='';
 if(rawOrigin){const u=new URL(rawOrigin);if(!['https:','http:'].includes(u.protocol)||u.pathname!=='/'||u.search||u.hash||u.username||u.password)throw Error('SITE_URL must be an HTTP(S) origin, such as https://brand.yourdomain.com');origin=u.origin;}
 const esc=s=>String(s).replaceAll('&','&amp;').replaceAll('"','&quot;').replaceAll('<','&lt;').replaceAll('>','&gt;');
