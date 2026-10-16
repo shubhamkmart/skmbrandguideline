@@ -27,3 +27,7 @@ Mobile revision: all 20 chapters checked at 320 px and 768 px viewports.
 No horizontal page overflow, missing images, or browser warnings/errors observed.
 Phone menu, background focus blocking, stacked tables and tablet-to-desktop
 menu reset checked. Additional 390 px, 1024 px and 1440 px layout checks passed.
+
+Brand helper: 5 backend validation/security tests passed. No API credentials
+found in source or public assets. Groq key configured in Netlify as a production
+secret. Both new transparent SVGs match the supplied originals byte-for-byte.

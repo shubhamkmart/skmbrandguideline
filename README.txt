@@ -57,6 +57,15 @@ Inter is self-hosted; its license is included with the built font assets.
 Noto Sans Devanagari is documented as a proposed regional font, not bundled.
 
 INTERACTIONS
+The floating brand helper answers questions using the guide through a server-side
+Netlify Function at /api/brand-chat. Set GROQ_API_KEY as a production secret in
+Netlify environment variables, then deploy. Never put the key in source or public
+assets. GROQ_MODEL optionally overrides the default llama-3.3-70b-versatile model.
+Questions and the relevant guide excerpts are sent to Groq to produce an answer.
+Conversation history stays in page memory and resets on navigation/reload.
+For local chat testing, set GROQ_API_KEY in the process environment before npm start.
+Static/manual-only uploads serve the guide; the helper needs Netlify Functions.
+
 Search chapter content from the sidebar. Use left/right arrows outside
 controls to move between chapters. Click a color to copy its HEX value.
 Type into the typography tester. Switch social preview aspect ratios.

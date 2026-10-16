@@ -1,7 +1,11 @@
 [build]
   base = "."
-  command = "npm run build && npm run check"
+  command = "npm run build && npm run check && npm test"
   publish = "dist"
 
 [build.environment]
   NODE_VERSION = "22"
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
