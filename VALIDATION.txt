@@ -22,3 +22,8 @@ Canonical URLs and sitemap require SITE_URL to be set to the final public origin
 
 Typography revision: body copy 16 px, navigation 14 px, larger supporting labels.
 Production rebuild and all 20 chapter/link checks passed after the revision.
+
+Mobile revision: all 20 chapters checked at 320 px and 768 px viewports.
+No horizontal page overflow, missing images, or browser warnings/errors observed.
+Phone menu, background focus blocking, stacked tables and tablet-to-desktop
+menu reset checked. Additional 390 px, 1024 px and 1440 px layout checks passed.
