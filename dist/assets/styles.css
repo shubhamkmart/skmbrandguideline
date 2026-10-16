@@ -379,7 +379,7 @@ body.menu-open .brand-chat{visibility:hidden}
  .sidebar-brand{padding:28px 20px 24px;color:#fff;font-size:14px;gap:12px}
  .sidebar-brand small{color:#d2dfd1;font-size:11px;letter-spacing:0}
  .sidebar-brand .logo-art{width:42px;height:42px;border-radius:4px}
- .edition{color:#ccdbca;border-color:#ffffff24;padding:0 22px 23px}
+ .edition{color:#ccdbca;border-color:#ffffff24;padding:0 20px 23px;gap:7px;font-size:9px;white-space:nowrap}
  .edition>span:last-child{color:#d5e1d1;border-color:#ffffff38}
  .edition .tiny-dot{background:#f3cb2d}
  .nav-search{margin:0 18px 22px;background:#ffffff0c;border-color:#ffffff35;box-shadow:none;color:#d1dfcf;border-radius:4px}
@@ -614,3 +614,20 @@ body.menu-open .brand-chat{visibility:hidden}
  .footer{padding-bottom:88px;font-size:11px;gap:10px}
 }
 @media print{.chapter-cover-number{display:none!important}}
+
+@media screen and (max-width:1024px){
+ .mobile-header{height:80px;background:#3d6948;border-bottom:1px solid #ffffff20;padding:0 20px}
+ .sidebar{top:80px}
+ .nav-backdrop{top:80px}
+ .mobile-header .mobile-brand{position:relative;display:block;width:144px;height:76px;overflow:hidden;flex-shrink:0}
+ .mobile-brand img{position:absolute;top:50%;left:0;width:144px;height:144px;max-width:none;transform:translateY(-50%);object-fit:contain}
+ .mobile-header button{position:relative;width:48px;height:48px;min-height:48px;border:1px solid #f3cb2d80;background:#214b3230;border-radius:8px;display:flex;align-items:center;justify-content:center;transition:background 150ms,border-color 150ms}
+ .mobile-header button:hover,.mobile-header button[aria-expanded=true]{background:#214b32;border-color:#f3cb2d}
+ .menu-glyph{display:block;position:relative;width:30px;height:28px}
+ .menu-glyph>span{position:absolute;left:2px;top:7px;height:2px;width:26px;background:#fff;border-radius:2px;transition:transform 180ms ease,top 180ms ease,width 180ms ease}
+ .menu-glyph>span:nth-child(2){top:18px;width:17px;background:#f3cb2d}
+ .menu-glyph>i{position:absolute;right:2px;top:17px;width:4px;height:4px;background:#f3cb2d;border-radius:1px;transition:opacity 150ms}
+ .mobile-header button[aria-expanded=true] .menu-glyph>span{top:13px;transform:rotate(45deg)}
+ .mobile-header button[aria-expanded=true] .menu-glyph>span:nth-child(2){top:13px;width:26px;transform:rotate(-45deg)}
+ .mobile-header button[aria-expanded=true] .menu-glyph>i{opacity:0}
+}

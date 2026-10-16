@@ -3,7 +3,7 @@ Validation completed 16 October 2026.
 PASS: React production build.
 PASS: All 20 chapters contain initial HTML content, unique titles and descriptions,
       one H1, semantic landmarks, real navigation links and parseable JSON-LD.
-PASS: 1,103 local link and asset references resolve to generated files.
+PASS: 1,140 local link and asset references resolve to generated files.
 PASS: Digital-only scope scan of every chapter's main content.
 PASS: Original SVG source hashes match the supplied files.
 PASS: Production configuration generates 20 self-canonical URLs and sitemap entries.
@@ -40,3 +40,6 @@ are present in initial HTML, descriptions, structured data and brand-guide.txt.
 Presentation-inspired UI revision: guideline data unchanged. All 20 chapters
 checked at 320 px and 768 px; no horizontal page overflow or missing images.
 Desktop cover and typography specimens visually reviewed at 1440 px.
+
+Mobile navbar: supplied transparent yellow logo on #3D6948; custom menu opens,
+closes and responds to Escape. Header checked at 320, 390, 768 and 1024 px.
