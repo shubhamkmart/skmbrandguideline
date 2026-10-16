@@ -8,7 +8,7 @@ const request=(data,options={})=>new Request('https://brand.example/api/brand-ch
 test('retrieves color rules and carries context into follow-up questions',()=>{
   const result=getBrandContext('What are our colors?','overview');
   assert(result.sources.some(s=>s.url==='/colors/'));
-  assert(result.context.includes('#3D6948'));
+  assert(result.context.includes('#39823C'));
   assert(result.context.includes('#F3CB2D'));
   const followup=getBrandContext('Can I use white text on it?','overview',[{role:'user',content:'What is the brand gold color?'}]);
   assert(followup.sources.some(s=>s.url==='/accessibility/'));
@@ -34,10 +34,10 @@ test('keeps provider credentials server-side and returns grounded sources',async
     assert.equal(url,'https://api.groq.com/openai/v1/chat/completions');
     assert.equal(options.headers.Authorization,'Bearer test-only-placeholder');
     const payload=JSON.parse(options.body);
-    assert(payload.messages[0].content.includes('#3D6948'));
+    assert(payload.messages[0].content.includes('#39823C'));
     assert(payload.messages[0].content.includes('Do not invent'));
     assert.equal(payload.messages.at(-1).role,'user');
-    return new Response(JSON.stringify({choices:[{message:{content:'Green is #3D6948.'}}]}),{status:200});
+    return new Response(JSON.stringify({choices:[{message:{content:'Green is #39823C.'}}]}),{status:200});
   };
   try{const response=await brandChat(request({question:'What is our green?'}));const text=await response.text();assert.equal(response.status,200);assert(!text.includes('test-only-placeholder'));assert(JSON.parse(text).sources.some(s=>s.url==='/colors/'))}
   finally{globalThis.fetch=savedFetch;if(savedKey===undefined)delete process.env.GROQ_API_KEY;else process.env.GROQ_API_KEY=savedKey}

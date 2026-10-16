@@ -5,11 +5,11 @@
 - [Complete text guide](/brand-guide.txt): Full digital standards and design tokens.
 
 ## Chapters
-- [Overview](/): Shubham K Mart digital brand guidelines: Green #3D6948, Gold #F3CB2D, Inter font roles, two logo color versions, placement rules, social formats, banners and website UI.
+- [Overview](/): Shubham K Mart digital brand guidelines: Green #39823C, Gold #F3CB2D, Inter font roles, two logo color versions, placement rules, social formats, banners and website UI.
 - [Mission & personality](/mission/): Make digital shopping feel clear, useful and dependable. Our identity connects a warm local voice with a consistent digital experience.
-- [Logo system](/logo/): Shubham K Mart logo rules: yellow transparent only on Brand Green #3D6948; green transparent only on Brand Gold #F3CB2D. Four SVG files, permitted surfaces and prohibited alterations.
+- [Logo system](/logo/): Shubham K Mart logo rules: yellow transparent only on Brand Green #39823C; green transparent only on Brand Gold #F3CB2D. Four SVG files, permitted surfaces and prohibited alterations.
 - [Logo placement](/logo-placement/): Shubham K Mart logo placement by format: 24/16 px header insets, proposed 64 px feed margins, 48 px banner margins, clear space and matching green/gold backgrounds.
-- [Brand colors](/colors/): Shubham K Mart colors: Brand Green #3D6948 and Brand Gold #F3CB2D, with supporting HEX values, surface roles and text contrast guidance.
+- [Brand colors](/colors/): Shubham K Mart colors: Brand Green #39823C and Brand Gold #F3CB2D, with supporting HEX values, surface roles and text contrast guidance.
 - [Typography](/typography/): Shubham K Mart typography: Inter Bold 700 and ExtraBold 800 for primary headlines; Regular 400 for body copy; Medium 500 and SemiBold 600 for UI labels.
 - [Voice & language](/voice/): Speak like a thoughtful shopping companion who respects people’s time. Lead with usefulness and keep every promise grounded in confirmed facts.
 - [Layout & spacing](/layout/): Build around a clear headline, one focal visual and a useful next step. Align every element to a shared grid instead of filling every gap.

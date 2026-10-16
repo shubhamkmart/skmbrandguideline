@@ -1,7 +1,7 @@
 Shubham K Mart Digital Brand Guidelines
 
 Color palette
-Brand green | #3D6948 | Primary brand surface
+Brand green | #39823C | Primary brand surface
 Brand gold | #F3CB2D | Energy & emphasis
 Deep green | #214B32 | Text on gold
 Ink | #192C20 | Primary text
@@ -25,27 +25,27 @@ Responsible: Accurate information and accountable service language.
 
 Two colors. One identity.
 Choose the yellow logo for Brand Green and the green logo for Brand Gold. Each color is available as an original boxed SVG and a transparent SVG. Keep every supplied mark unchanged.
-Yellow transparent logo: Place it only on the solid Brand Green surface #3D6948. Do not place it on gold, white, cream, black, photography, gradients or arbitrary colors.
+Yellow transparent logo: Place it only on the solid Brand Green surface #39823C. Do not place it on gold, white, cream, black, photography, gradients or arbitrary colors.
 Green transparent logo: Place it only on the solid Brand Gold surface #F3CB2D. Do not place it on green, white, cream, black, photography, gradients or arbitrary colors.
 Original boxed logos: Keep their original background, artwork colors, effects and proportions. Use the complete boxed artwork when the surrounding interface is neutral.
-Original artwork colors: The supplied yellow artwork uses #FACF03 and green artwork uses #39823C. These are logo artwork colors. The proposed digital surface tokens are #3D6948 and #F3CB2D. Preserve the SVG colors; do not recolor the files to match a token.
+Original artwork colors: Brand Green #39823C matches the green in the supplied SVG masters and is shared by the navbar and primary website surfaces. The supplied yellow artwork stays #FACF03; Brand Gold surfaces use #F3CB2D. Keep every original SVG unchanged.
 No new variants: Use the four provided SVG masters. Do not invent white, monochrome, flat, horizontal or symbol-only versions without an approved export.
 Never alter the mark: Do not stretch, rotate, crop, add outlines, replace lettering, recolor, add glow or change the supplied shadows.
 File | Logo version | Permitted background | Use
-logo-yellow-transparent.svg | Yellow transparent | Brand Green #3D6948 only | Green digital headers, campaign panels, posts, Stories and banners.
+logo-yellow-transparent.svg | Yellow transparent | Brand Green #39823C only | Green digital headers, campaign panels, posts, Stories and banners.
 logo-green-transparent.svg | Green transparent | Brand Gold #F3CB2D only | Gold digital headers, campaign panels, posts, Stories and banners.
 logo-yellow-on-green.svg | Yellow boxed original | Keep the supplied green background inside the artwork | Square brand tiles, avatars and a protected logo plate on neutral layouts.
 logo-green-on-yellow.svg | Green boxed original | Keep the supplied yellow background inside the artwork | Square brand tiles, avatars and a protected logo plate on neutral layouts.
 
 The right logo in every format
 Select the logo by its background first, then place it on the format grid. Transparent yellow belongs on Brand Green only; transparent green belongs on Brand Gold only. Keep the brand anchor consistent within each template.
-Choose the surface first: Use only #3D6948 behind the yellow transparent logo and #F3CB2D behind the green transparent logo. Other backgrounds require the complete original boxed artwork.
+Choose the surface first: Use only #39823C behind the yellow transparent logo and #F3CB2D behind the green transparent logo. Other backgrounds require the complete original boxed artwork.
 Clear space: Proposed minimum: 0.25 × the symbol width on each side. Measure from the visible mark rather than empty SVG canvas.
 Minimum size: Test a 32 px symbol and a 160 px full lockup. The supplied square artwork may need a larger display size so its original wordmark remains readable.
 Responsive placement: Recompose the layout for narrow screens. Preserve the logo aspect ratio, readable size and clear space; never stretch the image to fill a container.
 Digital surface | Logo selection | Placement & starting inset | Production check
 Website / app header | Green header: yellow transparent. Gold header: green transparent. Neutral header: complete boxed original. | Left content-grid anchor; 24 px desktop / 16 px mobile inset. | Test a 160 px full-lockup width and separate it from navigation controls.
-Portrait feed post · 1080 × 1350 | Yellow transparent on #3D6948 or green transparent on #F3CB2D. | Top-left; proposed 64 px outer inset. | Keep at least 0.25 × symbol width of clear space.
+Portrait feed post · 1080 × 1350 | Yellow transparent on #39823C or green transparent on #F3CB2D. | Top-left; proposed 64 px outer inset. | Keep at least 0.25 × symbol width of clear space.
 Square feed post · 1080 × 1080 | Choose the transparent version matching the solid brand surface. | Top-left; proposed 64 px outer inset. | Keep the same anchor across the entire series.
 Story / Reel · 1080 × 1920 | Use the matching transparent version inside a solid brand panel. | Inside the safe region; proposed 64 px side inset. | Start with 250 px top and 350 px bottom exclusions; verify current platform overlays.
 Web banner · 1080 × 600 | Green background: yellow transparent. Gold background: green transparent. | Top-left; proposed 48 px inset. | Keep logo and headline inside the visible responsive crop.
@@ -120,7 +120,7 @@ Understanding: Use explicit labels, specific errors and clear status messages. D
 Touch & regional text: Aim for 44 × 44 px mobile targets and test regional scripts on actual devices.
 Verification: A checklist does not establish conformance. Test screen readers, zoom, keyboard access and reduced-motion behavior.
 Pair | Contrast | Use
-White on brand green | 6.34:1 | Suitable for normal-size text.
+White on brand green | 4.74:1 | Suitable for normal-size text.
 Deep green on gold | 6.33:1 | Suitable for normal-size text.
 Gold on brand green | 4.04:1 | Use for qualifying large text; avoid small functional copy.
 White on gold | 1.57:1 | Avoid for functional text.
@@ -198,7 +198,7 @@ The right starting files
 Download the original vector artwork, transparent yellow and green logos, proposed design tokens and editable digital layout templates. Templates use the original supplied mark without redrawing it.
 Originals: All four supplied SVG files retain their original paths, effects and colors. The transparent yellow and green variants are available as separate downloads.
 Template status: The feed, story and banner templates are proposed editable layouts. Check current platform crops and final copy before release.
-Transparent logo backgrounds: Yellow transparent: Brand Green #3D6948 only. Green transparent: Brand Gold #F3CB2D only. Keep each original boxed file on its supplied background.
+Transparent logo backgrounds: Yellow transparent: Brand Green #39823C only. Green transparent: Brand Gold #F3CB2D only. Keep each original boxed file on its supplied background.
 Naming: Use skm-campaign-name-channel-locale-v01. Keep a clear version and locale for every creative.
 
 Ready for the next screen
@@ -219,7 +219,7 @@ Design tokens
 {
   "color": {
     "brand": {
-      "green": "#3D6948",
+      "green": "#39823C",
       "gold": "#F3CB2D",
       "greenDeep": "#214B32"
     },
