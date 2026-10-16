@@ -23,34 +23,32 @@ Assured: Strong alignment and clear statements supported by evidence.
 Energetic: Gold accents, confident type and light wit when appropriate.
 Responsible: Accurate information and accountable service language.
 
-Two colors. One identity.
-Choose the yellow logo for Brand Green and the green logo for Brand Gold. Each color is available as an original boxed SVG, a transparent SVG and a transparent PNG. Keep every supplied mark unchanged.
-Yellow transparent logo: Place it only on the solid Brand Green surface #39823C. Do not place it on gold, white, cream, black, photography, gradients or arbitrary colors.
-Green transparent logo: Place it only on the solid Brand Gold surface #F3CB2D. Do not place it on green, white, cream, black, photography, gradients or arbitrary colors.
-Original boxed logos: Keep their original background, artwork colors, effects and proportions. Use the complete boxed artwork when the surrounding interface is neutral.
-Original artwork colors: Brand Green #39823C matches the green in the supplied SVG masters and is shared by the navbar and primary website surfaces. The supplied yellow artwork stays #FACF03; Brand Gold surfaces use #F3CB2D. Keep every original SVG unchanged.
-Bag-only symbol: The supplied bag-only yellow and green exports are available in PNG and SVG. Use the symbol for compact digital placements where the brand is already identified; introduce the brand with the complete wordmark. Yellow belongs on Brand Green #39823C and green belongs on Brand Gold #F3CB2D.
-No new variants: Use the supplied full-wordmark and bag-only SVG/PNG masters. Do not invent white, monochrome, horizontal or other reconstructed versions without an approved export.
-Never alter the mark: Do not stretch, rotate, crop, add outlines, replace lettering, recolor, add glow or change the supplied shadows.
+Two colors. One brand symbol.
+The logo is our official brand mark. Choose the yellow logo for Brand Green #39823C and the green logo for Brand Gold #F3CB2D. Each color is available as transparent SVG and transparent PNG masters. The named wordmark logo is not permitted.
+Logo only: Use the official logo exclusively across all brand surfaces. Do not use any named or wordmark logo lockups.
+Yellow logo on Brand Green: Place the yellow logo only on the solid Brand Green surface #39823C. Do not place it on gold, white, cream, black, photography, gradients or arbitrary colors.
+Green logo on Brand Gold: Place the green logo only on the solid Brand Gold surface #F3CB2D. Do not place it on green, white, cream, black, photography, gradients or arbitrary colors.
+Artwork colors: Brand Green #39823C is our primary brand surface. The logo artwork uses the authentic yellow and green palette. Always maintain high contrast and pure brand backgrounds.
+Transparent masters: Both SVG and 2160 × 2160 PNG formats are available for both colorways. Transparent means the background is removed to sit cleanly on solid Brand Green or Brand Gold surfaces.
+No named logo or wordmark: Do not include or reconstruct named logos or typography with the symbol. The standalone logo represents the brand.
+Never alter the mark: Do not stretch, rotate, crop, add outlines, recolor, add drop shadows or modify the logo artwork.
 File | Logo version | Permitted background | Use
-logo-yellow-transparent.svg | Yellow transparent | Brand Green #39823C only | Green digital headers, campaign panels, posts, Stories and banners.
-logo-green-transparent.svg | Green transparent | Brand Gold #F3CB2D only | Gold digital headers, campaign panels, posts, Stories and banners.
-logo-yellow-on-green.svg | Yellow boxed original | Keep the supplied green background inside the artwork | Square brand tiles, avatars and a protected logo plate on neutral layouts.
-logo-green-on-yellow.svg | Green boxed original | Keep the supplied yellow background inside the artwork | Square brand tiles, avatars and a protected logo plate on neutral layouts.
+logo-bag-only-yellow-transparent.svg | Yellow logo · transparent | Brand Green #39823C only | Primary digital headers, brand tiles, digital web banners, and app UI.
+logo-bag-only-green-transparent.svg | Green logo · transparent | Brand Gold #F3CB2D only | Gold digital headers, campaign panels, app promotional banners and navigation.
 
 The right logo in every format
-Select the logo by its background first, then place it on the format grid. Transparent yellow belongs on Brand Green only; transparent green belongs on Brand Gold only. Keep the brand anchor consistent within each template.
-Choose the surface first: Use only #39823C behind the yellow transparent logo and #F3CB2D behind the green transparent logo. Other backgrounds require the complete original boxed artwork.
+Select the logo by its background first, then place it on the format grid. Transparent yellow logo belongs on Brand Green only; transparent green logo belongs on Brand Gold only. Keep the brand anchor consistent within each template.
+Choose the surface first: Use only #39823C behind the yellow logo and #F3CB2D behind the green logo.
+Exact digital sizes: Desktop header: 44 px height (33 px width). Mobile header / app bar: 36 px height (27 px width). Digital web banners & app banners (1080 × 600 px): 110 × 145 px mark (48 px inset). OG share cards (1200 × 630 px): 115 × 152 px mark (64 px inset).
 Clear space: Proposed minimum: 0.25 × the symbol width on each side. Measure from the visible mark rather than empty SVG canvas.
-Minimum size: Test a 32 px symbol and a 160 px full lockup. The supplied square artwork may need a larger display size so its original wordmark remains readable.
-Responsive placement: Recompose the layout for narrow screens. Preserve the logo aspect ratio, readable size and clear space; never stretch the image to fill a container.
-Digital surface | Logo selection | Placement & starting inset | Production check
-Website / app header | Green header: yellow transparent. Gold header: green transparent. Neutral header: complete boxed original. | Left content-grid anchor; 24 px desktop / 16 px mobile inset. | Test a 160 px full-lockup width and separate it from navigation controls.
-Portrait feed post · 1080 × 1350 | Yellow transparent on #39823C or green transparent on #F3CB2D. | Top-left; proposed 64 px outer inset. | Keep at least 0.25 × symbol width of clear space.
-Square feed post · 1080 × 1080 | Choose the transparent version matching the solid brand surface. | Top-left; proposed 64 px outer inset. | Keep the same anchor across the entire series.
-Story / Reel · 1080 × 1920 | Use the matching transparent version inside a solid brand panel. | Inside the safe region; proposed 64 px side inset. | Start with 250 px top and 350 px bottom exclusions; verify current platform overlays.
-Web banner · 1080 × 600 | Green background: yellow transparent. Gold background: green transparent. | Top-left; proposed 48 px inset. | Keep logo and headline inside the visible responsive crop.
-Photography / mixed artwork | Use the complete boxed original or create a solid Brand Green or Brand Gold panel for its matching transparent logo. | Align the brand plate to the content grid. | Never place the transparent mark directly over an image or unapproved surface.
+Minimum size: Absolute minimum 32 px symbol height for compact digital UI and 64 px or larger for digital campaign layouts.
+Responsive placement: Recompose the layout for narrow screens. Preserve the symbol aspect ratio, readable size and clear space; never stretch the image to fill a container.
+Digital surface & size | Logo & theme selection | Placement & safe inset | Production check
+Website / app header · 1440 × 90 / 390 × 64 px | Brand Green #39823C header: yellow logo. Brand Gold #F3CB2D header: green logo. | Left content-grid anchor; 24 px desktop / 16 px mobile inset. | Desktop symbol: 44 px height (33 px width); Mobile symbol: 36 px height (27 px width); 32 px absolute minimum.
+Digital web banner · 1080 × 600 px | Brand Green #39823C canvas with yellow logo. | Top-left; proposed 48 px inset. | Render mark at 110 × 145 px; primary desktop web and campaign banner; keep mark and headline legible in crop.
+App banner · 1080 × 600 px | Brand Gold #F3CB2D canvas with green logo (or Brand Green #39823C pairing). | Top-left; proposed 48 px inset. | Render mark at 110 × 145 px; in-app carousel and category promotions; 48 px safe touch boundary.
+Open Graph / Social preview · 1200 × 630 px | Brand Green #39823C canvas with yellow logo (or Brand Gold #F3CB2D pairing). | Top-left; proposed 64 px inset. | Render mark at 115 × 152 px; standard 1.91:1 sharing preview card for digital sharing and chat previews.
+Photography / mixed artwork | Create a solid Brand Green or Brand Gold panel for its matching transparent logo. | Align the brand plate to the content grid. | Never place the transparent mark directly over an image or unapproved surface.
 
 The colors of familiarity
 Green builds recognition. Gold brings energy. Warm neutrals give content room. Click any swatch to copy its HEX value.
@@ -126,35 +124,18 @@ Deep green on gold | 6.33:1 | Suitable for normal-size text.
 Gold on brand green | 3.02:1 | Use for qualifying large text; avoid small functional copy.
 White on gold | 1.57:1 | Avoid for functional text.
 
-Recognizable in every scroll
-Build a repeatable visual language for Instagram and other social channels. One useful message, a familiar brand anchor and enough space to read.
-Creative anatomy: Use a brand anchor, one headline, one relevant visual and a permitted action. Keep material terms readable.
-Captions: Add context, use natural language and verify any claim, date or destination.
-Export review: These dimensions come from the supplied guide. Verify the current platform crop and placement before publication.
-Format | Starting canvas | Layout guidance
-Instagram portrait | 1080 × 1350 px · 4:5 | Proposed 64 px inset; check feed and profile crops.
-Instagram square | 1080 × 1080 px · 1:1 | Keep a repeatable anchor and one clear headline.
-LinkedIn landscape | 1200 × 627 px | Keep the central idea readable at preview size.
-LinkedIn square | 1200 × 1200 px | Use a short headline and a relevant visual.
-
-A full-screen brand moment
-Use the vertical canvas with intention. Keep the message out of interface overlays and make the key idea understandable without sound.
-Canvas: Start at 1080 × 1920 px. Use a 64 px side inset as a proposed layout guide.
-Safe-area starting point: Reserve 250 px at the top and 350 px at the bottom. These are proposed exclusions, not universal platform rules. Preview current overlays on each placement.
-Logo position: Use the top-left inside the content-safe area. Keep the clear-space rule around the mark.
-Captions & motion: Keep captions high-contrast and inside the safe region. The headline and essential meaning must work in a static frame.
-Cover frame: Check the cover in the feed and profile grid. Keep its core message within the actual visible crop.
-
 Small canvas. Clear impact.
-A strong banner is a focused composition. Give the headline priority, keep the logo readable and adapt the layout to its actual placement.
-Margins: For the 1080 × 600 template, start with 48 px safe insets. Keep all essential copy inside them.
+A strong banner is a focused composition. Give the headline priority, keep the logo readable and adapt the layout to its actual placement. Both digital web banners and app banners share the 1080 × 600 px canvas with 48 px safe insets.
+Margins & safe zones: For 1080 × 600 web and app banners, start with 48 px safe insets. Keep all essential copy and logos inside them.
+Themes & contrast: Digital web banners default to Brand Green #39823C (yellow logo, white headline). In-app promotional banners default to Brand Gold #F3CB2D (green logo, Deep Green #214B32 headline).
 Action: One descriptive action leading to a working, relevant destination.
 Performance: Export at the required display density, set dimensions and avoid oversized raster files.
 Truth: Show only verified claims and relevant categories. Never place unreadable conditions below a large promise.
-Asset | Proposed size | Use
-Website / app banner | 1080 × 600 px | Brand or category communication.
-Social sharing image | 1200 × 630 px | Open Graph preview; implementation extension.
-Responsive alternate | Placement-specific | Create a separate narrow composition when cropping hides key content.
+Asset & theme | Dimensions & safe inset | Use & specifications
+Digital web banner · Brand Green | 1080 × 600 px · 48 px inset | Primary website header and campaign banner. Uses Brand Green #39823C background with yellow logo.
+App banner · Brand Gold | 1080 × 600 px · 48 px inset | Mobile app carousel and category promotions. Uses Brand Gold #F3CB2D background with green logo.
+Social sharing image · Open Graph | 1200 × 630 px · 64 px inset | Open Graph preview card; ensures crisp rendering across social and chat previews.
+Responsive alternate · Narrow crop | Placement-specific · 24 px inset | Create a separate narrow composition when responsive mobile viewports crop horizontal content.
 
 The brand, made usable
 Connect the brand system to useful interfaces. Predictable navigation, readable information and clear states matter on every screen.
@@ -196,11 +177,11 @@ Interaction: Use 48 px primary buttons, recommended 44 px touch targets and visi
 Responsive values: Use the shared scale while allowing the composition to adapt to its content and viewport.
 
 The right starting files
-Download the original vector artwork, transparent yellow and green logos, proposed design tokens and editable digital layout templates. Templates use the original supplied mark without redrawing it.
-Originals: All four supplied SVG files retain their original paths, effects and colors. The transparent yellow and green variants are available as separate downloads.
-Template status: The feed, story and banner templates are proposed editable layouts. Check current platform crops and final copy before release.
-Transparent PNG and SVG downloads: Both full-wordmark and bag-only color versions are available as supplied 2160 × 2160 PNG files and SVG masters. Choose PNG for raster workflows and SVG for scalable digital layouts. The same background and placement rules apply to both formats.
-Transparent logo backgrounds: Yellow transparent: Brand Green #39823C only. Green transparent: Brand Gold #F3CB2D only. Keep each original boxed file on its supplied background.
+Download the official vector artwork, transparent yellow and green logos, proposed design tokens and editable digital web and app banner layout templates. Templates use the official logo without redrawing it.
+Official logos: The yellow and green logo SVG files retain their authentic vector paths, shading and colors. Transparent yellow and green variants are available as SVG and PNG.
+Template status: The web banner, app banner and Open Graph templates are proposed editable layouts featuring the official logo. Check current platform crops and final copy before release.
+Transparent PNG and SVG downloads: The logo is available as supplied 2160 × 2160 PNG files and SVG vector masters. Choose PNG for raster workflows and SVG for scalable digital layouts. The same background and placement rules apply to both formats.
+Transparent logo backgrounds: Yellow transparent: Brand Green #39823C only. Green transparent: Brand Gold #F3CB2D only. Never place on white, cream, black or arbitrary backgrounds.
 Naming: Use skm-campaign-name-channel-locale-v01. Keep a clear version and locale for every creative.
 
 Ready for the next screen

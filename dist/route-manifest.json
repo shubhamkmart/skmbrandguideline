@@ -11,7 +11,7 @@
   },
   {
     "id": "logo",
-    "title": "Two colors. One identity.",
+    "title": "Two colors. One brand symbol.",
     "path": "/logo/"
   },
   {
@@ -53,16 +53,6 @@
     "id": "accessibility",
     "title": "A brand everyone can use",
     "path": "/accessibility/"
-  },
-  {
-    "id": "social",
-    "title": "Recognizable in every scroll",
-    "path": "/social/"
-  },
-  {
-    "id": "stories",
-    "title": "A full-screen brand moment",
-    "path": "/stories/"
   },
   {
     "id": "banners",

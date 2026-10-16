@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "shubham-k-mart-brand": {
+      "command": "node",
+      "args": ["./mcp-server.mjs"],
+      "description": "Shubham K Mart Digital Brand Guidelines MCP Server - provides design tokens, official logos, layout templates, and brand compliance checks."
+    }
+  }
+}

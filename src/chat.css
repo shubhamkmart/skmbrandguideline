@@ -74,7 +74,7 @@ body.menu-open .brand-chat{visibility:hidden}
 .chat-compose .chat-mic[aria-pressed=true]{background:#f3cb2d;color:#214b32;border-color:#d9b325;box-shadow:0 0 0 3px #f3cb2d30}
 .chat-voice-status{margin:0;padding:0 14px 9px;background:#f5f6ed;color:#607458;font-size:11px;line-height:1.5;flex-shrink:0}
 .chat-voice-status.is-listening{font-weight:600;color:#214b32}
-.sidebar-bag{width:32px;height:42px;flex-shrink:0}
+.sidebar-bag, .sidebar-logo{width:32px;height:42px;flex-shrink:0}
 @media(max-width:640px){.chat-compose button{width:40px;height:44px}.chat-compose{gap:6px}.chat-compose textarea{padding:10px 8px}.chat-voice-status{padding-inline:12px}}
 
 /* The buddy's little conversation corner. */

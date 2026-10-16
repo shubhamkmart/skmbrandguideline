@@ -5,10 +5,10 @@
 - [Complete text guide](https://skmbrandguideline.netlify.app/brand-guide.txt): Full digital standards and design tokens.
 
 ## Chapters
-- [Overview](https://skmbrandguideline.netlify.app/): Shubham K Mart digital brand guidelines: Green #39823C, Gold #F3CB2D, Inter font roles, two logo color versions, placement rules, social formats, banners and website UI.
+- [Overview](https://skmbrandguideline.netlify.app/): Shubham K Mart digital brand guidelines: Green #39823C, Gold #F3CB2D, Inter font roles, two logo color versions, placement rules, 1080 × 600 web and app banners, and website UI.
 - [Mission & personality](https://skmbrandguideline.netlify.app/mission/): Make digital shopping feel clear, useful and dependable. Our identity connects a warm local voice with a consistent digital experience.
-- [Logo system](https://skmbrandguideline.netlify.app/logo/): Shubham K Mart logo rules: yellow transparent only on Brand Green #39823C; green transparent only on Brand Gold #F3CB2D. Full-wordmark and bag-only SVG/PNG files, permitted surfaces and prohibited alterations.
-- [Logo placement](https://skmbrandguideline.netlify.app/logo-placement/): Shubham K Mart logo placement by format: 24/16 px header insets, proposed 64 px feed margins, 48 px banner margins, clear space and matching green/gold backgrounds.
+- [Logo system](https://skmbrandguideline.netlify.app/logo/): Shubham K Mart logo rules: yellow logo transparent only on Brand Green #39823C; green logo transparent only on Brand Gold #F3CB2D. SVG/PNG files, permitted surfaces and prohibited alterations. Named logo is not used.
+- [Logo placement](https://skmbrandguideline.netlify.app/logo-placement/): Shubham K Mart logo placement by format: 24/16 px header insets, 48 px banner margins (1080 × 600 px digital web and app banners), clear space and matching green/gold backgrounds for the logo.
 - [Brand colors](https://skmbrandguideline.netlify.app/colors/): Shubham K Mart colors: Brand Green #39823C and Brand Gold #F3CB2D, with supporting HEX values, surface roles and text contrast guidance.
 - [Typography](https://skmbrandguideline.netlify.app/typography/): Shubham K Mart typography: Inter Bold 700 and ExtraBold 800 for primary headlines; Regular 400 for body copy; Medium 500 and SemiBold 600 for UI labels.
 - [Voice & language](https://skmbrandguideline.netlify.app/voice/): Speak like a thoughtful shopping companion who respects people’s time. Lead with usefulness and keep every promise grounded in confirmed facts.
@@ -16,12 +16,10 @@
 - [Imagery & graphics](https://skmbrandguideline.netlify.app/imagery/): Use authorized product images and purposeful illustrations. Every visual should help someone understand the category or message.
 - [Icons & motion](https://skmbrandguideline.netlify.app/icons-motion/): Choose a coherent icon family and motion that helps people understand a change. Keep the interface responsive and the content easy to follow.
 - [Accessibility](https://skmbrandguideline.netlify.app/accessibility/): The supplied guide proposes WCAG 2.2 AA as a target. Use these checks during design and development, followed by testing with real content and assistive technology.
-- [Social media posts](https://skmbrandguideline.netlify.app/social/): Shubham K Mart social design: 1080 × 1350 portrait and 1080 × 1080 square starting canvases, Inter headlines, logo anchors, approved brand surfaces and readable copy.
-- [Stories & Reels](https://skmbrandguideline.netlify.app/stories/): Shubham K Mart Stories and Reels: 1080 × 1920 starting canvas, proposed 250 px top and 350 px bottom exclusions, logo color selection and vertical composition.
-- [Digital banners](https://skmbrandguideline.netlify.app/banners/): Shubham K Mart digital banners: proposed 1080 × 600 canvas, 48 px safe insets, one headline, correct logo/background pairing and responsive crops.
+- [Digital banners](https://skmbrandguideline.netlify.app/banners/): Shubham K Mart digital banners: proposed 1080 × 600 canvas for web and app banners, 48 px safe insets, one headline, correct green/gold logo pairing and responsive crops.
 - [Website & app UI](https://skmbrandguideline.netlify.app/website/): Shubham K Mart website and app UI: Inter typography, semantic colors, proposed 48 px buttons, recommended 44 px touch targets, component states and accessible navigation.
 - [Content strategy](https://skmbrandguideline.netlify.app/content/): Plan content around everyday needs, category discovery and digital confidence. The supplied mix is an initial planning hypothesis, not a performance benchmark.
 - [Notifications & email](https://skmbrandguideline.netlify.app/messages/): Use direct channels with care. Routine messages should be warm, brief and relevant, with readable content and a clear reason to exist.
 - [Developer tokens](https://skmbrandguideline.netlify.app/tokens/): Shubham K Mart developer tokens: color HEX values, Inter typography, spacing, corner radii, target sizes and motion timings in downloadable CSS and JSON.
-- [Asset library](https://skmbrandguideline.netlify.app/assets/): Download Shubham K Mart original logos, full-wordmark and bag-only transparent PNG/SVG logos, CSS/JSON design tokens and editable digital templates. Includes exact logo background restrictions.
+- [Asset library](https://skmbrandguideline.netlify.app/assets/): Download Shubham K Mart official transparent PNG/SVG logos, CSS/JSON design tokens and editable digital templates including 1080 × 600 web and app banners. Includes exact logo background restrictions.
 - [Release checklist](https://skmbrandguideline.netlify.app/release/): Give every digital release a focused final review. Use the checklist below for the current session, then record the evidence with the release.
