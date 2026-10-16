@@ -26,7 +26,7 @@ export default async function brandChat(request){
       signal:AbortSignal.timeout(25000)
     });
     if(response.status===429)return reply({error:'The helper is busy. Please wait a moment and try again.'},429,{'Retry-After':'30'});
-    if(!response.ok)return reply({error:'The answer service could not connect. Please try again shortly.'},502);
+    if(!response.ok){console.warn('Brand helper provider status:',response.status);return reply({error:'The answer service could not connect. Please try again shortly.',code:`PROVIDER_${response.status}`},502)}
     const data=await response.json();const answer=data.choices?.[0]?.message?.content;
     if(typeof answer!=='string'||!answer.trim())return reply({error:'No answer came through. Please try your question again.'},502);
     return reply({answer:answer.trim(),sources});
