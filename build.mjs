@@ -10,7 +10,7 @@ await build({entryPoints:['src/render.jsx'],outfile:'.build/render.mjs',bundle:t
 const {render,chapters,palette,tokens,tokenCSS,href}=await import(pathToFileURL(path.join(root,'.build/render.mjs')).href+`?v=${Date.now()}`);
 await build({entryPoints:['src/client.jsx'],outfile:'dist/assets/app.js',bundle:true,format:'esm',minify:true,jsx:'automatic',target:['es2020'],define:{'process.env.NODE_ENV':'"production"'}});
 await cp('public','dist',{recursive:true});
-await writeFile('dist/assets/styles.css',(await readFile('src/styles.css','utf8'))+'\n'+(await readFile('src/chat.css','utf8')));
+await writeFile('dist/assets/styles.css',(await readFile('src/styles.css','utf8'))+'\n'+(await readFile('src/chat.css','utf8'))+'\n'+(await readFile('src/editorial.css','utf8')));
 await cp('node_modules/@fontsource-variable/inter/files/inter-latin-wght-normal.woff2','dist/assets/inter-latin-wght-normal.woff2');
 await cp('node_modules/@fontsource-variable/inter/LICENSE','dist/assets/Inter-LICENSE.txt');
 await writeFile('dist/assets/skm-tokens-v1.json',JSON.stringify(tokens,null,2));
