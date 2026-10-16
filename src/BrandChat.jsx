@@ -3,6 +3,7 @@ import {ChatAnswer} from './ChatAnswer.jsx';
 import {BuddyArt} from './BrandCompanion.jsx';
 
 const starters=['What are our brand colors?','Which font should I use?','Where should I place the logo?'];
+function StarterIcon({index}){return <span className="chat-starter-icon" aria-hidden="true">{index===0?<svg viewBox="0 0 24 24"><circle cx="9" cy="9" r="6" fill="#39823C"/><circle cx="15" cy="15" r="6" fill="#F3CB2D" stroke="#214B32" strokeWidth="1.2"/></svg>:index===1?<span>Aa</span>:<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round"><path d="M5 8h14l-1 13H6L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>}</span>}
 function ChatIcon({close=false}){return <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d={close?'m6 6 12 12M6 18 18 6':'M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9H13a8.5 8.5 0 0 1 8 8v.5Z'}/>{!close&&<path d="M8 11h8M8 14h5"/>}</svg>}
 export function BrandChat({chapter,open,onOpenChange,triggerRef}){
   const [draft,setDraft]=useState(''),[messages,setMessages]=useState([]),[busy,setBusy]=useState(false),[error,setError]=useState(''),[voiceSupported,setVoiceSupported]=useState(null),[listening,setListening]=useState(false),[voiceNote,setVoiceNote]=useState('');
@@ -45,10 +46,10 @@ export function BrandChat({chapter,open,onOpenChange,triggerRef}){
     {open&&<section id="brand-helper-panel" ref={panel} className="chat-panel" role="dialog" aria-modal="false" aria-labelledby="brand-helper-title">
       <header className="chat-header"><div className="chat-avatar"><BuddyArt/></div><div><h2 id="brand-helper-title">Your brand helper</h2><span>Shubham K Mart · Digital guidelines</span></div><button className="chat-close" aria-label="Close brand helper" onClick={close}><ChatIcon close/></button></header>
       <div className="chat-messages" role="log" aria-live="polite" aria-relevant="additions" aria-label="Brand helper conversation">
-        <div className="chat-welcome"><span className="chat-greeting">A little guidance, right here.</span><p>Ask about colors, fonts, logo placement, social posts or your next digital design.</p></div>
-        {!messages.length&&<div className="chat-starters">{starters.map(q=><button key={q} onClick={()=>ask(q)} disabled={busy}>{q}<span aria-hidden="true">↗</span></button>)}</div>}
+        <div className="chat-welcome"><span className="chat-welcome-tag"><span aria-hidden="true">✦</span> YOUR CREATIVE SIDEKICK</span><span className="chat-greeting">Hi, friend.<br/>Let’s make it on-brand.</span><p>Ask about colors, fonts, logo placement, social posts or your next digital design.</p></div>
+        {!messages.length&&<div className="chat-starters">{starters.map((q,i)=><button key={q} onClick={()=>ask(q)} disabled={busy}><StarterIcon index={i}/><span className="chat-starter-label">{q}</span><span className="chat-starter-arrow" aria-hidden="true">↗</span></button>)}</div>}
         {messages.map((m,i)=><article className={`chat-message chat-${m.role}`} key={i}><span className="chat-speaker">{m.role==='user'?'YOU':'BRAND HELPER'}</span><ChatAnswer text={m.content}/>{m.sources?.length>0&&<nav className="chat-sources" aria-label="Related guidelines"><span>From the guide</span>{m.sources.map(s=><a href={s.url} key={s.url}>{s.title} ↗</a>)}</nav>}</article>)}
-        {busy&&<p className="chat-thinking" role="status">Finding the right guideline<span aria-hidden="true">…</span></p>}
+        {busy&&<p className="chat-thinking" role="status"><span className="chat-thinking-dots" aria-hidden="true"><i/><i/><i/></span>Finding the right guideline<span className="chat-sr-only">…</span></p>}
         {error&&<div className="chat-error" role="alert">{error}<button onClick={()=>ask(draft)} disabled={busy}>Try again</button></div>}
         <div ref={last}/>
       </div>

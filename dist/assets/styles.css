@@ -374,6 +374,45 @@ body.menu-open .brand-chat{visibility:hidden}
 .sidebar-bag{width:32px;height:42px;flex-shrink:0}
 @media(max-width:640px){.chat-compose button{width:40px;height:44px}.chat-compose{gap:6px}.chat-compose textarea{padding:10px 8px}.chat-voice-status{padding-inline:12px}}
 
+/* The buddy's little conversation corner. */
+.chat-panel{border:2px solid #d3dfc9;border-radius:28px;box-shadow:0 18px 60px #192c2026,0 3px 0 #cbd9c3}
+.chat-header{position:relative;grid-template-columns:50px minmax(0,1fr) 40px;gap:12px;padding:17px 16px 22px;background:#39823c;border-radius:0 0 24px 24px;z-index:1}
+.chat-avatar{width:50px;height:50px;border:1px solid #fff5b4;border-radius:19px 19px 16px 7px;background:#f3cb2d;box-shadow:0 3px 0 #214b3240;transform:rotate(-5deg)}
+.chat-avatar>svg{width:49px;height:57px;transform:rotate(5deg)}
+.chat-header h2{font-size:19px;letter-spacing:-.035em}
+.chat-header>div>span{color:#fff;font-size:10px;opacity:.9}
+.chat-close{border:1px solid #ffffff35;border-radius:50%;color:#fff;background:#ffffff10}
+.chat-close:hover{background:#ffffff28}
+.chat-messages{background-color:#fbfaf4;background-image:radial-gradient(#39823c0d .8px,transparent .8px);background-size:18px 18px;padding-top:20px}
+.chat-welcome{position:relative;padding:2px 3px 0}
+.chat-welcome-tag{display:flex;align-items:center;gap:7px;color:#496641;font-size:9px;font-weight:650;letter-spacing:.1em;margin-bottom:13px}
+.chat-welcome-tag>span{display:grid;place-items:center;width:23px;height:23px;background:#f3cb2d;border-radius:8px;letter-spacing:0;color:#214b32;font-size:15px;transform:rotate(-8deg)}
+.chat-greeting{font-size:27px;line-height:1.12;font-weight:750;margin-bottom:12px;letter-spacing:-.045em}
+.chat-welcome p{font-size:14px;line-height:1.65;color:#50674a}
+.chat-starters{gap:9px;margin-top:19px}
+.chat-starters button{justify-content:flex-start;gap:11px;min-height:54px;padding:9px 12px 9px 9px;border-radius:16px;background:#fffefa;border-color:#d8e2ce;box-shadow:0 2px 0 #e0e7d8;font-size:13px;color:#214b32}
+.chat-starters button:hover{background:#f3f6eb;border-color:#a9c09c}
+.chat-starter-icon{display:grid;place-items:center;width:34px;height:34px;border-radius:11px;background:#edf3e6;flex-shrink:0;color:#214b32}
+.chat-starter-icon>svg{width:23px;height:23px}.chat-starter-icon>span{font-size:18px;font-weight:650;letter-spacing:-.06em}
+.chat-starter-label{flex:1}.chat-starter-arrow{color:#39823c;font-size:18px}
+.chat-message{border-radius:19px 19px 19px 5px;box-shadow:0 2px 0 #e6ebdf}
+.chat-user{border-radius:19px 19px 5px 19px;background:#fff2b8;border-color:#e8d68a;box-shadow:0 2px 0 #efe3b2}
+.chat-speaker{color:#526b45;font-size:9px;font-weight:700}
+.chat-sources a{border-radius:100px}.chat-table tr{border-radius:12px}
+.chat-thinking{display:flex;align-items:center;gap:9px;color:#496641}
+.chat-thinking-dots{display:flex;gap:3px;padding:10px 9px;background:#e7efdc;border-radius:12px 12px 12px 3px}
+.chat-thinking-dots i{width:4px;height:4px;background:#39823c;border-radius:50%;animation:chat-dot 1.2s ease-in-out infinite}
+.chat-thinking-dots i:nth-child(2){animation-delay:.15s}.chat-thinking-dots i:nth-child(3){animation-delay:.3s}
+.chat-compose{border-top:1px solid #dce5d2;padding-top:12px}
+.chat-compose textarea{border-radius:17px;box-shadow:inset 0 1px 2px #214b3206}
+.chat-compose textarea:focus-visible{outline:2px solid #39823c;outline-offset:2px}
+.chat-compose button{border-radius:50%}.chat-compose .chat-mic{background:#fffefa}
+.chat-compose .chat-mic:disabled{background:#d7e0cc;color:#8c9c7f}
+.chat-disclosure{padding-bottom:14px}.chat-error{border-radius:16px}
+@keyframes chat-dot{0%,60%,100%{transform:translateY(0);opacity:.5}30%{transform:translateY(-3px);opacity:1}}
+@media(max-width:640px){.chat-panel{border-radius:24px}.chat-header{grid-template-columns:44px minmax(0,1fr) 36px;gap:10px;padding:13px 12px 18px;border-radius:0 0 21px 21px}.chat-avatar{width:44px;height:44px;border-radius:16px 16px 14px 6px}.chat-avatar>svg{width:44px;height:51px}.chat-header h2{font-size:18px}.chat-header>div>span{font-size:9px}.chat-close{width:36px;height:36px}.chat-greeting{font-size:26px}.chat-starters button{font-size:13px}.chat-message{padding:14px}.chat-compose textarea{border-radius:15px}.chat-compose button{width:40px;height:44px;border-radius:15px}}
+@media(prefers-reduced-motion:reduce){.chat-thinking-dots i{animation:none;opacity:1}}
+
 /* Presentation-style brand book: shared content, distinct visual chapters. */
 .chapter-cover-number{display:none}
 @media screen {
