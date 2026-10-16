@@ -3,7 +3,7 @@ Validation completed 16 October 2026.
 PASS: React production build.
 PASS: All 20 chapters contain initial HTML content, unique titles and descriptions,
       one H1, semantic landmarks, real navigation links and parseable JSON-LD.
-PASS: 1,153 local link and asset references resolve to generated files.
+PASS: 1,170 local link and asset references resolve to generated files.
 PASS: Digital-only scope scan of every chapter's main content.
 PASS: Original SVG source hashes match the supplied files.
 PASS: Production configuration generates 20 self-canonical URLs and sitemap entries.
@@ -54,3 +54,16 @@ PNG download tested in browser; all generated asset references resolve.
 
 Mobile chapter navigation: shared 62 px segmented bar replaces tall cards.
 Mission, asset and release navigation checked with long chapter labels; no overflow.
+
+Companion: visible by default, five automatic activities, pointer tracking, hover
+reactions and a happy-hop greeting. Pause, hide, restore and cross-page preference
+persistence verified. Reduced-motion disables animation. Hidden during menu/chat.
+44 px companion controls and no launcher overlap at the 320 px phone viewport.
+
+Visual guides: mission map, format-specific logo anchors, message flow, interactive
+motion feedback, content-mix chart, notification/email mockups, token pipeline and
+contrast comparisons. All 20 chapters checked at 320 and 768 px without overflow
+or missing images. Drawer has one visible logo on mobile. Nine tests pass.
+
+Bag-only assets: both colors in supplied PNG and SVG files preserved byte-for-byte.
+PNG download tested in browser. Assets and brand knowledge include usage rules.

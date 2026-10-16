@@ -246,6 +246,8 @@
 @media screen and (max-width:1024px){
  .mobile-header{height:80px;background:#39823C;border-bottom:1px solid #ffffff20;padding:0 20px}
  .sidebar{top:80px}
+ .sidebar .sidebar-brand{display:none}
+ .sidebar .edition{padding-top:24px}
  .nav-backdrop{top:80px}
  .mobile-header .mobile-brand{position:relative;display:block;width:144px;height:76px;overflow:hidden;flex-shrink:0}
  .mobile-brand img{position:absolute;top:50%;left:0;width:144px;height:144px;max-width:none;transform:translateY(-50%);object-fit:contain}
