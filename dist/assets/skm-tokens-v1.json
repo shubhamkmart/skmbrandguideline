@@ -1,0 +1,48 @@
+{
+  "color": {
+    "brand": {
+      "green": "#3D6948",
+      "gold": "#F3CB2D",
+      "greenDeep": "#214B32"
+    },
+    "text": {
+      "primary": "#192C20",
+      "inverse": "#FFFFFF"
+    },
+    "surface": {
+      "base": "#FFFFFF",
+      "warm": "#FBFAF4",
+      "tinted": "#F1F6F1"
+    },
+    "border": {
+      "default": "#DAE5DC"
+    }
+  },
+  "font": {
+    "latin": "Inter, system-ui, sans-serif",
+    "devanagari": "Noto Sans Devanagari, sans-serif"
+  },
+  "spacing": [
+    4,
+    8,
+    12,
+    16,
+    24,
+    32,
+    48,
+    64
+  ],
+  "radius": [
+    8,
+    12,
+    16
+  ],
+  "contentWidth": 1200,
+  "buttonHeight": 48,
+  "recommendedTarget": 44,
+  "motion": {
+    "fast": 150,
+    "standard": 250
+  },
+  "status": "Proposed v1.0"
+}

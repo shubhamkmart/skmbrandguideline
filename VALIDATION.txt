@@ -1,0 +1,24 @@
+Validation completed 16 October 2026.
+
+PASS: React production build.
+PASS: All 20 chapters contain initial HTML content, unique titles and descriptions,
+      one H1, semantic landmarks, real navigation links and parseable JSON-LD.
+PASS: 1,069 local link and asset references resolve to generated files.
+PASS: Digital-only scope scan of every chapter's main content.
+PASS: Original SVG source hashes match the supplied files.
+PASS: Production configuration generates 20 self-canonical URLs and sitemap entries.
+      Verified using a test origin; the final build has no fabricated public domain.
+PASS: Local chapter HTTP 200 and unknown-route HTTP 404.
+PASS: Browser checks for color copying, sidebar search, live typography,
+      social format switching, CSS/JSON switching, and checklist/reset behavior.
+PASS: Mobile navigation, 390 px mobile and 1440 px desktop breakpoint checks.
+PASS: No page overflow or missing images in sampled mobile chapters:
+      overview, stories, logo placement, typography, social, banners, website,
+      developer tokens and assets. No browser warnings/errors observed.
+
+Limits: not publicly deployed. Search-engine indexing, field Core Web Vitals,
+full WCAG conformance and actual platform crops were not verified.
+Canonical URLs and sitemap require SITE_URL to be set to the final public origin.
+
+Typography revision: body copy 16 px, navigation 14 px, larger supporting labels.
+Production rebuild and all 20 chapter/link checks passed after the revision.

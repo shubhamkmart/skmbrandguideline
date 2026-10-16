@@ -1,0 +1,31 @@
+:root {
+  --brand-green: #3D6948;
+  --brand-gold: #F3CB2D;
+  --brand-green-deep: #214B32;
+  --text-primary: #192C20;
+  --text-inverse: #FFFFFF;
+  --surface-base: #FFFFFF;
+  --surface-warm: #FBFAF4;
+  --surface-tinted: #F1F6F1;
+  --border-default: #DAE5DC;
+  --font-latin: 'Inter', system-ui, sans-serif;
+  --font-devanagari: 'Noto Sans Devanagari', sans-serif;
+  --space-1: 4px; --space-2: 8px;
+  --space-3: 12px; --space-4: 16px;
+  --space-6: 24px; --space-8: 32px;
+  --space-12: 48px; --space-16: 64px;
+  --radius-sm: 8px; --radius-md: 12px;
+  --radius-lg: 16px;
+  --content-width: 1200px;
+  --button-height: 48px;
+  --target-size: 44px;
+  --motion-fast: 150ms;
+  --motion-standard: 250ms;
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

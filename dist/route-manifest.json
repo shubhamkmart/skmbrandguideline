@@ -1,0 +1,102 @@
+[
+  {
+    "id": "overview",
+    "title": "Welcome to the brand",
+    "path": "/"
+  },
+  {
+    "id": "mission",
+    "title": "Mission & personality",
+    "path": "/mission/"
+  },
+  {
+    "id": "logo",
+    "title": "Our signature",
+    "path": "/logo/"
+  },
+  {
+    "id": "logo-placement",
+    "title": "Space to be recognized",
+    "path": "/logo-placement/"
+  },
+  {
+    "id": "colors",
+    "title": "The colors of familiarity",
+    "path": "/colors/"
+  },
+  {
+    "id": "typography",
+    "title": "Clear words. Confident type.",
+    "path": "/typography/"
+  },
+  {
+    "id": "voice",
+    "title": "Sound like someone familiar",
+    "path": "/voice/"
+  },
+  {
+    "id": "layout",
+    "title": "A little structure goes far",
+    "path": "/layout/"
+  },
+  {
+    "id": "imagery",
+    "title": "Images people can trust",
+    "path": "/imagery/"
+  },
+  {
+    "id": "icons-motion",
+    "title": "Small details, shared rhythm",
+    "path": "/icons-motion/"
+  },
+  {
+    "id": "accessibility",
+    "title": "A brand everyone can use",
+    "path": "/accessibility/"
+  },
+  {
+    "id": "social",
+    "title": "Recognizable in every scroll",
+    "path": "/social/"
+  },
+  {
+    "id": "stories",
+    "title": "A full-screen brand moment",
+    "path": "/stories/"
+  },
+  {
+    "id": "banners",
+    "title": "Small canvas. Clear impact.",
+    "path": "/banners/"
+  },
+  {
+    "id": "website",
+    "title": "The brand, made usable",
+    "path": "/website/"
+  },
+  {
+    "id": "content",
+    "title": "Content with a useful role",
+    "path": "/content/"
+  },
+  {
+    "id": "messages",
+    "title": "A thoughtful interruption",
+    "path": "/messages/"
+  },
+  {
+    "id": "tokens",
+    "title": "A shared source of truth",
+    "path": "/tokens/"
+  },
+  {
+    "id": "assets",
+    "title": "The right starting files",
+    "path": "/assets/"
+  },
+  {
+    "id": "release",
+    "title": "Ready for the next screen",
+    "path": "/release/"
+  }
+]
