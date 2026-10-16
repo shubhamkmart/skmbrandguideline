@@ -1,9 +1,8 @@
 import React,{useState,useEffect,useRef} from 'react';
+import {ChatAnswer} from './ChatAnswer.jsx';
 
 const starters=['What are our brand colors?','Which font should I use?','Where should I place the logo?'];
 function ChatIcon({close=false}){return <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d={close?'m6 6 12 12M6 18 18 6':'M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9H13a8.5 8.5 0 0 1 8 8v.5Z'}/>{!close&&<path d="M8 11h8M8 14h5"/>}</svg>}
-function Answer({text}){return <div className="chat-answer">{text.split(/(\*\*[^*]+\*\*|`[^`]+`)/g).map((part,i)=>part.startsWith('**')?<strong key={i}>{part.slice(2,-2)}</strong>:part.startsWith('`')?<code key={i}>{part.slice(1,-1)}</code>:<React.Fragment key={i}>{part}</React.Fragment>)}</div>}
-
 export function BrandChat({chapter}){
   const [open,setOpen]=useState(false),[draft,setDraft]=useState(''),[messages,setMessages]=useState([]),[busy,setBusy]=useState(false),[error,setError]=useState('');
   const panel=useRef(null),input=useRef(null),launcher=useRef(null),last=useRef(null),controller=useRef(null),pending=useRef(false);
@@ -33,7 +32,7 @@ export function BrandChat({chapter}){
       <div className="chat-messages" role="log" aria-live="polite" aria-relevant="additions" aria-label="Brand helper conversation">
         <div className="chat-welcome"><span className="chat-greeting">A little guidance, right here.</span><p>Ask about colors, fonts, logo placement, social posts or your next digital design.</p></div>
         {!messages.length&&<div className="chat-starters">{starters.map(q=><button key={q} onClick={()=>ask(q)} disabled={busy}>{q}<span aria-hidden="true">↗</span></button>)}</div>}
-        {messages.map((m,i)=><article className={`chat-message chat-${m.role}`} key={i}><span className="chat-speaker">{m.role==='user'?'YOU':'BRAND HELPER'}</span><Answer text={m.content}/>{m.sources?.length>0&&<nav className="chat-sources" aria-label="Related guidelines"><span>From the guide</span>{m.sources.map(s=><a href={s.url} key={s.url}>{s.title} ↗</a>)}</nav>}</article>)}
+        {messages.map((m,i)=><article className={`chat-message chat-${m.role}`} key={i}><span className="chat-speaker">{m.role==='user'?'YOU':'BRAND HELPER'}</span><ChatAnswer text={m.content}/>{m.sources?.length>0&&<nav className="chat-sources" aria-label="Related guidelines"><span>From the guide</span>{m.sources.map(s=><a href={s.url} key={s.url}>{s.title} ↗</a>)}</nav>}</article>)}
         {busy&&<p className="chat-thinking" role="status">Finding the right guideline<span aria-hidden="true">…</span></p>}
         {error&&<div className="chat-error" role="alert">{error}<button onClick={()=>ask(draft)} disabled={busy}>Try again</button></div>}
         <div ref={last}/>

@@ -1,0 +1,266 @@
+Shubham K Mart Digital Brand Guidelines
+
+Color palette
+Brand green | #3D6948 | Primary brand surface
+Brand gold | #F3CB2D | Energy & emphasis
+Deep green | #214B32 | Text on gold
+Ink | #192C20 | Primary text
+Cream | #FBFAF4 | Warm surface
+Pale green | #F1F6F1 | Tinted surface
+Divider | #DAE5DC | Quiet structure
+White | #FFFFFF | Base surface
+
+Welcome to the brand
+A familiar identity, wherever we show up. The shared design language for everyone building and creating for Shubham K Mart.
+
+Mission & personality
+Make digital shopping feel clear, useful and dependable. Our identity connects a warm local voice with a consistent digital experience.
+Mission: Quality and value: Become a preferred name through quality products and accessible prices. Adapted from the mission described in the supplied PDF.
+Vision: A rewarding experience: Create a gratifying shopping experience for Indian customers. Adapted from the vision described in the supplied PDF.
+Digital expression: Familiar at every tap: Help people find relevant information, understand the next step and recognize the brand across screens.
+Approachable: Warm surfaces, readable layouts and familiar, respectful words.
+Assured: Strong alignment and clear statements supported by evidence.
+Energetic: Gold accents, confident type and light wit when appropriate.
+Responsible: Accurate information and accountable service language.
+
+Two colors. One identity.
+Choose the yellow logo for Brand Green and the green logo for Brand Gold. Each color is available as an original boxed SVG and a transparent SVG. Keep every supplied mark unchanged.
+Yellow transparent logo: Place it only on the solid Brand Green surface #3D6948. Do not place it on gold, white, cream, black, photography, gradients or arbitrary colors.
+Green transparent logo: Place it only on the solid Brand Gold surface #F3CB2D. Do not place it on green, white, cream, black, photography, gradients or arbitrary colors.
+Original boxed logos: Keep their original background, artwork colors, effects and proportions. Use the complete boxed artwork when the surrounding interface is neutral.
+Original artwork colors: The supplied yellow artwork uses #FACF03 and green artwork uses #39823C. These are logo artwork colors. The proposed digital surface tokens are #3D6948 and #F3CB2D. Preserve the SVG colors; do not recolor the files to match a token.
+No new variants: Use the four provided SVG masters. Do not invent white, monochrome, flat, horizontal or symbol-only versions without an approved export.
+Never alter the mark: Do not stretch, rotate, crop, add outlines, replace lettering, recolor, add glow or change the supplied shadows.
+File | Logo version | Permitted background | Use
+logo-yellow-transparent.svg | Yellow transparent | Brand Green #3D6948 only | Green digital headers, campaign panels, posts, Stories and banners.
+logo-green-transparent.svg | Green transparent | Brand Gold #F3CB2D only | Gold digital headers, campaign panels, posts, Stories and banners.
+logo-yellow-on-green.svg | Yellow boxed original | Keep the supplied green background inside the artwork | Square brand tiles, avatars and a protected logo plate on neutral layouts.
+logo-green-on-yellow.svg | Green boxed original | Keep the supplied yellow background inside the artwork | Square brand tiles, avatars and a protected logo plate on neutral layouts.
+
+The right logo in every format
+Select the logo by its background first, then place it on the format grid. Transparent yellow belongs on Brand Green only; transparent green belongs on Brand Gold only. Keep the brand anchor consistent within each template.
+Choose the surface first: Use only #3D6948 behind the yellow transparent logo and #F3CB2D behind the green transparent logo. Other backgrounds require the complete original boxed artwork.
+Clear space: Proposed minimum: 0.25 × the symbol width on each side. Measure from the visible mark rather than empty SVG canvas.
+Minimum size: Test a 32 px symbol and a 160 px full lockup. The supplied square artwork may need a larger display size so its original wordmark remains readable.
+Responsive placement: Recompose the layout for narrow screens. Preserve the logo aspect ratio, readable size and clear space; never stretch the image to fill a container.
+Digital surface | Logo selection | Placement & starting inset | Production check
+Website / app header | Green header: yellow transparent. Gold header: green transparent. Neutral header: complete boxed original. | Left content-grid anchor; 24 px desktop / 16 px mobile inset. | Test a 160 px full-lockup width and separate it from navigation controls.
+Portrait feed post · 1080 × 1350 | Yellow transparent on #3D6948 or green transparent on #F3CB2D. | Top-left; proposed 64 px outer inset. | Keep at least 0.25 × symbol width of clear space.
+Square feed post · 1080 × 1080 | Choose the transparent version matching the solid brand surface. | Top-left; proposed 64 px outer inset. | Keep the same anchor across the entire series.
+Story / Reel · 1080 × 1920 | Use the matching transparent version inside a solid brand panel. | Inside the safe region; proposed 64 px side inset. | Start with 250 px top and 350 px bottom exclusions; verify current platform overlays.
+Web banner · 1080 × 600 | Green background: yellow transparent. Gold background: green transparent. | Top-left; proposed 48 px inset. | Keep logo and headline inside the visible responsive crop.
+Photography / mixed artwork | Use the complete boxed original or create a solid Brand Green or Brand Gold panel for its matching transparent logo. | Align the brand plate to the content grid. | Never place the transparent mark directly over an image or unapproved surface.
+
+The colors of familiarity
+Green builds recognition. Gold brings energy. Warm neutrals give content room. Click any swatch to copy its HEX value.
+Primary roles: Use brand green for brand surfaces and white text. Use gold as an accent with deep-green text.
+Supporting roles: Use ink for body copy, cream for editorial surfaces and pale green for quiet grouping.
+Source distinction: The canonical pair is proposed. Supplied logo artwork uses legacy colors and remains unchanged.
+
+Clear words. Confident type.
+Inter is the proposed shared family for Latin text. Primary headlines use Bold or ExtraBold. Secondary body copy uses Regular. UI labels use Medium or SemiBold. These are different roles within the same font family.
+English + Hinglish: Use natural phrasing and sentence case. Avoid extended all-caps paragraphs.
+Regional scripts: Noto Sans Devanagari is proposed for Hindi. Confirm suitable script fonts for Gujarati and Odia before release.
+Proof every language: Review matras, Unicode shaping, line breaks, spelling and text expansion with a regional editor.
+Role | Desktop / mobile | Weight / line height
+Display | 48–56 / 34–40 px | 700–800 / 1.15
+H1 | 36 / 28 px | 700 / 1.2
+H2 | 28 / 24 px | 700 / 1.2
+H3 | 22 / 20 px | 600 / 1.25
+Body | 16 / 16 px | 400 / 1.5
+Support | 14 / 14 px | 400–500 / 1.5
+Price | 22–28 / 20–24 px | 700 / 1.2
+
+Sound like someone familiar
+Speak like a thoughtful shopping companion who respects people’s time. Lead with usefulness and keep every promise grounded in confirmed facts.
+Everyday: “Ghar ki list, ab thodi easier.”: Friendly and natural. Use English or Hinglish to suit the audience.
+Festival: “Make room for moments together.”: Thoughtful and culturally relevant. Have a regional editor review the final copy.
+Service: “We’re checking your order.”: Precise and accountable. Share dates or response times only when confirmed.
+Brand spelling: Always write Shubham K Mart in consumer-facing text. SKM belongs in clear internal or technical contexts.
+Existing tagline: Shopping karo khulke, paise bachao jamke! Campaign headlines support this line rather than replace it.
+Copy structure: Start with a verified fact, connect it to a familiar situation, explain the benefit and offer one relevant next step.
+Claims: Avoid unverified cheapest-ever statements, fabricated urgency and universal availability promises.
+
+A little structure goes far
+Build around a clear headline, one focal visual and a useful next step. Align every element to a shared grid instead of filling every gap.
+Creative hierarchy: Brand anchor → headline → relevant visual → action → legible terms.
+Density: One dominant message per panel. Leave quiet space around the headline.
+Small screens: Stack content by reading priority. Avoid shrinking a desktop composition into a narrow screen.
+Foundation | Proposed standard | Use
+Spacing | 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 px | 8 px base with 4 px substeps.
+Content width | Approximately 1200 px | Centered content area with responsive page padding.
+Radius | 8 / 12 / 16 px | Controls, cards and larger containers.
+Grid | 12 desktop / 4 mobile columns | Consistent content alignment. Proposed implementation extension.
+Primary button | 48 px height | Keep the label short and meaningful.
+Touch target | Recommended 44 × 44 px | Separate adjacent controls and keep focus visible.
+
+Images people can trust
+Use authorized product images and purposeful illustrations. Every visual should help someone understand the category or message.
+Use: Accurate product imagery: Keep labels, proportions, pack sizes and colors faithful to the approved catalogue asset.
+Compose: One focal point: Leave clean space for the headline. Use consistent image scale and a restrained background.
+Describe: Meaningful alternatives: Write alt text for informative imagery. Decorative details get an empty alt attribute.
+Illustrations: Abstract editorial illustrations may support a concept. They cannot establish that an item is available.
+Image exports: Use SVG for approved vector marks. Choose appropriately sized WebP / AVIF for raster web images and PNG when transparency matters.
+Quality: Avoid compressed screenshots, altered product labels and busy collages that compete with the message.
+
+Small details, shared rhythm
+Choose a coherent icon family and motion that helps people understand a change. Keep the interface responsive and the content easy to follow.
+Iconography: 2 px outlines: Use one coherent outline family with consistent optical sizing. Avoid mixing unrelated styles.
+Fast feedback: 150 ms: Use for button feedback, hover states and small functional changes.
+Standard transition: 250 ms: Use for panels and interface transitions. Avoid delays before essential content.
+Purpose: Motion communicates feedback or orientation. Keep content visible and useful when animations are disabled.
+Reduced motion: Respect prefers-reduced-motion and remove nonessential movement.
+Icon labels: Keep text labels on unfamiliar actions. Decorative icons should not create duplicate screen-reader announcements.
+
+A brand everyone can use
+The supplied guide proposes WCAG 2.2 AA as a target. Use these checks during design and development, followed by testing with real content and assistive technology.
+Perception: Provide meaningful alt text, readable contrast, text scaling and responsive reflow.
+Keyboard: Support logical Tab order, a visible focus indicator and usable controls without a pointer.
+Understanding: Use explicit labels, specific errors and clear status messages. Do not rely only on color.
+Touch & regional text: Aim for 44 × 44 px mobile targets and test regional scripts on actual devices.
+Verification: A checklist does not establish conformance. Test screen readers, zoom, keyboard access and reduced-motion behavior.
+Pair | Contrast | Use
+White on brand green | 6.34:1 | Suitable for normal-size text.
+Deep green on gold | 6.33:1 | Suitable for normal-size text.
+Gold on brand green | 4.04:1 | Use for qualifying large text; avoid small functional copy.
+White on gold | 1.57:1 | Avoid for functional text.
+
+Recognizable in every scroll
+Build a repeatable visual language for Instagram and other social channels. One useful message, a familiar brand anchor and enough space to read.
+Creative anatomy: Use a brand anchor, one headline, one relevant visual and a permitted action. Keep material terms readable.
+Captions: Add context, use natural language and verify any claim, date or destination.
+Export review: These dimensions come from the supplied guide. Verify the current platform crop and placement before publication.
+Format | Starting canvas | Layout guidance
+Instagram portrait | 1080 × 1350 px · 4:5 | Proposed 64 px inset; check feed and profile crops.
+Instagram square | 1080 × 1080 px · 1:1 | Keep a repeatable anchor and one clear headline.
+LinkedIn landscape | 1200 × 627 px | Keep the central idea readable at preview size.
+LinkedIn square | 1200 × 1200 px | Use a short headline and a relevant visual.
+
+A full-screen brand moment
+Use the vertical canvas with intention. Keep the message out of interface overlays and make the key idea understandable without sound.
+Canvas: Start at 1080 × 1920 px. Use a 64 px side inset as a proposed layout guide.
+Safe-area starting point: Reserve 250 px at the top and 350 px at the bottom. These are proposed exclusions, not universal platform rules. Preview current overlays on each placement.
+Logo position: Use the top-left inside the content-safe area. Keep the clear-space rule around the mark.
+Captions & motion: Keep captions high-contrast and inside the safe region. The headline and essential meaning must work in a static frame.
+Cover frame: Check the cover in the feed and profile grid. Keep its core message within the actual visible crop.
+
+Small canvas. Clear impact.
+A strong banner is a focused composition. Give the headline priority, keep the logo readable and adapt the layout to its actual placement.
+Margins: For the 1080 × 600 template, start with 48 px safe insets. Keep all essential copy inside them.
+Action: One descriptive action leading to a working, relevant destination.
+Performance: Export at the required display density, set dimensions and avoid oversized raster files.
+Truth: Show only verified claims and relevant categories. Never place unreadable conditions below a large promise.
+Asset | Proposed size | Use
+Website / app banner | 1080 × 600 px | Brand or category communication.
+Social sharing image | 1200 × 630 px | Open Graph preview; implementation extension.
+Responsive alternate | Placement-specific | Create a separate narrow composition when cropping hides key content.
+
+The brand, made usable
+Connect the brand system to useful interfaces. Predictable navigation, readable information and clear states matter on every screen.
+Responsive foundation: Keep body text at 16 px, use flexible columns and test reflow at narrow widths and enlarged text.
+Crawlable pages: Render meaningful content in the initial HTML, use real anchor links and give every useful page its own descriptive URL and metadata.
+Honest UX copy: Describe the current state and the next step. Avoid fabricated dates, hidden conditions or misleading button labels.
+Component | Required states | Design behavior
+Navigation & search | Default, focus, results, loading, empty | Clear labels, visible focus and a predictable content grid.
+Buttons & links | Default, hover, focus, disabled, loading | One clear primary action. Explain a disabled action when needed.
+Form fields | Label, help, focus, error, success | Persistent labels and specific, recoverable errors.
+Content cards | Default, loading, unavailable | Accurate copy and image dimensions reserved to avoid layout shift.
+Status messages | Informative, success, error | Use words or icons alongside color; announce updates accessibly.
+
+Content with a useful role
+Plan content around everyday needs, category discovery and digital confidence. The supplied mix is an initial planning hypothesis, not a performance benchmark.
+35%: Everyday utility: Household lists, helpful routines and practical planning.
+25%: Category discovery: Useful category information based on actual catalogue content.
+20%: Family & culture: Regional moments, thoughtful relevance and local language.
+10%: Digital service & trust: Search guidance, availability explanations and confirmed support information.
+10%: Approved campaigns: A verified message with valid dates and an appropriate destination.
+Brief: Record audience, objective, channel, region and one central message.
+Localize: Transcreate meaning rather than translate word for word. Have a regional editor proof the final creative.
+Review: Use actual channel results to adjust the mix. Record what worked and archive expired campaign material.
+
+A thoughtful interruption
+Use direct channels with care. Routine messages should be warm, brief and relevant, with readable content and a clear reason to exist.
+Routine notification: Ghar ki list ready?: Roz ki chhoti-badi zarooraton ko ek jagah dekho. Editorial sample from the supplied deck.
+Support template: We’re checking order [ID].: We’ll share an update by [CONFIRMED TIME]. Resolve every bracketed field before sending.
+Email layout: One clear message: Use a compact approved logo, readable text, one relevant action and plain contact information.
+Routine titles: Keep titles at 30 characters maximum with no explicit routine CTA or pressure-led offer language.
+Consent & timing: Check the intended audience, consent, frequency and approved send time. Offer campaigns follow separate review.
+Email usability: Provide useful alt text, visible links and a plain-text alternative. Keep the message understandable when images are blocked.
+
+A shared source of truth
+Use semantic values across CSS, JSON, design tools and components. These proposed tokens reproduce the digital system described in the source deck.
+Semantic usage: Use brand.green for brand expression and text.primary for body text. Avoid scattered one-off HEX values.
+Typography: Inter for Latin text. Load a suitable approved script font for each regional locale.
+Interaction: Use 48 px primary buttons, recommended 44 px touch targets and visible focus states.
+Responsive values: Use the shared scale while allowing the composition to adapt to its content and viewport.
+
+The right starting files
+Download the original vector artwork, transparent yellow and green logos, proposed design tokens and editable digital layout templates. Templates use the original supplied mark without redrawing it.
+Originals: All four supplied SVG files retain their original paths, effects and colors. The transparent yellow and green variants are available as separate downloads.
+Template status: The feed, story and banner templates are proposed editable layouts. Check current platform crops and final copy before release.
+Transparent logo backgrounds: Yellow transparent: Brand Green #3D6948 only. Green transparent: Brand Gold #F3CB2D only. Keep each original boxed file on its supplied background.
+Naming: Use skm-campaign-name-channel-locale-v01. Keep a clear version and locale for every creative.
+
+Ready for the next screen
+Give every digital release a focused final review. Use the checklist below for the current session, then record the evidence with the release.
+Owner record: Track approved copy, scope, evidence, owner, verified date, approval status and next review date.
+Workflow: Brief and design → copy review → factual checks → QA → approval → publish → monitor.
+Version status: The supplied source standards are marked proposed v1.0. Formal brand approval remains a separate step from making this guide.
+Original logo, correct spelling and consistent placement
+Proposed palette and typography applied consistently
+Clear-space, safe-area and mobile crop reviewed
+Images authorized and final copy proofread
+Claims, dates and category details confirmed
+Contrast, keyboard focus and alt text reviewed
+Destination links and responsive layouts checked
+Version, locale, owner and review date recorded
+
+Design tokens
+{
+  "color": {
+    "brand": {
+      "green": "#3D6948",
+      "gold": "#F3CB2D",
+      "greenDeep": "#214B32"
+    },
+    "text": {
+      "primary": "#192C20",
+      "inverse": "#FFFFFF"
+    },
+    "surface": {
+      "base": "#FFFFFF",
+      "warm": "#FBFAF4",
+      "tinted": "#F1F6F1"
+    },
+    "border": {
+      "default": "#DAE5DC"
+    }
+  },
+  "font": {
+    "latin": "Inter, system-ui, sans-serif",
+    "devanagari": "Noto Sans Devanagari, sans-serif"
+  },
+  "spacing": [
+    4,
+    8,
+    12,
+    16,
+    24,
+    32,
+    48,
+    64
+  ],
+  "radius": [
+    8,
+    12,
+    16
+  ],
+  "contentWidth": 1200,
+  "buttonHeight": 48,
+  "recommendedTarget": 44,
+  "motion": {
+    "fast": 150,
+    "standard": 250
+  },
+  "status": "Proposed v1.0"
+}

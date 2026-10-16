@@ -3,7 +3,7 @@ Validation completed 16 October 2026.
 PASS: React production build.
 PASS: All 20 chapters contain initial HTML content, unique titles and descriptions,
       one H1, semantic landmarks, real navigation links and parseable JSON-LD.
-PASS: 1,069 local link and asset references resolve to generated files.
+PASS: 1,102 local link and asset references resolve to generated files.
 PASS: Digital-only scope scan of every chapter's main content.
 PASS: Original SVG source hashes match the supplied files.
 PASS: Production configuration generates 20 self-canonical URLs and sitemap entries.
@@ -16,9 +16,9 @@ PASS: No page overflow or missing images in sampled mobile chapters:
       overview, stories, logo placement, typography, social, banners, website,
       developer tokens and assets. No browser warnings/errors observed.
 
-Limits: not publicly deployed. Search-engine indexing, field Core Web Vitals,
+Limits: Search-engine indexing, field Core Web Vitals,
 full WCAG conformance and actual platform crops were not verified.
-Canonical URLs and sitemap require SITE_URL to be set to the final public origin.
+Netlify builds use the production URL for canonical URLs and the sitemap; SITE_URL can override it.
 
 Typography revision: body copy 16 px, navigation 14 px, larger supporting labels.
 Production rebuild and all 20 chapter/link checks passed after the revision.
@@ -31,3 +31,8 @@ menu reset checked. Additional 390 px, 1024 px and 1440 px layout checks passed.
 Brand helper: 5 backend validation/security tests passed. No API credentials
 found in source or public assets. Groq key configured in Netlify as a production
 secret. Both new transparent SVGs match the supplied originals byte-for-byte.
+
+Latest revision: all 20 chapters checked at 320 px and 768 px without page overflow,
+missing images or source footnotes. Helper fits the phone viewport. Nine backend
+and answer-formatting tests pass. Logo rules, placement, font roles and HEX values
+are present in initial HTML, descriptions, structured data and brand-guide.txt.

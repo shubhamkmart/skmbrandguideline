@@ -1,0 +1,27 @@
+# Shubham K Mart Digital Brand Guidelines
+
+> Digital identity, original SVG assets, typography, color and format-specific logo placement.
+
+- [Complete text guide](/brand-guide.txt): Full digital standards and design tokens.
+
+## Chapters
+- [Overview](/): Shubham K Mart digital brand guidelines: Green #3D6948, Gold #F3CB2D, Inter font roles, two logo color versions, placement rules, social formats, banners and website UI.
+- [Mission & personality](/mission/): Make digital shopping feel clear, useful and dependable. Our identity connects a warm local voice with a consistent digital experience.
+- [Logo system](/logo/): Shubham K Mart logo rules: yellow transparent only on Brand Green #3D6948; green transparent only on Brand Gold #F3CB2D. Four SVG files, permitted surfaces and prohibited alterations.
+- [Logo placement](/logo-placement/): Shubham K Mart logo placement by format: 24/16 px header insets, proposed 64 px feed margins, 48 px banner margins, clear space and matching green/gold backgrounds.
+- [Brand colors](/colors/): Shubham K Mart colors: Brand Green #3D6948 and Brand Gold #F3CB2D, with supporting HEX values, surface roles and text contrast guidance.
+- [Typography](/typography/): Shubham K Mart typography: Inter Bold 700 and ExtraBold 800 for primary headlines; Regular 400 for body copy; Medium 500 and SemiBold 600 for UI labels.
+- [Voice & language](/voice/): Speak like a thoughtful shopping companion who respects people’s time. Lead with usefulness and keep every promise grounded in confirmed facts.
+- [Layout & spacing](/layout/): Build around a clear headline, one focal visual and a useful next step. Align every element to a shared grid instead of filling every gap.
+- [Imagery & graphics](/imagery/): Use authorized product images and purposeful illustrations. Every visual should help someone understand the category or message.
+- [Icons & motion](/icons-motion/): Choose a coherent icon family and motion that helps people understand a change. Keep the interface responsive and the content easy to follow.
+- [Accessibility](/accessibility/): The supplied guide proposes WCAG 2.2 AA as a target. Use these checks during design and development, followed by testing with real content and assistive technology.
+- [Social media posts](/social/): Shubham K Mart social design: 1080 × 1350 portrait and 1080 × 1080 square starting canvases, Inter headlines, logo anchors, approved brand surfaces and readable copy.
+- [Stories & Reels](/stories/): Shubham K Mart Stories and Reels: 1080 × 1920 starting canvas, proposed 250 px top and 350 px bottom exclusions, logo color selection and vertical composition.
+- [Digital banners](/banners/): Shubham K Mart digital banners: proposed 1080 × 600 canvas, 48 px safe insets, one headline, correct logo/background pairing and responsive crops.
+- [Website & app UI](/website/): Shubham K Mart website and app UI: Inter typography, semantic colors, proposed 48 px buttons, recommended 44 px touch targets, component states and accessible navigation.
+- [Content strategy](/content/): Plan content around everyday needs, category discovery and digital confidence. The supplied mix is an initial planning hypothesis, not a performance benchmark.
+- [Notifications & email](/messages/): Use direct channels with care. Routine messages should be warm, brief and relevant, with readable content and a clear reason to exist.
+- [Developer tokens](/tokens/): Shubham K Mart developer tokens: color HEX values, Inter typography, spacing, corner radii, target sizes and motion timings in downloadable CSS and JSON.
+- [Asset library](/assets/): Download Shubham K Mart original and transparent SVG logos, CSS/JSON design tokens and editable digital templates. Includes exact logo background restrictions.
+- [Release checklist](/release/): Give every digital release a focused final review. Use the checklist below for the current session, then record the evidence with the release.
