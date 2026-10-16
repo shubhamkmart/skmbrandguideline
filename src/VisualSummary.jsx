@@ -2,7 +2,7 @@ import React,{useState} from 'react';
 
 function Frame({title,children,className=''}){return <section className={`visual-guide ${className}`}><header className="visual-guide-heading"><span>THE VISUAL GUIDE</span><h2>{title}</h2></header>{children}</section>}
 const notificationTitle='Ghar ki list ready?';
-const swatchColors=['#39823C','#F3CB2D','#214B32','#192C20','#DAE5DC'];
+const swatchColors=['#39823C','#F3CB2D','#214B32','#192C20','#F37021'];
 
 export function VisualSummary({page,Icon}){
   const [feedback,setFeedback]=useState(false);

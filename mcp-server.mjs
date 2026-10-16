@@ -12,7 +12,7 @@ import readline from 'node:readline';
 import {readFile} from 'node:fs/promises';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
-import {chapters, palette, tokens} from './src/data.js';
+import {chapters, palette, tokens, complementaryPalette} from './src/data.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -24,8 +24,14 @@ export const tokenCSS = `:root {
   --text-inverse: #FFFFFF;
   --surface-base: #FFFFFF;
   --surface-warm: #FBFAF4;
-  --surface-tinted: #F1F6F1;
-  --border-default: #DAE5DC;
+  --border-default: #E2E8DE;
+  --category-red: #D8232A;
+  --category-orange: #F37021;
+  --category-plum: #3E162F;
+  --category-terracotta: #C86D51;
+  --category-lilac: #9678B6;
+  --category-cocoa: #3D1E16;
+  --category-cyan: #00A3E0;
   --font-latin: 'Inter', system-ui, sans-serif;
   --font-devanagari: 'Noto Sans Devanagari', sans-serif;
   --space-1: 4px; --space-2: 8px;
@@ -346,6 +352,13 @@ export async function executeTool(name, args = {}) {
       const data = {
         brand: 'Shubham K Mart',
         palette: palette.map(([name, hex, role]) => ({ name, hex, role })),
+        complementaryPalette: complementaryPalette.map(c => ({
+          name: c.name,
+          hex: c.hex,
+          category: c.category,
+          role: c.role,
+          anchorRule: c.anchorRule
+        })),
         contrastRules: [
           { pair: 'White (#FFFFFF) on Brand Green (#39823C)', ratio: '4.74:1', status: 'PASS (WCAG AA for normal text)' },
           { pair: 'Deep Green (#214B32) on Brand Gold (#F3CB2D)', ratio: '6.33:1', status: 'PASS (WCAG AA for normal text)' },
@@ -355,7 +368,8 @@ export async function executeTool(name, args = {}) {
         logoBackgroundRules: [
           'Yellow transparent logo MUST sit on solid #39823C Brand Green ONLY.',
           'Green transparent logo MUST sit on solid #F3CB2D Brand Gold ONLY.',
-          'Never place transparent logos directly on white, cream, black, gradients, or busy photography.'
+          'Never place transparent logos directly on white, cream, black, gradients, or busy photography.',
+          'Complementary category colors are strictly for promotional canvases. Every promotional asset must preserve the official Shubham K Mart brand anchor with its designated background.'
         ]
       };
       return { content: [{ type: 'text', text: JSON.stringify(data, null, 2) }] };

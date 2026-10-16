@@ -1,4 +1,4 @@
-.visual-guide{margin:24px 0;padding:32px;background:#fff;border:1px solid #dae5dc;border-radius:4px;overflow:hidden}
+.visual-guide{margin:24px 0;padding:32px;background:#fff;border:1px solid #e2e8de;border-radius:4px;overflow:hidden}
 .visual-guide-heading{margin-bottom:28px}
 .visual-guide-heading>span{display:block;font-size:10px;font-weight:600;letter-spacing:.13em;color:#537556}
 .visual-guide h2{font-size:30px;line-height:1.15;letter-spacing:-.05em;margin-top:12px}
@@ -52,8 +52,8 @@
 .legend-anchor{width:12px;height:12px;background:#f3cb2d;border:1px solid #214b32;flex-shrink:0}
 .legend-gold-anchor{width:12px;height:12px;background:#39823c;border:1px solid #f3cb2d;flex-shrink:0;margin-left:12px}
 .legend-safe{width:14px;height:12px;border:1px dashed #39823c;margin-left:12px;flex-shrink:0}
-.message-flow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;background:#f1f6f1;border:1px solid #d7e3d5;border-radius:4px}
-.message-flow>div{position:relative;min-width:0;padding:24px 20px;border-right:1px solid #d7e3d5}
+.message-flow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;background:#fbfaf4;border:1px solid #e2e8de;border-radius:4px}
+.message-flow>div{position:relative;min-width:0;padding:24px 20px;border-right:1px solid #e2e8de}
 .message-flow>div:last-child{border:0}
 .flow-number{display:block;font-size:11px;color:#6b826b;margin-bottom:24px}
 .message-flow>div>svg{color:#39823c;margin-bottom:18px}
@@ -64,7 +64,7 @@
 .visual-verdict svg{width:17px;height:17px;color:#39823c}
 .visual-verdict b{font-size:22px;color:#7b4130;font-weight:400}
 .motion-samples{display:grid;grid-template-columns:1fr 1fr;gap:22px}
-.motion-samples>div{padding:26px;background:#f1f6f1;border:1px solid #dae5dc;border-radius:4px;min-width:0}
+.motion-samples>div{padding:26px;background:#fbfaf4;border:1px solid #e2e8de;border-radius:4px;min-width:0}
 .motion-samples h3{margin-top:25px;margin-bottom:10px;font-size:23px}
 .icon-family{display:flex;flex-wrap:wrap;gap:20px;padding:28px 0 14px;color:#39823c}
 .icon-family svg{stroke-width:2}
@@ -72,11 +72,11 @@
 .motion-demo-button:hover{transform:translateY(-2px);background:#214b32}
 .motion-demo-button:active{transform:scale(.97)}
 .motion-demo-button.is-confirmed{background:#f3cb2d;border-color:#f3cb2d;color:#214b32}
-.motion-result{display:flex;align-items:center;gap:12px;padding:17px 22px;border:1px solid #dae5dc;border-radius:4px;margin-top:18px;font-size:14px;color:#526952;background:#fff;transition:background 250ms,color 250ms}
+.motion-result{display:flex;align-items:center;gap:12px;padding:17px 22px;border:1px solid #e2e8de;border-radius:4px;margin-top:18px;font-size:14px;color:#526952;background:#fff;transition:background 250ms,color 250ms}
 .motion-result>svg{width:19px;height:19px;flex-shrink:0}
 .motion-result.is-active{background:#e9f3e5;color:#214b32;animation:visual-confirm 250ms cubic-bezier(.2,0,0,1)}
 .content-mix{display:grid;grid-template-columns:1fr 1.4fr;gap:40px;align-items:center}
-.content-donut{width:100%;max-width:290px;aspect-ratio:1;background:conic-gradient(#39823c 0 35%,#f3cb2d 35% 60%,#214b32 60% 80%,#192c20 80% 90%,#dae5dc 90% 100%);border-radius:50%;padding:38px;margin:auto}
+.content-donut{width:100%;max-width:290px;aspect-ratio:1;background:conic-gradient(#39823c 0 35%,#f3cb2d 35% 60%,#214b32 60% 80%,#192c20 80% 90%,#f37021 90% 100%);border-radius:50%;padding:38px;margin:auto}
 .content-donut>div{width:100%;height:100%;background:#fff;border-radius:50%;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:8px}
 .content-donut strong{font-size:55px;font-weight:600;letter-spacing:-.08em;color:#214b32;line-height:1}
 .content-donut strong span{font-size:24px;letter-spacing:-.04em;margin-left:3px}
@@ -101,7 +101,7 @@
 .notification-limit svg{width:13px;height:13px}
 .phone-home{position:absolute;bottom:13px;left:35%;width:30%;height:4px;border-radius:4px;background:#214b32}
 .email-wireframe{border:1px solid #cbd9c8;border-radius:6px;overflow:hidden;background:#fff}
-.email-top{display:flex;align-items:center;gap:9px;padding:13px 17px;background:#f1f6f1;color:#59725b;font-size:9px;letter-spacing:.08em;border-bottom:1px solid #dae5dc}
+.email-top{display:flex;align-items:center;gap:9px;padding:13px 17px;background:#fbfaf4;color:#59725b;font-size:9px;letter-spacing:.08em;border-bottom:1px solid #e2e8de}
 .email-top>span:last-child{margin-left:auto}
 .email-content{padding:25px}
 .email-logo{background:#39823c;width:76px;height:68px;display:flex;align-items:center;justify-content:center;border-radius:6px;margin-bottom:12px;padding:6px}
@@ -110,9 +110,9 @@
 .email-content h3{font-size:27px;letter-spacing:-.05em;margin:28px 0 15px}
 .email-content p{font-size:13px;line-height:1.8}
 .email-example-action{display:inline-flex;align-items:center;gap:14px;background:#f3cb2d;color:#214b32;padding:12px 16px;font-size:12px;font-weight:600;margin-top:25px;border-radius:4px}
-.email-contact{border-top:1px solid #dae5dc;margin-top:28px;padding-top:16px;font-size:9px;line-height:1.6;color:#627b62}
+.email-contact{border-top:1px solid #e2e8de;margin-top:28px;padding-top:16px;font-size:9px;line-height:1.6;color:#627b62}
 .token-flow{display:grid;grid-template-columns:minmax(0,1fr) 24px minmax(0,1fr) 24px minmax(0,1fr);align-items:center;gap:18px}
-.token-flow>div{background:#f1f6f1;border:1px solid #d8e3d5;padding:24px 18px;border-radius:4px;min-width:0}
+.token-flow>div{background:#fbfaf4;border:1px solid #e2e8de;padding:24px 18px;border-radius:4px;min-width:0}
 .token-flow h3{font-size:17px;margin-top:25px;margin-bottom:8px}
 .token-flow p{font-size:12px}
 .flow-connector{font-size:26px;color:#39823c;text-align:center}
@@ -123,7 +123,7 @@
 .token-screen-icon{position:relative;height:44px;border:2px solid #39823c;border-radius:4px;padding:7px;margin-top:25px;display:flex;gap:4px}
 .token-screen-icon span{height:100%;width:30%;background:#d6e5d0;border-radius:2px}.token-screen-icon span:first-child{background:#39823c}.token-screen-icon span:last-child{background:#f3cb2d}
 .contrast-infographic{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px}
-.contrast-infographic article{min-width:0;border:1px solid #dae5dc;border-radius:4px;overflow:hidden}
+.contrast-infographic article{min-width:0;border:1px solid #e2e8de;border-radius:4px;overflow:hidden}
 .contrast-pair{min-height:155px;padding:22px;display:flex;flex-direction:column;gap:14px}
 .contrast-pair>span{font-size:66px;font-weight:600;letter-spacing:-.07em;line-height:1}
 .contrast-pair strong{font-size:16px;font-weight:500}

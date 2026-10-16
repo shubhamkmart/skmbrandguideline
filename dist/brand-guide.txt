@@ -1,14 +1,21 @@
 Shubham K Mart Digital Brand Guidelines
 
-Color palette
+Canonical Brand Palette
 Brand green | #39823C | Primary brand surface
 Brand gold | #F3CB2D | Energy & emphasis
 Deep green | #214B32 | Text on gold
 Ink | #192C20 | Primary text
 Cream | #FBFAF4 | Warm surface
-Pale green | #F1F6F1 | Tinted surface
-Divider | #DAE5DC | Quiet structure
 White | #FFFFFF | Base surface
+
+Category Complementary Palette (Promotional Canvas Only)
+undefined | undefined | undefined | undefined
+undefined | undefined | undefined | undefined
+undefined | undefined | undefined | undefined
+undefined | undefined | undefined | undefined
+undefined | undefined | undefined | undefined
+undefined | undefined | undefined | undefined
+undefined | undefined | undefined | undefined
 
 Welcome to the brand
 A familiar identity, wherever we show up. The shared design language for everyone building and creating for Shubham K Mart.
@@ -51,10 +58,11 @@ Open Graph / Social preview · 1200 × 630 px | Brand Green #39823C canvas with 
 Photography / mixed artwork | Create a solid Brand Green or Brand Gold panel for its matching transparent logo. | Align the brand plate to the content grid. | Never place the transparent mark directly over an image or unapproved surface.
 
 The colors of familiarity
-Green builds recognition. Gold brings energy. Warm neutrals give content room. Click any swatch to copy its HEX value.
-Primary roles: Use brand green for brand surfaces and white text. Use gold as an accent with deep-green text.
-Supporting roles: Use ink for body copy, cream for editorial surfaces and pale green for quiet grouping.
-Source distinction: The canonical pair is proposed. Supplied logo artwork uses legacy colors and remains unchanged.
+Green builds recognition. Gold brings energy. Warm neutrals give content room. Click any swatch to copy its HEX value. Real retail banners also employ category-specific complementary colors to express product flavors and moods.
+Primary canonical roles: Use brand green for brand surfaces and white text. Use gold as an accent with deep-green text.
+Supporting canonical roles: Use ink for body copy, cream for warm editorial surfaces and white for clean cards. (Pale green and old divider tint have been removed from the palette).
+Category complementary palette: Retail campaign banners use category-specific complementary colors: Chilli Red (instant foods), Sunrise Orange (breakfast), Confectionery Lilac & Cocoa (chocolates), Terracotta & Plum (dry fruits), and School Cyan (stationery).
+Brand anchor requirement: Complementary category colors belong on the campaign backdrop. The official Shubham K Mart brand anchor (transparent yellow logo on Brand Green, or green logo on Brand Gold) must always be present in the creative.
 
 Clear words. Confident type.
 Inter is the proposed shared family for Latin text. Primary headlines use Bold or ExtraBold. Secondary body copy uses Regular. UI labels use Medium or SemiBold. These are different roles within the same font family.
@@ -127,13 +135,15 @@ White on gold | 1.57:1 | Avoid for functional text.
 Small canvas. Clear impact.
 A strong banner is a focused composition. Give the headline priority, keep the logo readable and adapt the layout to its actual placement. Both digital web banners and app banners share the 1080 × 600 px canvas with 48 px safe insets.
 Margins & safe zones: For 1080 × 600 web and app banners, start with 48 px safe insets. Keep all essential copy and logos inside them.
-Themes & contrast: Digital web banners default to Brand Green #39823C (yellow logo, white headline). In-app promotional banners default to Brand Gold #F3CB2D (green logo, Deep Green #214B32 headline).
+Themes & contrast: Digital web banners default to Brand Green #39823C (yellow logo, white headline). In-app promotional banners default to Brand Gold #F3CB2D (green logo, Deep Green #214B32 headline). Category banners use complementary category themes with a clear brand anchor.
+Category complementary colors: In category campaigns, use appetizing, culturally relevant background colors (e.g., Chilli Red for noodles, Sunrise Orange for breakfast, Confectionery Lilac for sweets).
 Action: One descriptive action leading to a working, relevant destination.
 Performance: Export at the required display density, set dimensions and avoid oversized raster files.
 Truth: Show only verified claims and relevant categories. Never place unreadable conditions below a large promise.
 Asset & theme | Dimensions & safe inset | Use & specifications
 Digital web banner · Brand Green | 1080 × 600 px · 48 px inset | Primary website header and campaign banner. Uses Brand Green #39823C background with yellow logo.
 App banner · Brand Gold | 1080 × 600 px · 48 px inset | Mobile app carousel and category promotions. Uses Brand Gold #F3CB2D background with green logo.
+Category banners · Complementary palettes | 1080 × 600 px · 48 px inset | Retail promotional banners using category-specific mood colors (Chilli Red, Sunrise Orange, Lilac/Cocoa, Terracotta, Cyan) with brand anchor.
 Social sharing image · Open Graph | 1200 × 630 px · 64 px inset | Open Graph preview card; ensures crisp rendering across social and chat previews.
 Responsive alternate · Narrow crop | Placement-specific · 24 px inset | Create a separate narrow composition when responsive mobile viewports crop horizontal content.
 
@@ -212,11 +222,19 @@ Design tokens
     },
     "surface": {
       "base": "#FFFFFF",
-      "warm": "#FBFAF4",
-      "tinted": "#F1F6F1"
+      "warm": "#FBFAF4"
     },
     "border": {
-      "default": "#DAE5DC"
+      "default": "#E2E8DE"
+    },
+    "category": {
+      "chilliRed": "#D8232A",
+      "sunriseOrange": "#F37021",
+      "confectioneryLilac": "#9678B6",
+      "richCocoa": "#3D1E16",
+      "terracottaEarth": "#C86D51",
+      "deepPlum": "#3E162F",
+      "schoolCyan": "#00A3E0"
     }
   },
   "font": {

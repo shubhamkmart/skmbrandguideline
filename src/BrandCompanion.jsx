@@ -35,7 +35,7 @@ function SleepingRoom(){return <svg viewBox="0 0 100 90" fill="none" aria-hidden
   <g className="room-sleeper"><path d="M42 43v-7a7 7 0 0 1 14 0v7" stroke="#214B32" strokeWidth="3"/>
   <rect x="35" y="41" width="28" height="22" rx="5" fill="#F3CB2D" stroke="#214B32" strokeWidth="1.5"/>
   <path d="m40 49 3 2 3-2m6 0 3 2 3-2m-12 8q3 2 6 0" stroke="#214B32" strokeWidth="1.6" strokeLinecap="round"/>
-  <path d="M33 58q17-5 33 0v7H33z" fill="#F1F6F1" stroke="#B9CEAF"/>
+  <path d="M33 58q17-5 33 0v7H33z" fill="#FBFAF4" stroke="#B9CEAF"/>
   </g><g className="room-zzz" fill="#214B32" fontFamily="Inter, sans-serif" fontWeight="700"><text x="60" y="28" fontSize="8">z</text><text x="69" y="20" fontSize="11">z</text></g>
   <text x="50" y="88" textAnchor="middle" fill="#214B32" fontSize="8" fontFamily="Inter, sans-serif" fontWeight="500">Wake buddy</text>
 </svg>}
