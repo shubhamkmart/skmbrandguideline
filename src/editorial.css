@@ -286,3 +286,14 @@
 .asset-download-row .download-formats a{color:#214b32;border-color:#c5d5c6;background:#f1f6f1;padding:9px 12px}
 .asset-download-row .download-formats a:hover{background:#e1ecdf;border-color:#39823c}
 @media screen and (max-width:640px){.asset-card .asset-copy{padding:22px}.asset-card .asset-download-row{margin:0 22px;padding:16px 0 20px}.download-formats a{font-size:14px}}
+@media screen and (max-width:640px){
+ .page-turner{gap:0;padding:0;min-height:0;align-items:stretch;margin:24px 0 18px;border:1px solid #d0ddd1;border-radius:8px;overflow:hidden;background:#fff}
+ .page-turner>div{min-width:0}
+ .page-turner>div:last-child{border-left:1px solid #dbe5dc}
+ .page-turner a,.page-turner .next-chapter{min-height:60px;height:100%;padding:10px 12px;gap:8px;border:0;border-radius:0;background:#fff;color:#214b32;font-size:13px;font-weight:600;line-height:1.35}
+ .page-turner .next-chapter{background:#f8faf6}
+ .page-turner a:hover,.page-turner .next-chapter:hover{background:#eaf2e8;color:#214b32}
+ .page-turner a>svg{width:14px;height:14px;flex-shrink:0;color:#39823c}
+ .page-turner small,.page-turner .next-chapter small{color:#58735b;font-size:7px;font-weight:500;letter-spacing:.08em;line-height:1.4;margin-bottom:4px}
+ .page-turner .edition-label{font-size:8px;line-height:1.5;padding:12px;letter-spacing:.04em}
+}

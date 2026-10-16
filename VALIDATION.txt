@@ -51,3 +51,6 @@ White-on-green contrast is 4.74:1; all nine tests and 20 chapter checks pass.
 Transparent PNG downloads: original 2160 × 2160 RGBA files preserved byte-for-byte.
 PNG and SVG options added to both transparent logo cards and logo gallery.
 PNG download tested in browser; all generated asset references resolve.
+
+Mobile chapter navigation: shared 62 px segmented bar replaces tall cards.
+Mission, asset and release navigation checked with long chapter labels; no overflow.
