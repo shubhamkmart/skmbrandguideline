@@ -58,11 +58,11 @@ Open Graph / Social preview · 1200 × 630 px | Brand Green #39823C canvas with 
 Photography / mixed artwork | Create a solid Brand Green or Brand Gold panel for its matching transparent logo. | Align the brand plate to the content grid. | Never place the transparent mark directly over an image or unapproved surface.
 
 The colors of familiarity
-Green builds recognition. Gold brings energy. Warm neutrals give content room. Click any swatch to copy its HEX value. Real retail banners also employ category-specific complementary colors to express product flavors and moods.
+Green builds recognition. Gold brings energy. Warm neutrals give content room. Click any swatch to copy its HEX value. Retail category complementary colors bring appetite and mood to seasonal promotions.
 Primary canonical roles: Use brand green for brand surfaces and white text. Use gold as an accent with deep-green text.
 Supporting canonical roles: Use ink for body copy, cream for warm editorial surfaces and white for clean cards. (Pale green and old divider tint have been removed from the palette).
-Category complementary palette: Retail campaign banners use category-specific complementary colors: Chilli Red (instant foods), Sunrise Orange (breakfast), Confectionery Lilac & Cocoa (chocolates), Terracotta & Plum (dry fruits), and School Cyan (stationery).
-Brand anchor requirement: Complementary category colors belong on the campaign backdrop. The official Shubham K Mart brand anchor (transparent yellow logo on Brand Green, or green logo on Brand Gold) must always be present in the creative.
+Category complementary palette: Retail promotions use category-specific complementary colors: Chilli Red (instant foods), Sunrise Orange (breakfast), Confectionery Lilac & Cocoa (chocolates), Terracotta & Plum (dry fruits), and School Cyan (stationery).
+Brand anchor requirement: Complementary category colors belong on promotional category canvases. The official Shubham K Mart brand anchor (transparent yellow logo on Brand Green, or green logo on Brand Gold) must always be present.
 
 Clear words. Confident type.
 Inter is the proposed shared family for Latin text. Primary headlines use Bold or ExtraBold. Secondary body copy uses Regular. UI labels use Medium or SemiBold. These are different roles within the same font family.
