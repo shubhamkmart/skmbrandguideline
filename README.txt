@@ -1,5 +1,5 @@
 SHUBHAM K MART — DIGITAL BRAND GUIDELINES
-React website with 20 independently rendered HTML chapters.
+React website with 19 independently rendered HTML chapters.
 
 RUN LOCALLY
 1. Install Node.js 20.19+ if needed.
