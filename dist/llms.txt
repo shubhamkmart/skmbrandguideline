@@ -23,3 +23,4 @@
 - [Developer tokens](https://skmbrandguideline.vercel.app/tokens/): Shubham K Mart developer tokens: color HEX values, Inter typography, spacing, corner radii, target sizes and motion timings in downloadable CSS and JSON.
 - [Asset library](https://skmbrandguideline.vercel.app/assets/): Download Shubham K Mart official transparent PNG/SVG logos, CSS/JSON design tokens and editable digital templates including 1080 × 600 web and app banners. Includes exact logo background restrictions.
 - [Release checklist](https://skmbrandguideline.vercel.app/release/): Give every digital release a focused final review. Use the checklist below for the current session, then record the evidence with the release.
+- [MCP](https://skmbrandguideline.vercel.app/mcp/): Connect Shubham K Mart brand tools to your AI assistant. Choose a hosted cloud connection or run the same tools locally, then retrieve colors, fonts, official bag logos and digital design standards.

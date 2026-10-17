@@ -88,5 +88,10 @@
     "id": "release",
     "title": "Ready for the next screen",
     "path": "/release/"
+  },
+  {
+    "id": "mcp",
+    "title": "MCP setup and AI tools",
+    "path": "/mcp/"
   }
 ]

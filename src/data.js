@@ -252,6 +252,7 @@ export const tokens={
   status:'Proposed v1.0'
 };
 export const href=(id)=>id==='overview'?'/':`/${id}/`;
+chapters.push({"id": "mcp", "title": "MCP setup and AI tools", "nav": "MCP", "group": "HANDOFF", "eyebrow": "THE BRAND, CONNECTED", "headline": "Your AI.\nOur brand knowledge.", "intro": "Connect Shubham K Mart brand tools to your AI assistant. Choose a hosted cloud connection or run the same tools locally, then retrieve colors, fonts, official bag logos and digital design standards.", "kind": "mcp", "rules": [["Cloud connection", "Streamable HTTP endpoint on Vercel. Public brand tools do not require a Groq API key."], ["Local connection", "Node.js stdio server from the repository. Build first to generate the full guide and templates."], ["Verify before creating", "List available tools, retrieve brand colors and read an official logo resource before starting a design."], ["Use the official assets", "Retrieve the supplied SVG or PNG artwork; preserve logo proportions and permitted green/gold background pairings."]]});
 const groupOrder=['START HERE','FOUNDATIONS','IDENTITY','DESIGN SYSTEM','DIGITAL APPLICATIONS','HANDOFF'];
 chapters.sort((a,b)=>groupOrder.indexOf(a.group)-groupOrder.indexOf(b.group));
 

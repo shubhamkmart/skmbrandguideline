@@ -83,3 +83,9 @@ Print this chapter produces a clean print view of digital guidance.
 VERIFICATION REFERENCE
 Google Search Central: JavaScript SEO basics
 https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics
+
+MCP: LOCAL AND CLOUD
+Local: npm run mcp (Node.js stdio; build first).
+Cloud: https://skmbrandguideline.vercel.app/api/mcp (Streamable HTTP).
+Setup instructions and copyable Codex prompts: /mcp/ on the website.
+The MCP endpoint serves public brand tools without a Groq key.
