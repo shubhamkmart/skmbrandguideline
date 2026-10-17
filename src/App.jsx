@@ -14,9 +14,98 @@ function Cards({cards}){return <div className="detail-cards">{cards.map(([label,
 function DownloadFormats({file,label,png=false}){const formats=png?['png','svg']:[file.split('.').pop()];return <div className="download-formats" aria-label={`${label} download formats`}>{formats.map(format=><a key={format} download href={`/assets/${file.replace(/\.[^.]+$/,'.'+format)}`} aria-label={`Download ${label} as ${format.toUpperCase()}`}><Icon name="download" size={15}/>{format.toUpperCase()}</a>)}</div>}
 function Campaign({format='portrait',label=true,theme='gold'}){const isGreen=theme==='green';return <div className={`campaign campaign-${format} ${isGreen?'campaign-green':''}`}><div className="campaign-header"><Logo alternate={!isGreen}/><span>DIGITAL EDITORIAL CONCEPT</span></div><div className="campaign-copy"><span className="mini-tag">THE EVERYDAY EDIT</span><h3>Ghar ki list,<br/>ab thodi<br/><em>easier.</em></h3><p>Little lists. Everyday possibilities.</p></div><div className="abstract-art" aria-hidden="true"><div className="art-box box-one"/><div className="art-box box-two"/><span className="art-orbit"/></div><div className="campaign-bottom">Shubham K Mart <span>Made for your everyday ↗</span></div>{label&&<span className="concept-label">Illustrative layout · no product or offer claim</span>}</div>}
 function Overview(){return <><section className="hero"><div className="hero-copy"><Kicker>THE DIGITAL BRAND BOOK</Kicker><h1>One brand.<br/>Every digital<br/><em>moment.</em></h1><p>A familiar identity, wherever we show up.<br/>The design language for everyone building<br className="desktop-br"/> and creating for Shubham K Mart.</p><a className="btn gold" href="/mission/">Explore the guidelines <Icon name="arrow"/></a><div className="hero-meta"><span className="tiny-dot"/>DIGITAL EDITION <i/> PROPOSED V1.0</div></div><div className="hero-art"><span className="orbit orbit-one"/><span className="orbit orbit-two"/><div className="brand-tile"><Logo alternate className="hero-brand-logo"/></div><span className="floating-note note-top">ROOTED IN FAMILIARITY <Icon name="spark" size={14}/></span><span className="floating-note note-bottom">Designed for every screen. <span>↗</span></span><div className="hero-art-caption">OUR IDENTITY · THE LOGO</div></div></section><div className="intro-strip"><div><span className="small-caps">ONE SHARED LANGUAGE</span><h2>Familiar at every tap.</h2></div><p>From a first impression to the smallest interface detail, consistency makes every digital experience feel like Shubham K Mart.</p><Icon name="spark" size={38}/></div><section className="essentials"><div className="section-heading"><div><span className="small-caps">THE FOUNDATIONS</span><h2>Start with what makes us, us.</h2></div><span className="quiet">The essentials, at a glance</span></div><div className="foundation-grid"><a className="foundation color-foundation" href="/colors/"><div className="mini-swatches"><span/><span/><span/><span/></div><div><span className="label">01 / COLOR</span><h3>Grounded. Bright. Ours.</h3><p>A purposeful palette for every screen.</p></div><Icon name="arrow"/></a><a className="foundation type-foundation" href="/typography/"><div className="giant-aa">Aa<span>Inter</span></div><div><span className="label">02 / TYPOGRAPHY</span><h3>Clarity has a type.</h3><p>One family. A confident hierarchy.</p></div><Icon name="arrow"/></a><a className="foundation voice-foundation" href="/voice/"><div className="quote-art">“Ghar ki list,<br/>ab thodi <em>easier.</em>”</div><div><span className="label">03 / VOICE</span><h3>Warm. Clear. Familiar.</h3><p>Words that feel close to home.</p></div><Icon name="arrow"/></a></div></section><section className="application-preview"><div className="preview-visual"><Campaign format="landscape" label={false}/></div><div className="preview-copy"><span className="small-caps">THE BRAND IN ACTION</span><h2>A system built<br/>for your next idea.</h2><p>Web banners, app interfaces and digital promotions. A consistent foundation with room for creativity.</p><a className="text-link" href="/banners/">See digital applications <Icon name="arrow"/></a></div></section></>}
-function Visual({page,onCopy}){const [bannerTheme,setBannerTheme]=useState('green'),[sample,setSample]=useState('Everyday feels familiar.'),[sampleWeight,setSampleWeight]=useState('700'),[sampleSize,setSampleSize]=useState(40),[tokenTab,setTokenTab]=useState('CSS'),[checked,setChecked]=useState([]);const k=page.kind;
+function Visual({page,onCopy}){const [colorFilter,setColorFilter]=useState('all'),[bannerTheme,setBannerTheme]=useState('green'),[sample,setSample]=useState('Everyday feels familiar.'),[sampleWeight,setSampleWeight]=useState('700'),[sampleSize,setSampleSize]=useState(40),[tokenTab,setTokenTab]=useState('CSS'),[checked,setChecked]=useState([]);const k=page.kind;
  if(k==='logo')return <><div className="logo-gallery"><div className="logo-on-green"><div className="logo-showcase-box"><svg className="logo-stage-art" viewBox="819 730 560 741" role="img" aria-label="Yellow logo on Brand Green background"><image href="/assets/logo-bag-only-yellow-transparent.svg" width="2160" height="2160"/></svg></div><span className="logo-version-title">Yellow logo · transparent</span><span className="logo-background-rule">ONLY ON BRAND GREEN · #39823C</span><DownloadFormats file="logo-bag-only-yellow-transparent.svg" label="Yellow logo" png/></div><div className="logo-on-gold"><div className="logo-showcase-box"><svg className="logo-stage-art" viewBox="819 730 560 741" role="img" aria-label="Green logo on Brand Gold background"><image href="/assets/logo-bag-only-green-transparent.svg" width="2160" height="2160"/></svg></div><span className="logo-version-title">Green logo · transparent</span><span className="logo-background-rule">ONLY ON BRAND GOLD · #F3CB2D</span><DownloadFormats file="logo-bag-only-green-transparent.svg" label="Green logo" png/></div></div><div className="logo-donts"><div><span className="small-caps">KEEP THE IDENTITY INTACT</span><h2>Logo only.<br/>Clear boundaries.</h2><p>The logo is the sole visual brand mark. The named wordmark logo is not permitted in brand communications.</p></div><ul><li>Use only the official logo; do not use the named logo.</li><li>Yellow logo belongs ONLY on Brand Green #39823C.</li><li>Green logo belongs ONLY on Brand Gold #F3CB2D.</li><li>No transparent logos on white, cream, black or arbitrary colors.</li><li>No transparent logos directly over photography or gradients.</li><li>No stretching, rotation, or added text lockups.</li></ul></div></>;
- if(k==='colors')return <><div className="palette-section-intro"><span className="small-caps">FOUNDATIONAL IDENTITY</span><h2>Canonical Brand Palette</h2><p>The 6 core brand colors. Brand Green #39823C and Brand Gold #F3CB2D form the primary identity, grounded by Deep Green, Ink, Cream and White. Click any swatch to copy its HEX value.</p></div><div className="palette-grid">{palette.map(([name,hex,role],i)=><button className={`swatch swatch-${i}`} key={hex} onClick={()=>onCopy(hex)} aria-label={`Copy ${name} ${hex}`}><span className="swatch-sample" style={{background:hex,color:i===0||i===2||i===3?'white':'#192C20'}}><Icon name="copy"/><span>{i<2?'Aa':''}</span></span><span className="swatch-info"><strong>{name}</strong><code>{hex}</code><small>{role}</small></span></button>)}</div><div className="note-box">Proposed canonical palette (6 colors) · Grounded in Brand Green and Brand Gold, balanced by Cream and White surfaces with high-contrast Ink typography.</div><div className="palette-section-intro" style={{marginTop:'44px'}}><span className="small-caps">RETAIL CAMPAIGNS &amp; CATEGORIES</span><h2>Category Complementary Colors</h2><p>Complementary retail category colors bring flavor and appetite appeal to promotional creative, while preserving the official Shubham K Mart brand anchor.</p></div><div className="palette-grid complementary-grid">{complementaryPalette.map(([name,hex,category,usage],i)=><button className={`swatch swatch-comp swatch-comp-${i}`} key={hex} onClick={()=>onCopy(hex)} aria-label={`Copy ${name} ${hex}`}><span className="swatch-sample" style={{background:hex,color:['#3D1E16','#3E162F','#D8232A','#C86D51','#00A3E0'].includes(hex)?'white':'#192C20'}}><Icon name="copy"/><span>Aa</span></span><span className="swatch-info"><strong>{name}</strong><code>{hex}</code><small><strong>{category}</strong><br/><em>{usage}</em></small></span></button>)}</div><div className="note-box note-box-complementary"><strong>Brand Anchor Rule:</strong> Complementary colors are strictly for promotional category canvases and campaign backdrops. The official Shubham K Mart logo anchor (yellow logo on Brand Green, or green logo on Brand Gold) must always be present to authenticate every release.</div></>;
+ if(k==='colors'){
+  const allColors = [
+    ...palette.map(([name, hex, role], i) => ({
+      name,
+      hex,
+      role,
+      type: 'canonical',
+      tag: 'Canonical Core',
+      detail: role,
+      index: i
+    })),
+    ...complementaryPalette.map(([name, hex, category, usage], i) => ({
+      name,
+      hex,
+      role: usage,
+      type: 'complementary',
+      tag: `Complementary · ${category}`,
+      detail: `${category} · ${usage}`,
+      index: i + palette.length
+    }))
+  ];
+  const displayedColors = colorFilter === 'all' ? allColors : allColors.filter(c => c.type === colorFilter);
+  const darkHexes = ['#39823C','#214B32','#192C20','#D8232A','#3D1E16','#3E162F','#C86D51','#00A3E0'];
+
+  return <>
+    <div className="palette-section-intro">
+      <span className="small-caps">OUR DIGITAL PALETTE</span>
+      <h2>Brand &amp; Complementary Colors</h2>
+      <p>The complete digital color system. Six canonical brand colors establish our core identity, while category complementary colors bring flavor and appetite appeal to retail promotions. Click any swatch to copy its HEX value.</p>
+    </div>
+
+    <div className="segmented color-filter-bar" aria-label="Color palette filter">
+      {[
+        ['all', `All colors (${allColors.length})`],
+        ['canonical', `Canonical identity (${palette.length})`],
+        ['complementary', `Category complementary (${complementaryPalette.length})`]
+      ].map(([val, label]) => (
+        <button 
+          key={val} 
+          type="button" 
+          className={colorFilter === val ? 'selected' : ''} 
+          aria-pressed={colorFilter === val} 
+          onClick={() => setColorFilter(val)}
+        >
+          {label}
+        </button>
+      ))}
+    </div>
+
+    <div className="palette-grid main-palette-grid">
+      {displayedColors.map((color) => {
+        const isDark = darkHexes.includes(color.hex);
+        return (
+          <button 
+            className={`swatch swatch-${color.type} swatch-item-${color.index}`} 
+            key={color.hex} 
+            onClick={() => onCopy(color.hex)} 
+            aria-label={`Copy ${color.name} ${color.hex}`}
+          >
+            <span 
+              className="swatch-sample" 
+              style={{
+                background: color.hex, 
+                color: isDark ? '#FFFFFF' : '#192C20'
+              }}
+            >
+              <Icon name="copy" />
+              <span>Aa</span>
+            </span>
+            <span className="swatch-info">
+              <span className={`swatch-badge ${color.type}`}>{color.tag}</span>
+              <strong>{color.name}</strong>
+              <code>{color.hex}</code>
+              <small>{color.detail}</small>
+            </span>
+          </button>
+        );
+      })}
+    </div>
+
+    <div className="palette-rules-duo">
+      <div className="note-box">
+        <strong>Canonical Core:</strong> Grounded in Brand Green (#39823C) and Brand Gold (#F3CB2D), balanced by warm Cream (#FBFAF4) and clean White (#FFFFFF) surfaces with high-contrast Ink (#192C20) typography.
+      </div>
+      <div className="note-box note-box-complementary">
+        <strong>Complementary Rule:</strong> Category complementary colors belong on promotional category canvases. Every creative must retain the official Shubham K Mart brand anchor (yellow logo on Brand Green or green logo on Brand Gold).
+      </div>
+    </div>
+  </>;
+ }
  if(k==='typography')return <><div className="type-role-grid" aria-label="Primary, secondary and interface typography"><article className="type-role type-role-primary"><span className="type-role-label">PRIMARY / HEADLINES</span><h2>Inter ExtraBold</h2><span className="type-role-weight">Bold 700 · ExtraBold 800</span><div className="type-primary-example">Everyday,<br/>made easier.</div><p className="type-role-use">Campaign headlines, hero titles and key messages. Large, bold and instantly recognizable.</p></article><article className="type-role type-role-secondary"><span className="type-role-label">SECONDARY / BODY COPY</span><h2>Inter Regular</h2><span className="type-role-weight">Regular 400</span><div className="type-secondary-example">Familiar at every tap.</div><p className="type-body-example">Clear information, familiar words and enough room to read. Use this lighter weight for paragraphs, descriptions and supporting content.</p><p className="type-role-use">Body copy · 16 px · 1.5 line height</p></article><article className="type-role type-role-interface"><div><span className="type-role-label">UI / LABELS &amp; CONTROLS</span><h2>Inter Medium &amp; SemiBold</h2><span className="type-role-weight">Medium 500 · SemiBold 600</span></div><div className="type-ui-examples"><span>Explore essentials</span><span>Search the guide</span></div><p className="type-role-use">Buttons, navigation, field labels and compact interface text.</p></article></div><div className="type-specimen"><div className="type-specimen-top"><strong>Inter</strong><span>THE ACTUAL WEBSITE FONT</span></div><div className="type-showcase"><span>Aa</span><p>Clear words.<br/>Familiar shapes.</p></div><p className="type-proof">Every sample below renders in Inter, the same font used across this website.</p><p className="alphabet">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br/>abcdefghijklmnopqrstuvwxyz<br/>0123456789 ₹ &amp; @ ! ?</p><label htmlFor="type-sample">TRY THE TYPEFACE</label><input id="type-sample" value={sample} maxLength={90} onChange={e=>setSample(e.target.value)}/><div className="type-controls"><div><label htmlFor="type-weight">WEIGHT</label><select id="type-weight" value={sampleWeight} onChange={e=>setSampleWeight(e.target.value)}>{[['400','Regular · 400'],['500','Medium · 500'],['600','SemiBold · 600'],['700','Bold · 700'],['800','ExtraBold · 800']].map(([v,l])=><option key={v} value={v}>{l}</option>)}</select></div><div><label htmlFor="type-size">PREVIEW SIZE · {sampleSize} PX</label><input id="type-size" type="range" min="24" max="64" step="2" value={sampleSize} onChange={e=>setSampleSize(Number(e.target.value))}/></div></div><p className="live-specimen" style={{fontWeight:sampleWeight,fontSize:sampleSize}}>{sample||'Type something familiar.'}</p><div className="type-weight-samples" aria-label="Inter font weight examples">{[['400','Regular'],['500','Medium'],['600','SemiBold'],['700','Bold'],['800','ExtraBold']].map(([w,l])=> <div key={w}><span>{l} · {w}</span><p style={{fontWeight:w}}>Shubham K Mart</p></div>)}</div></div></>;
  if(k==='placement')return <div className="placement-demo"><div className="clear-space"><span className="measure top">¼ × symbol width</span><div className="clear-space-inner"><Logo/></div><span className="measure bottom">PROPOSED CLEAR-SPACE RULE</span></div><div className="placement-copy"><span className="small-caps">LET THE MARK BREATHE</span><h2>Space is part<br/>of the signature.</h2><p>The boundary is an exclusion zone, not a border to export. Measure from the visible mark, and review the complete lockup at the intended size.</p></div></div>;
  if(k==='banners')return <><div className="segmented" aria-label="Banner preview theme">{[['green','Digital web banner · 1080 × 600 (Green)'],['gold','App banner · 1080 × 600 (Gold)']].map(([v,l])=><button key={v} aria-pressed={bannerTheme===v} className={bannerTheme===v?'selected':''} onClick={()=>setBannerTheme(v)}>{l}</button>)}</div><div className="banner-stage"><Campaign format="landscape" theme={bannerTheme}/></div><div className="spec-row"><span>1080 × 600 PX</span><span>48 PX PROPOSED INSET</span><span>{bannerTheme==='green'?'THEME: BRAND GREEN #39823C · YELLOW LOGO':'THEME: BRAND GOLD #F3CB2D · GREEN LOGO'}</span><span>ONE CLEAR MESSAGE</span></div></>;
