@@ -8,7 +8,7 @@
     "api/brand-chat.mjs": {"maxDuration": 30},
     "api/mcp.mjs": {
       "maxDuration": 30,
-      "includeFiles": ["public/assets/logo-bag-only-*.svg", "public/assets/logo-bag-only-*.png", "dist/brand-guide.txt", "dist/assets/skm-*.svg", "dist/assets/skm-tokens-v1.*"]
+      "includeFiles": "{public/assets/logo-bag-only-*,dist/brand-guide.txt,dist/assets/skm-*}"
     }
   },
   "headers": [
