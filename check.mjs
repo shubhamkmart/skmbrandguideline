@@ -9,7 +9,7 @@ for(const r of routes){const file=path.join('dist',r.id==='overview'?'index.html
 assert.equal(routes.length,19);
 const guide=await readFile('dist/brand-guide.txt','utf8');
 assert(guide.includes('#39823C')&&guide.includes('#F3CB2D')&&guide.includes('Inter'),'Crawlable color and font standards');
-assert(guide.includes('Brand Green #39823C only')&&guide.includes('Brand Gold #F3CB2D only'),'Crawlable logo background restrictions');
+assert(guide.includes('Brand Green #39823C only')&&(guide.includes('Brand Yellow #F3CB2D only')||guide.includes('Brand Gold #F3CB2D only')),'Crawlable logo background restrictions');
 assert((await readFile('dist/llms.txt','utf8')).includes('/brand-guide.txt'),'Text guide discoverable');
 assert((await readFile('dist/robots.txt','utf8')).includes('Allow: /'));
 console.log(`PASS: ${routes.length} prerendered chapters; ${links} local links/assets; unique metadata; one H1 per page; structured data; digital scope.`);

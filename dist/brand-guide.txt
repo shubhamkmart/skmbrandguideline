@@ -2,8 +2,8 @@ Shubham K Mart Digital Brand Guidelines
 
 Canonical Brand Palette
 Brand green | #39823C | Primary brand surface
-Brand gold | #F3CB2D | Energy & emphasis
-Deep green | #214B32 | Text on gold
+Brand yellow | #F3CB2D | Energy & emphasis
+Deep green | #214B32 | Text on yellow
 Ink | #192C20 | Primary text
 Cream | #FBFAF4 | Warm surface
 White | #FFFFFF | Base surface
@@ -29,25 +29,25 @@ Deep Plum | #3E162F | Seeds & superfoods | Wholesome seed mixes
 School Cyan | #00A3E0 | Stationery & notebooks | Student clarity & focus
 
 5 Curated Color Combinations
-Fresh & Natural (Grocery & Organic): Brand Green #39823C, Brand Gold #F3CB2C, Soft Mint #D9F7E5, Pure White #FFFFFF | Best for grocery, organic products, health and wellness.
-Bold Sale & Promotions (Sale & Offers): Brand Gold #F3CB2C, Tangerine Orange #FF941A, Crimson Red #E63946, Charcoal Slate #111827 | Best for discounts, limited-time offers and clearance banners.
-Premium & Elegant (Premium & Luxury): Forest Green #1B5E20, Brand Gold #F3CB2C, Charcoal Slate #111827, Golden Cream #FFF7D6 | Best for premium products, brand campaigns and elegant graphics.
-Trendy & Modern (Apps & Tech): Brand Green #39823C, Digital Purple #7C3AED, Brand Gold #F3CB2C, Sky Blue #38BDF8 | Best for youthful creatives, app promotions and digital campaigns.
+Fresh & Natural (Grocery & Organic): Brand Green #39823C, Brand Yellow #F3CB2C, Soft Mint #D9F7E5, Pure White #FFFFFF | Best for grocery, organic products, health and wellness.
+Bold Sale & Promotions (Sale & Offers): Brand Yellow #F3CB2C, Tangerine Orange #FF941A, Crimson Red #E63946, Charcoal Slate #111827 | Best for discounts, limited-time offers and clearance banners.
+Premium & Elegant (Premium & Luxury): Forest Green #1B5E20, Brand Yellow #F3CB2C, Charcoal Slate #111827, Golden Cream #FFF7D6 | Best for premium products, brand campaigns and elegant graphics.
+Trendy & Modern (Apps & Tech): Brand Green #39823C, Digital Purple #7C3AED, Brand Yellow #F3CB2C, Sky Blue #38BDF8 | Best for youthful creatives, app promotions and digital campaigns.
 Minimal & Clean (Clean Layouts): Pure White #FFFFFF, Soft Mint #D9F7E5, Brand Green #39823C, Charcoal Slate #111827 | Best for clean layouts, product cards and professional website graphics.
 
 5 Banner Gradient Styles
-Signature brand gradient: Brand Gold → Brand Green (#F3CB2C → #39823C) | CSS: linear-gradient(135deg, #F3CB2C 0%, #39823C 100%) | Primary brand banners, hero backdrops and signature identity surfaces.
+Signature brand gradient: Brand Yellow → Brand Green (#F3CB2C → #39823C) | CSS: linear-gradient(135deg, #F3CB2C 0%, #39823C 100%) | Primary brand banners, hero backdrops and signature identity surfaces.
 Festive energy: Tangerine Orange → Crimson Red (#FF941A → #E63946) | CSS: linear-gradient(135deg, #FF941A 0%, #E63946 100%) | Festival campaigns, flash sale banners, clearance alerts and high-energy promotions.
 Fresh mint: Brand Green → Fresh Mint Green (#39823C → #A7E3A1) | CSS: linear-gradient(135deg, #39823C 0%, #A7E3A1 100%) | Fresh fruits & vegetables, organic groceries, dairy and morning wellness.
 Modern digital: Digital Purple → Sky Blue (#7C3AED → #38BDF8) | CSS: linear-gradient(135deg, #7C3AED 0%, #38BDF8 100%) | App promotions, tech accessories, digital payment rewards and youth campaigns.
-Golden premium: Brand Gold → Golden Cream (#F3CB2C → #FFF7D6) | CSS: linear-gradient(135deg, #F3CB2C 0%, #FFF7D6 100%) | Cosmetic product presentation, luxury gift packs, gourmet foods and 3D podiums.
+Golden premium: Brand Yellow → Golden Cream (#F3CB2C → #FFF7D6) | CSS: linear-gradient(135deg, #F3CB2C 0%, #FFF7D6 100%) | Cosmetic product presentation, luxury gift packs, gourmet foods and 3D podiums.
 
 Which Palette Should You Use? Selection Matrix
 Everyday brand banners | Yellow + Green + White | #F3CB2C · #39823C · #FFFFFF | Core website banners, permanent app UI, standard retail headers.
 Grocery and fresh food | Green + Mint + Yellow | #39823C · #D9F7E5 · #F3CB2C | Fresh fruits, vegetables, dairy, grains and health & wellness.
 Festival campaigns | Yellow + Orange + Red + Dark Green | #F3CB2C · #FF941A · #E63946 · #1B5E20 | Diwali, festive season, celebration hampers and cultural promotions.
 Big sale announcements | Yellow + Red + Charcoal | #F3CB2C · #E63946 · #111827 | End-of-season clearance, mega discounts, flash sale countdowns.
-Premium product graphics | Dark Green + Gold + Cream | #1B5E20 · #F3CB2C · #FFF7D6 | Gourmet selections, 3D cylinder podiums, luxury cosmetic presentation.
+Premium product graphics | Dark Green + Yellow + Cream | #1B5E20 · #F3CB2C · #FFF7D6 | Gourmet selections, 3D cylinder podiums, luxury cosmetic presentation.
 Modern app or tech graphics | Green + Purple + Sky Blue | #39823C · #7C3AED · #38BDF8 | Digital feature updates, mobile app promotions, youth campaigns.
 Minimal website sections | White + Mint + Green | #FFFFFF · #D9F7E5 · #39823C | Clean product cards, checkout flows, policy pages and uncluttered layouts.
 
@@ -64,44 +64,44 @@ Vision: A rewarding experience: Create a gratifying shopping experience for Indi
 Digital expression: Familiar at every tap: Help people find relevant information, understand the next step and recognize the brand across screens.
 Approachable: Warm surfaces, readable layouts and familiar, respectful words.
 Assured: Strong alignment and clear statements supported by evidence.
-Energetic: Gold accents, confident type and light wit when appropriate.
+Energetic: Yellow accents, confident type and light wit when appropriate.
 Responsible: Accurate information and accountable service language.
 
 Two colors. One brand symbol.
-The logo is our official brand mark. Choose the yellow logo for Brand Green #39823C and the green logo for Brand Gold #F3CB2D. Each color is available as transparent SVG and transparent PNG masters. The named wordmark logo is not permitted.
+The logo is our official brand mark. Choose the yellow logo for Brand Green #39823C and the green logo for Brand Yellow #F3CB2D. Each color is available as transparent SVG and transparent PNG masters. The named wordmark logo is not permitted.
 Logo only: Use the official logo exclusively across all brand surfaces. Do not use any named or wordmark logo lockups.
-Yellow logo on Brand Green: Place the yellow logo only on the solid Brand Green surface #39823C. Do not place it on gold, white, cream, black, photography, gradients or arbitrary colors.
-Green logo on Brand Gold: Place the green logo only on the solid Brand Gold surface #F3CB2D. Do not place it on green, white, cream, black, photography, gradients or arbitrary colors.
+Yellow logo on Brand Green: Place the yellow logo only on the solid Brand Green surface #39823C. Do not place it on yellow, white, cream, black, photography, gradients or arbitrary colors.
+Green logo on Brand Yellow: Place the green logo only on the solid Brand Yellow surface #F3CB2D. Do not place it on green, white, cream, black, photography, gradients or arbitrary colors.
 Artwork colors: Brand Green #39823C is our primary brand surface. The logo artwork uses the authentic yellow and green palette. Always maintain high contrast and pure brand backgrounds.
-Transparent masters: Both SVG and 2160 × 2160 PNG formats are available for both colorways. Transparent means the background is removed to sit cleanly on solid Brand Green or Brand Gold surfaces.
+Transparent masters: Both SVG and 2160 × 2160 PNG formats are available for both colorways. Transparent means the background is removed to sit cleanly on solid Brand Green or Brand Yellow surfaces.
 No named logo or wordmark: Do not include or reconstruct named logos or typography with the symbol. The standalone logo represents the brand.
 Never alter the mark: Do not stretch, rotate, crop, add outlines, recolor, add drop shadows or modify the logo artwork.
 File | Logo version | Permitted background | Use
 logo-bag-only-yellow-transparent.svg | Yellow logo · transparent | Brand Green #39823C only | Primary digital headers, brand tiles, digital web banners, and app UI.
-logo-bag-only-green-transparent.svg | Green logo · transparent | Brand Gold #F3CB2D only | Gold digital headers, campaign panels, app promotional banners and navigation.
+logo-bag-only-green-transparent.svg | Green logo · transparent | Brand Yellow #F3CB2D only | Yellow digital headers, campaign panels, app promotional banners and navigation.
 
 The right logo in every format
-Select the logo by its background first, then place it on the format grid. Transparent yellow logo belongs on Brand Green only; transparent green logo belongs on Brand Gold only. Keep the brand anchor consistent within each template.
+Select the logo by its background first, then place it on the format grid. Transparent yellow logo belongs on Brand Green only; transparent green logo belongs on Brand Yellow only. Keep the brand anchor consistent within each template.
 Choose the surface first: Use only #39823C behind the yellow logo and #F3CB2D behind the green logo.
 Exact digital sizes: Desktop header: 44 px height (33 px width). Mobile header / app bar: 36 px height (27 px width). Digital web banners & app banners (1080 × 600 px): 110 × 145 px mark (48 px inset). OG share cards (1200 × 630 px): 115 × 152 px mark (64 px inset).
 Clear space: Proposed minimum: 0.25 × the symbol width on each side. Measure from the visible mark rather than empty SVG canvas.
 Minimum size: Absolute minimum 32 px symbol height for compact digital UI and 64 px or larger for digital campaign layouts.
 Responsive placement: Recompose the layout for narrow screens. Preserve the symbol aspect ratio, readable size and clear space; never stretch the image to fill a container.
 Digital surface & size | Logo & theme selection | Placement & safe inset | Production check
-Website / app header · 1440 × 90 / 390 × 64 px | Brand Green #39823C header: yellow logo. Brand Gold #F3CB2D header: green logo. | Left content-grid anchor; 24 px desktop / 16 px mobile inset. | Desktop symbol: 44 px height (33 px width); Mobile symbol: 36 px height (27 px width); 32 px absolute minimum.
+Website / app header · 1440 × 90 / 390 × 64 px | Brand Green #39823C header: yellow logo. Brand Yellow #F3CB2D header: green logo. | Left content-grid anchor; 24 px desktop / 16 px mobile inset. | Desktop symbol: 44 px height (33 px width); Mobile symbol: 36 px height (27 px width); 32 px absolute minimum.
 Digital web banner · 1080 × 600 px | Brand Green #39823C canvas with yellow logo. | Top-left; proposed 48 px inset. | Render mark at 110 × 145 px; primary desktop web and campaign banner; keep mark and headline legible in crop.
-App banner · 1080 × 600 px | Brand Gold #F3CB2D canvas with green logo (or Brand Green #39823C pairing). | Top-left; proposed 48 px inset. | Render mark at 110 × 145 px; in-app carousel and category promotions; 48 px safe touch boundary.
-Open Graph / Social preview · 1200 × 630 px | Brand Green #39823C canvas with yellow logo (or Brand Gold #F3CB2D pairing). | Top-left; proposed 64 px inset. | Render mark at 115 × 152 px; standard 1.91:1 sharing preview card for digital sharing and chat previews.
-Photography / mixed artwork | Create a solid Brand Green or Brand Gold panel for its matching transparent logo. | Align the brand plate to the content grid. | Never place the transparent mark directly over an image or unapproved surface.
+App banner · 1080 × 600 px | Brand Yellow #F3CB2D canvas with green logo (or Brand Green #39823C pairing). | Top-left; proposed 48 px inset. | Render mark at 110 × 145 px; in-app carousel and category promotions; 48 px safe touch boundary.
+Open Graph / Social preview · 1200 × 630 px | Brand Green #39823C canvas with yellow logo (or Brand Yellow #F3CB2D pairing). | Top-left; proposed 64 px inset. | Render mark at 115 × 152 px; standard 1.91:1 sharing preview card for digital sharing and chat previews.
+Photography / mixed artwork | Create a solid Brand Green or Brand Yellow panel for its matching transparent logo. | Align the brand plate to the content grid. | Never place the transparent mark directly over an image or unapproved surface.
 
 The colors of familiarity
-Green builds recognition. Gold brings energy. Warm neutrals give content room. Click any swatch to copy its HEX value. Explore campaign color combinations, banner gradients, and promotional guidelines below.
+Green builds recognition. Yellow brings energy. Warm neutrals give content room. Click any swatch to copy its HEX value. Explore campaign color combinations, banner gradients, and promotional guidelines below.
 Brand identity anchor: Keep yellow (#F3CB2D / #F3CB2C) and green (#39823C) consistent as your core brand identity across every consumer touchpoint.
 Campaign & promotional palette: Introduce Tangerine Orange (#FF941A) and Crimson Red (#E63946) for festive campaigns, clearance banners, and high-urgency promotional graphics.
 Category & soft backgrounds: Use Soft Fresh Mint (#D9F7E5) or Golden Cream (#FFF7D6) for softer backgrounds in grocery, organic, wellness, and luxury presentation.
 Modern digital accents: Introduce Digital Purple (#7C3AED) and Sky Blue (#38BDF8) for modern app graphics, tech accessories, digital payments, and youth-oriented creatives.
 Banner gradients: Use purposeful two-stop linear gradients (Signature Brand, Festive Energy, Fresh Mint, Modern Digital, Golden Premium) while preserving high contrast and legible typography.
-Brand anchor requirement: Every campaign creative, promotional banner, or category graphic must feature the official Shubham K Mart brand anchor with its designated background (yellow logo on Brand Green, or green logo on Brand Gold).
+Brand anchor requirement: Every campaign creative, promotional banner, or category graphic must feature the official Shubham K Mart brand anchor with its designated background (yellow logo on Brand Green, or green logo on Brand Yellow).
 
 Clear words. Confident type.
 Inter is the proposed shared family for Latin text. Primary headlines use Bold or ExtraBold. Secondary body copy uses Regular. UI labels use Medium or SemiBold. These are different roles within the same font family.
@@ -167,21 +167,21 @@ Touch & regional text: Aim for 44 × 44 px mobile targets and test regional scri
 Verification: A checklist does not establish conformance. Test screen readers, zoom, keyboard access and reduced-motion behavior.
 Pair | Contrast | Use
 White on brand green | 4.74:1 | Suitable for normal-size text.
-Deep green on gold | 6.33:1 | Suitable for normal-size text.
-Gold on brand green | 3.02:1 | Use for qualifying large text; avoid small functional copy.
-White on gold | 1.57:1 | Avoid for functional text.
+Deep green on yellow | 6.33:1 | Suitable for normal-size text.
+Yellow on brand green | 3.02:1 | Use for qualifying large text; avoid small functional copy.
+White on yellow | 1.57:1 | Avoid for functional text.
 
 Small canvas. Clear impact.
 A strong banner is a focused composition. Give the headline priority, keep the logo readable and adapt the layout to its actual placement. Both digital web banners and app banners share the 1080 × 600 px canvas with 48 px safe insets.
 Margins & safe zones: For 1080 × 600 web and app banners, start with 48 px safe insets. Keep all essential copy and logos inside them.
-Themes & contrast: Digital web banners default to Brand Green #39823C (yellow logo, white headline). In-app promotional banners default to Brand Gold #F3CB2D (green logo, Deep Green #214B32 headline). Category banners use complementary category themes with a clear brand anchor.
+Themes & contrast: Digital web banners default to Brand Green #39823C (yellow logo, white headline). In-app promotional banners default to Brand Yellow #F3CB2D (green logo, Deep Green #214B32 headline). Category banners use complementary category themes with a clear brand anchor.
 Category complementary colors: In category campaigns, use appetizing, culturally relevant background colors (e.g., Chilli Red for noodles, Sunrise Orange for breakfast, Confectionery Lilac for sweets).
 Action: One descriptive action leading to a working, relevant destination.
 Performance: Export at the required display density, set dimensions and avoid oversized raster files.
 Truth: Show only verified claims and relevant categories. Never place unreadable conditions below a large promise.
 Asset & theme | Dimensions & safe inset | Use & specifications
 Digital web banner · Brand Green | 1080 × 600 px · 48 px inset | Primary website header and campaign banner. Uses Brand Green #39823C background with yellow logo.
-App banner · Brand Gold | 1080 × 600 px · 48 px inset | Mobile app carousel and category promotions. Uses Brand Gold #F3CB2D background with green logo.
+App banner · Brand Yellow | 1080 × 600 px · 48 px inset | Mobile app carousel and category promotions. Uses Brand Yellow #F3CB2D background with green logo.
 Category banners · Complementary palettes | 1080 × 600 px · 48 px inset | Retail promotional banners using category-specific mood colors (Chilli Red, Sunrise Orange, Lilac/Cocoa, Terracotta, Cyan) with brand anchor.
 Social sharing image · Open Graph | 1200 × 630 px · 64 px inset | Open Graph preview card; ensures crisp rendering across social and chat previews.
 Responsive alternate · Narrow crop | Placement-specific · 24 px inset | Create a separate narrow composition when responsive mobile viewports crop horizontal content.
@@ -230,7 +230,7 @@ Download the official vector artwork, transparent yellow and green logos, propos
 Official logos: The yellow and green logo SVG files retain their authentic vector paths, shading and colors. Transparent yellow and green variants are available as SVG and PNG.
 Template status: The web banner, app banner and Open Graph templates are proposed editable layouts featuring the official logo. Check current platform crops and final copy before release.
 Transparent PNG and SVG downloads: The logo is available as supplied 2160 × 2160 PNG files and SVG vector masters. Choose PNG for raster workflows and SVG for scalable digital layouts. The same background and placement rules apply to both formats.
-Transparent logo backgrounds: Yellow transparent: Brand Green #39823C only. Green transparent: Brand Gold #F3CB2D only. Never place on white, cream, black or arbitrary backgrounds.
+Transparent logo backgrounds: Yellow transparent: Brand Green #39823C only. Green transparent: Brand Yellow #F3CB2D only. Never place on white, cream, black or arbitrary backgrounds.
 Naming: Use skm-campaign-name-channel-locale-v01. Keep a clear version and locale for every creative.
 
 Ready for the next screen
@@ -252,13 +252,14 @@ Connect Shubham K Mart brand tools to your AI assistant. Choose a hosted cloud c
 Cloud connection: Streamable HTTP endpoint on Vercel. Public brand tools do not require a Groq API key.
 Local connection: Node.js stdio server from the repository. Build first to generate the full guide and templates.
 Verify before creating: List available tools, retrieve brand colors and read an official logo resource before starting a design.
-Use the official assets: Retrieve the supplied SVG or PNG artwork; preserve logo proportions and permitted green/gold background pairings.
+Use the official assets: Retrieve the supplied SVG or PNG artwork; preserve logo proportions and permitted green/yellow background pairings.
 
 Design tokens
 {
   "color": {
     "brand": {
       "green": "#39823C",
+      "yellow": "#F3CB2D",
       "gold": "#F3CB2D",
       "greenDeep": "#214B32"
     },

@@ -52,7 +52,7 @@ test('get_brand_colors returns exact HEX codes and contrast pairings', async () 
   const data = JSON.parse(res.content[0].text);
   assert.equal(data.brand, 'Shubham K Mart');
   assert.ok(data.palette.some(c => c.hex === '#39823C' && c.name === 'Brand green'));
-  assert.ok(data.palette.some(c => c.hex === '#F3CB2D' && c.name === 'Brand gold'));
+  assert.ok(data.palette.some(c => c.hex === '#F3CB2D' && (c.name.toLowerCase() === 'brand yellow' || c.name.toLowerCase() === 'brand gold')));
   assert.ok(data.contrastRules.some(r => r.pair.includes('White') && r.status.includes('PASS')));
 });
 

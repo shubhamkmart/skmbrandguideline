@@ -65,7 +65,7 @@ for(const [name,w,h,isGold,logoW,logoH,headTop,subTop,bodyTop,inset,top] of [
   const bg=isGold?'#F3CB2D':'#39823C';
   const fg=isGold?'#214B32':'#FFFFFF';
   const activeLogo=isGold?logoGreen:logoYellow;
-  const label=name==='app-banner'?'App banner (1080 × 600 · Brand Gold)':name==='banner'?'Digital web banner (1080 × 600 · Brand Green)':name==='og'?'Open Graph image (1200 × 630 · Brand Green)':`Proposed ${name} digital layout`;
+  const label=name==='app-banner'?'App banner (1080 × 600 · Brand Yellow)':name==='banner'?'Digital web banner (1080 × 600 · Brand Green)':name==='og'?'Open Graph image (1200 × 630 · Brand Green)':`Proposed ${name} digital layout`;
   const s=`<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}"><title>Shubham K Mart proposed ${name} digital template</title><desc>Editable digital banner layout. Vector logo cropped to artwork bounding box for prominent display. Review actual platform crops before publication.</desc><rect width="${w}" height="${h}" fill="${bg}"/><image x="${inset}" y="${top}" width="${logoW}" height="${logoH}" xlink:href="data:image/svg+xml;base64,${activeLogo}"/><g fill="${fg}" font-family="Inter, Arial, sans-serif"><text x="${inset}" y="${headTop}" font-size="62" font-weight="700">Ghar ki list,</text><text x="${inset}" y="${subTop}" font-size="62" font-weight="700">ab thodi easier.</text><text x="${inset}" y="${bodyTop}" font-size="24">A little everyday warmth.</text><path d="M${inset} ${h-95}H${w-inset}" stroke="${fg}" opacity=".3"/><text x="${inset}" y="${h-55}" font-size="22">Shubham K Mart · ${label}</text></g></svg>`;
   await writeFile(`dist/assets/skm-${name}-template.svg`,s);
 }

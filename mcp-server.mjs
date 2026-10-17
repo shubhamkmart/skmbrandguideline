@@ -19,6 +19,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 export const tokenCSS = `:root {
   --brand-green: #39823C;
   --brand-gold: #F3CB2D;
+  --brand-yellow: #F3CB2D;
   --brand-green-deep: #214B32;
   --text-primary: #192C20;
   --text-inverse: #FFFFFF;
@@ -112,7 +113,7 @@ export const TOOLS = [
         color: {
           type: 'string',
           enum: ['yellow', 'green'],
-          description: '"yellow" for yellow logo on Brand Green (#39823C), "green" for green logo on Brand Gold (#F3CB2D).'
+          description: '"yellow" for yellow logo on Brand Green (#39823C), "green" for green logo on Brand Yellow (#F3CB2D).'
         },
         format: {
           type: 'string',
@@ -151,7 +152,7 @@ export const TOOLS = [
         type: {
           type: 'string',
           enum: ['web_banner', 'app_banner', 'og_image'],
-          description: 'Format type: web_banner (1080x600 · Brand Green), app_banner (1080x600 · Brand Gold), or og_image (1200x630 · Brand Green).'
+          description: 'Format type: web_banner (1080x600 · Brand Green), app_banner (1080x600 · Brand Yellow), or og_image (1200x630 · Brand Green).'
         },
         headline: {
           type: 'string',
@@ -261,7 +262,7 @@ export const RESOURCES = [
   {
     uri: 'brand://tokens/css',
     name: 'CSS Design Tokens',
-    description: 'Shubham K Mart CSS custom properties (--brand-green, --brand-gold, typography, spacing, radius).',
+    description: 'Shubham K Mart CSS custom properties (--brand-green, --brand-yellow, typography, spacing, radius).',
     mimeType: 'text/css'
   },
   {
@@ -291,13 +292,13 @@ export const RESOURCES = [
   {
     uri: 'brand://logos/green.svg',
     name: 'Green Logo (SVG Master)',
-    description: 'Vector SVG master of the official green logo. Permitted ONLY on Brand Gold #F3CB2D.',
+    description: 'Vector SVG master of the official green logo. Permitted ONLY on Brand Yellow #F3CB2D.',
     mimeType: 'image/svg+xml'
   },
   {
     uri: 'brand://logos/green.png',
     name: 'Green Logo (PNG Master)',
-    description: 'Official 2160 × 2160 transparent PNG master of the green logo. Permitted ONLY on Brand Gold #F3CB2D.',
+    description: 'Official 2160 × 2160 transparent PNG master of the green logo. Permitted ONLY on Brand Yellow #F3CB2D.',
     mimeType: 'image/png'
   },
   {
@@ -309,7 +310,7 @@ export const RESOURCES = [
   {
     uri: 'brand://templates/app-banner.svg',
     name: 'App Banner Template (1080 × 600 SVG)',
-    description: 'Official production SVG layout template for in-app banners on Brand Gold #F3CB2D with official green logo.',
+    description: 'Official production SVG layout template for in-app banners on Brand Yellow #F3CB2D with official green logo.',
     mimeType: 'image/svg+xml'
   },
   {
@@ -389,13 +390,13 @@ export async function executeTool(name, args = {}) {
         brandRecommendation,
         contrastRules: [
           { pair: 'White (#FFFFFF) on Brand Green (#39823C)', ratio: '4.74:1', status: 'PASS (WCAG AA for normal text)' },
-          { pair: 'Deep Green (#214B32) on Brand Gold (#F3CB2D)', ratio: '6.33:1', status: 'PASS (WCAG AA for normal text)' },
-          { pair: 'Gold (#F3CB2D) on Brand Green (#39823C)', ratio: '3.02:1', status: 'PASS for large text only (>=24px or bold >=19px)' },
-          { pair: 'White (#FFFFFF) on Brand Gold (#F3CB2D)', ratio: '1.57:1', status: 'FAIL - Avoid functional text; always use Deep Green on Gold' }
+          { pair: 'Deep Green (#214B32) on Brand Yellow (#F3CB2D)', ratio: '6.33:1', status: 'PASS (WCAG AA for normal text)' },
+          { pair: 'Yellow (#F3CB2D) on Brand Green (#39823C)', ratio: '3.02:1', status: 'PASS for large text only (>=24px or bold >=19px)' },
+          { pair: 'White (#FFFFFF) on Brand Yellow (#F3CB2D)', ratio: '1.57:1', status: 'FAIL - Avoid functional text; always use Deep Green on Yellow' }
         ],
         logoBackgroundRules: [
           'Yellow transparent logo MUST sit on solid #39823C Brand Green ONLY.',
-          'Green transparent logo MUST sit on solid #F3CB2D Brand Gold ONLY.',
+          'Green transparent logo MUST sit on solid #F3CB2D Brand Yellow ONLY.',
           'Never place transparent logos directly on white, cream, black, gradients, or busy photography.',
           'Campaign and complementary category colors are strictly for promotional canvases. Every promotional asset must preserve the official Shubham K Mart brand anchor with its designated background.'
         ]
@@ -408,11 +409,11 @@ export async function executeTool(name, args = {}) {
       if (color !== 'yellow' && color !== 'green') {
         return {
           isError: true,
-          content: [{ type: 'text', text: 'Invalid color. Must be "yellow" (for Brand Green background #39823C) or "green" (for Brand Gold background #F3CB2D).' }]
+          content: [{ type: 'text', text: 'Invalid color. Must be "yellow" (for Brand Green background #39823C) or "green" (for Brand Yellow background #F3CB2D).' }]
         };
       }
       const svg = color === 'yellow' ? await getYellowBagSvg() : await getGreenBagSvg();
-      const permittedBg = color === 'yellow' ? '#39823C (Brand Green only)' : '#F3CB2D (Brand Gold only)';
+      const permittedBg = color === 'yellow' ? '#39823C (Brand Green only)' : '#F3CB2D (Brand Yellow only)';
       const filename = `logo-bag-only-${color}-transparent.svg`;
       const pngFilename = `logo-bag-only-${color}-transparent.png`;
 
@@ -611,7 +612,7 @@ export async function executeTool(name, args = {}) {
         issues.push({
           severity: 'ERROR',
           rule: 'Green logo placement rule (Chapter 03)',
-          message: `Green logo is permitted ONLY on solid Brand Gold #F3CB2D. Found background: "${args.background_color}".`
+          message: `Green logo is permitted ONLY on solid Brand Yellow #F3CB2D. Found background: "${args.background_color}".`
         });
       } else if (bg === '#39823C' || bg === '#F3CB2D') {
         passes.push(`Background color ${bg} matches official logo pairing.`);
@@ -623,7 +624,7 @@ export async function executeTool(name, args = {}) {
         issues.push({
           severity: 'ERROR',
           rule: 'WCAG 2.2 AA Contrast (Chapter 11)',
-          message: 'White text on Brand Gold #F3CB2D has an illegible 1.57:1 contrast ratio. Always use Deep Green (#214B32) text on Gold (6.33:1 ratio).'
+          message: 'White text on Brand Yellow #F3CB2D has an illegible 1.57:1 contrast ratio. Always use Deep Green (#214B32) text on Yellow (6.33:1 ratio).'
         });
       }
 
@@ -693,8 +694,8 @@ export async function executeTool(name, args = {}) {
           mimeType: 'image/svg+xml',
           isBinary: false,
           description: 'Official green transparent logo vector master (SVG).',
-          permittedBackground: '#F3CB2D (Brand Gold only)',
-          rules: 'Permitted ONLY on solid Brand Gold #F3CB2D. No named wordmarks or alteration.'
+          permittedBackground: '#F3CB2D (Brand Yellow only)',
+          rules: 'Permitted ONLY on solid Brand Yellow #F3CB2D. No named wordmarks or alteration.'
         },
         logo_green_png: {
           file: 'public/assets/logo-bag-only-green-transparent.png',
@@ -702,8 +703,8 @@ export async function executeTool(name, args = {}) {
           isBinary: true,
           dimensions: '2160 × 2160 px',
           description: 'Official green transparent logo high-res master (PNG).',
-          permittedBackground: '#F3CB2D (Brand Gold only)',
-          rules: 'Permitted ONLY on solid Brand Gold #F3CB2D. No named wordmarks or alteration.'
+          permittedBackground: '#F3CB2D (Brand Yellow only)',
+          rules: 'Permitted ONLY on solid Brand Yellow #F3CB2D. No named wordmarks or alteration.'
         },
         web_banner_template: {
           file: 'dist/assets/skm-banner-template.svg',
@@ -719,8 +720,8 @@ export async function executeTool(name, args = {}) {
           mimeType: 'image/svg+xml',
           isBinary: false,
           dimensions: '1080 × 600 px',
-          description: 'Official in-app promotional banner SVG layout template on Brand Gold with green logo.',
-          permittedBackground: '#F3CB2D (Brand Gold)',
+          description: 'Official in-app promotional banner SVG layout template on Brand Yellow with green logo.',
+          permittedBackground: '#F3CB2D (Brand Yellow)',
           rules: '48 px safe inset, 110 × 145 px logo in top-left, Deep Green #214B32 text.'
         },
         og_image_template: {
@@ -896,7 +897,7 @@ export function getPrompt(name, args = {}) {
             text: `Design a 1080 × 600 app promotional banner for Shubham K Mart for campaign: "${args.campaign_name}".
 Rules:
 - 48 px outer safe insets.
-- Background: Brand Gold #F3CB2D with Green logo (Deep Green #214B32 text) or Brand Green #39823C with Yellow logo (White text).
+- Background: Brand Yellow #F3CB2D with Green logo (Deep Green #214B32 text) or Brand Green #39823C with Yellow logo (White text).
 - The 4 supplied logo files are the ONLY permitted marks in existence (no wordmark).
 - Headline in Inter 700.
 - One clear call-to-action button (48 px height, min 44 px touch target).`
@@ -918,7 +919,7 @@ Format: ${args.format || 'web_banner (1080 × 600)'}.
 Strict Brand Rules:
 1. Logo: Use the 4 official logo files exclusively (NO named wordmark logo).
 2. Canvas & Colors:
-   - Gold canvas: Background #F3CB2D with Green logo and Deep Green (#214B32) text.
+   - Yellow canvas: Background #F3CB2D with Green logo and Deep Green (#214B32) text.
    - Green canvas: Background #39823C with Yellow logo and White (#FFFFFF) text.
 3. Typography: Inter ExtraBold (800) / Bold (700) for headlines; Inter Regular (400) for body copy.
 4. Voice: Warm, helpful, grounded in everyday household lists ("Ghar ki list, ab thodi easier").
@@ -941,7 +942,7 @@ Rules:
 - Official logo anchored in top-left.
 - Headline in Inter 700.
 - One clear call-to-action button (48 px height, min 44 px touch target).
-- Contrast: Never put white text on gold #F3CB2D; use Deep Green #214B32.`
+- Contrast: Never put white text on yellow #F3CB2D; use Deep Green #214B32.`
           }
         }]
       };
@@ -959,7 +960,7 @@ Rules:
 Check:
 1. Is the logo the official logo only (no named wordmark)?
 2. Is the yellow logo ONLY on Brand Green #39823C?
-3. Is the green logo ONLY on Brand Gold #F3CB2D?
+3. Is the green logo ONLY on Brand Yellow #F3CB2D?
 4. Is text contrast WCAG AA compliant?
 5. Is the font Inter?`
           }
