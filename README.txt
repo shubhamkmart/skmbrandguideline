@@ -20,6 +20,12 @@ src/styles.css: responsive styling and print layout.
 npm run check validates the built chapters and local asset/link targets.
 
 PUBLIC HOSTING / CRAWLABILITY
+Vercel: import this repository using the Other preset and the repository root.
+vercel.json builds and validates dist plus the /api/brand-chat server function.
+Set GROQ_API_KEY as a sensitive environment variable for Production.
+The production Vercel domain supplies canonical URLs and the sitemap automatically.
+Use SITE_URL only to override it, for example when adding a custom domain.
+
 Netlify: connect this repository with its base directory at the repository root.
 The included netlify.toml builds the site and publishes dist automatically.
 Netlify's main site URL supplies canonical URLs and the sitemap automatically;
