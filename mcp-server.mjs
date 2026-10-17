@@ -12,7 +12,7 @@ import readline from 'node:readline';
 import {readFile} from 'node:fs/promises';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
-import {chapters, palette, tokens, complementaryPalette} from './src/data.js';
+import {chapters, palette, campaignPalette, complementaryPalette, colorCombinations, gradientIdeas, paletteMatrix, brandRecommendation, tokens} from './src/data.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -22,9 +22,23 @@ export const tokenCSS = `:root {
   --brand-green-deep: #214B32;
   --text-primary: #192C20;
   --text-inverse: #FFFFFF;
+  --text-charcoal: #111827;
   --surface-base: #FFFFFF;
   --surface-warm: #FBFAF4;
+  --surface-mint: #D9F7E5;
+  --surface-golden-cream: #FFF7D6;
   --border-default: #E2E8DE;
+  /* Campaign & Promotion Inspiration Colors */
+  --campaign-orange: #FF941A;
+  --campaign-red: #E63946;
+  --campaign-mint: #D9F7E5;
+  --campaign-charcoal: #111827;
+  --campaign-forest-green: #1B5E20;
+  --campaign-golden-cream: #FFF7D6;
+  --campaign-purple: #7C3AED;
+  --campaign-sky-blue: #38BDF8;
+  --campaign-mint-bright: #A7E3A1;
+  /* Category Complementary Palette */
   --category-red: #D8232A;
   --category-orange: #F37021;
   --category-plum: #3E162F;
@@ -352,13 +366,27 @@ export async function executeTool(name, args = {}) {
       const data = {
         brand: 'Shubham K Mart',
         palette: palette.map(([name, hex, role]) => ({ name, hex, role })),
-        complementaryPalette: complementaryPalette.map(c => ({
+        campaignPalette: campaignPalette.map(([name, hex, category, usage]) => ({
+          name,
+          hex,
+          category,
+          usage
+        })),
+        complementaryPalette: complementaryPalette.map(c => Array.isArray(c) ? ({
+          name: c[0],
+          hex: c[1],
+          category: c[2],
+          role: c[3]
+        }) : ({
           name: c.name,
           hex: c.hex,
           category: c.category,
-          role: c.role,
-          anchorRule: c.anchorRule
+          role: c.role
         })),
+        colorCombinations,
+        gradientIdeas,
+        paletteMatrix,
+        brandRecommendation,
         contrastRules: [
           { pair: 'White (#FFFFFF) on Brand Green (#39823C)', ratio: '4.74:1', status: 'PASS (WCAG AA for normal text)' },
           { pair: 'Deep Green (#214B32) on Brand Gold (#F3CB2D)', ratio: '6.33:1', status: 'PASS (WCAG AA for normal text)' },
@@ -369,7 +397,7 @@ export async function executeTool(name, args = {}) {
           'Yellow transparent logo MUST sit on solid #39823C Brand Green ONLY.',
           'Green transparent logo MUST sit on solid #F3CB2D Brand Gold ONLY.',
           'Never place transparent logos directly on white, cream, black, gradients, or busy photography.',
-          'Complementary category colors are strictly for promotional canvases. Every promotional asset must preserve the official Shubham K Mart brand anchor with its designated background.'
+          'Campaign and complementary category colors are strictly for promotional canvases. Every promotional asset must preserve the official Shubham K Mart brand anchor with its designated background.'
         ]
       };
       return { content: [{ type: 'text', text: JSON.stringify(data, null, 2) }] };

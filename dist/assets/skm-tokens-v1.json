@@ -7,14 +7,28 @@
     },
     "text": {
       "primary": "#192C20",
-      "inverse": "#FFFFFF"
+      "inverse": "#FFFFFF",
+      "charcoal": "#111827"
     },
     "surface": {
       "base": "#FFFFFF",
-      "warm": "#FBFAF4"
+      "warm": "#FBFAF4",
+      "mint": "#D9F7E5",
+      "goldenCream": "#FFF7D6"
     },
     "border": {
       "default": "#E2E8DE"
+    },
+    "campaign": {
+      "orange": "#FF941A",
+      "red": "#E63946",
+      "mint": "#D9F7E5",
+      "charcoal": "#111827",
+      "forestGreen": "#1B5E20",
+      "goldenCream": "#FFF7D6",
+      "purple": "#7C3AED",
+      "skyBlue": "#38BDF8",
+      "mintBright": "#A7E3A1"
     },
     "category": {
       "chilliRed": "#D8232A",

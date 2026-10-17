@@ -1,10 +1,60 @@
 import React,{useState,useEffect,useRef} from 'react';
-import {chapters,palette,complementaryPalette,tokens,href} from './data.js';
+import {chapters,palette,campaignPalette,complementaryPalette,colorCombinations,gradientIdeas,paletteMatrix,brandRecommendation,tokens,href} from './data.js';
 import {BrandChat} from './BrandChat.jsx';
 import {BrandCompanion} from './BrandCompanion.jsx';
 import {VisualSummary} from './VisualSummary.jsx';
 
-export const tokenCSS=`:root {\n  --brand-green: #39823C;\n  --brand-gold: #F3CB2D;\n  --brand-green-deep: #214B32;\n  --text-primary: #192C20;\n  --text-inverse: #FFFFFF;\n  --surface-base: #FFFFFF;\n  --surface-warm: #FBFAF4;\n  --border-default: #E2E8DE;\n  --category-chilli-red: #D8232A;\n  --category-sunrise-orange: #F37021;\n  --category-confectionery-lilac: #9678B6;\n  --category-rich-cocoa: #3D1E16;\n  --category-terracotta: #C86D51;\n  --category-deep-plum: #3E162F;\n  --category-school-cyan: #00A3E0;\n  --font-latin: 'Inter', system-ui, sans-serif;\n  --font-devanagari: 'Noto Sans Devanagari', sans-serif;\n  --space-1: 4px; --space-2: 8px;\n  --space-3: 12px; --space-4: 16px;\n  --space-6: 24px; --space-8: 32px;\n  --space-12: 48px; --space-16: 64px;\n  --radius-sm: 8px; --radius-md: 12px;\n  --radius-lg: 16px;\n  --content-width: 1200px;\n  --button-height: 48px;\n  --target-size: 44px;\n  --motion-fast: 150ms;\n  --motion-standard: 250ms;\n}\n@media (prefers-reduced-motion: reduce) {\n  *, *::before, *::after {\n    animation-duration: 0.01ms !important;\n    transition-duration: 0.01ms !important;\n    scroll-behavior: auto !important;\n  }\n}`;
+export const tokenCSS=`:root {
+  --brand-green: #39823C;
+  --brand-gold: #F3CB2D;
+  --brand-green-deep: #214B32;
+  --text-primary: #192C20;
+  --text-inverse: #FFFFFF;
+  --text-charcoal: #111827;
+  --surface-base: #FFFFFF;
+  --surface-warm: #FBFAF4;
+  --surface-mint: #D9F7E5;
+  --surface-golden-cream: #FFF7D6;
+  --border-default: #E2E8DE;
+  /* Campaign & Promotion Inspiration Colors */
+  --campaign-orange: #FF941A;
+  --campaign-red: #E63946;
+  --campaign-mint: #D9F7E5;
+  --campaign-charcoal: #111827;
+  --campaign-forest-green: #1B5E20;
+  --campaign-golden-cream: #FFF7D6;
+  --campaign-purple: #7C3AED;
+  --campaign-sky-blue: #38BDF8;
+  --campaign-mint-bright: #A7E3A1;
+  /* Category Complementary Palette */
+  --category-chilli-red: #D8232A;
+  --category-sunrise-orange: #F37021;
+  --category-confectionery-lilac: #9678B6;
+  --category-rich-cocoa: #3D1E16;
+  --category-terracotta: #C86D51;
+  --category-deep-plum: #3E162F;
+  --category-school-cyan: #00A3E0;
+  --font-latin: 'Inter', system-ui, sans-serif;
+  --font-devanagari: 'Noto Sans Devanagari', sans-serif;
+  --space-1: 4px; --space-2: 8px;
+  --space-3: 12px; --space-4: 16px;
+  --space-6: 24px; --space-8: 32px;
+  --space-12: 48px; --space-16: 64px;
+  --radius-sm: 8px; --radius-md: 12px;
+  --radius-lg: 16px;
+  --content-width: 1200px;
+  --button-height: 48px;
+  --target-size: 44px;
+  --motion-fast: 150ms;
+  --motion-standard: 250ms;
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}`;
 function Icon({name,size=18,...rest}) {const paths={arrow:'M4 12h16m-6-6 6 6-6 6',download:'M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5',search:'m21 21-5-5M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0',menu:'M4 6h16M4 12h16M4 18h16',close:'m6 6 12 12M6 18 18 6',check:'m5 12 4 4L19 6',copy:'M9 9h12v12H9zM15 5V2H2v13h3',grid:'M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z',sun:'M12 2v3m0 14v3M2 12h3m14 0h3M5 5l2 2m10 10 2 2M5 19l2-2M17 7l2-2M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0',code:'m8 6-6 6 6 6m8-12 6 6-6 6m-3-15-2 18',spark:'m12 2 2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5Z',external:'M14 3h7v7m0-7L10 14M10 3H3v18h18v-7',left:'m14 6-6 6 6 6',right:'m10 6 6 6-6 6',book:'M12 5C9 3 5 3 2 4v16c3-1 7-1 10 1m0-16c3-2 7-2 10-1v16c-3-1-7-1-10 1V5'};return <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" {...rest}><path d={paths[name]||paths.grid}/></svg>}
 function Logo({alternate=false,className='',...props}){const file=alternate?'logo-bag-only-green-transparent.svg':'logo-bag-only-yellow-transparent.svg';const label=`Shubham K Mart logo (${alternate?'green on gold':'yellow on green'})`;return <svg className={`logo-art ${className}`} viewBox="819 730 560 741" role="img" aria-label={label} {...props}><image href={`/assets/${file}`} width="2160" height="2160"/></svg>;}
 function Kicker({children}){return <div className="kicker"><span/>{children}</div>}
@@ -27,31 +77,41 @@ function Visual({page,onCopy}){const [colorFilter,setColorFilter]=useState('all'
       detail: role,
       index: i
     })),
+    ...campaignPalette.map(([name, hex, category, usage], i) => ({
+      name,
+      hex,
+      role: usage,
+      type: 'campaign',
+      tag: `Campaign · ${category}`,
+      detail: `${category} · ${usage}`,
+      index: i + palette.length
+    })),
     ...complementaryPalette.map(([name, hex, category, usage], i) => ({
       name,
       hex,
       role: usage,
-      type: 'complementary',
-      tag: `Complementary · ${category}`,
+      type: 'category',
+      tag: `Category · ${category}`,
       detail: `${category} · ${usage}`,
-      index: i + palette.length
+      index: i + palette.length + campaignPalette.length
     }))
   ];
   const displayedColors = colorFilter === 'all' ? allColors : allColors.filter(c => c.type === colorFilter);
-  const darkHexes = ['#39823C','#214B32','#192C20','#D8232A','#3D1E16','#3E162F','#C86D51','#00A3E0'];
+  const darkHexes = ['#39823C','#214B32','#192C20','#111827','#1B5E20','#7C3AED','#E63946','#D8232A','#3D1E16','#3E162F','#C86D51','#00A3E0'];
 
   return <>
     <div className="palette-section-intro">
       <span className="small-caps">OUR DIGITAL PALETTE</span>
-      <h2>Brand &amp; Complementary Colors</h2>
-      <p>The complete digital color system. Six canonical brand colors establish our core identity, while category complementary colors bring flavor and appetite appeal to retail promotions. Click any swatch to copy its HEX value.</p>
+      <h2>Brand, Campaign &amp; Category Colors</h2>
+      <p>The complete digital color system for banners, social media creatives, website graphics, sale promotions, and e-commerce designs. Grounded in Brand Green and Brand Gold, with campaign colors for festive energy and clearance offers. Click any swatch or chip to copy its HEX value.</p>
     </div>
 
     <div className="segmented color-filter-bar" aria-label="Color palette filter">
       {[
         ['all', `All colors (${allColors.length})`],
         ['canonical', `Canonical identity (${palette.length})`],
-        ['complementary', `Category complementary (${complementaryPalette.length})`]
+        ['campaign', `Campaign & promotion (${campaignPalette.length})`],
+        ['category', `Category mood (${complementaryPalette.length})`]
       ].map(([val, label]) => (
         <button 
           key={val} 
@@ -79,7 +139,7 @@ function Visual({page,onCopy}){const [colorFilter,setColorFilter]=useState('all'
               className="swatch-sample" 
               style={{
                 background: color.hex, 
-                color: isDark ? '#FFFFFF' : '#192C20'
+                color: isDark ? '#FFFFFF' : '#111827'
               }}
             >
               <Icon name="copy" />
@@ -96,12 +156,214 @@ function Visual({page,onCopy}){const [colorFilter,setColorFilter]=useState('all'
       })}
     </div>
 
+    {/* Section 1: 5 Curated Color Combinations */}
+    <section className="color-combinations-section" aria-labelledby="combinations-heading">
+      <div className="section-subheading">
+        <div>
+          <span className="small-caps">PURPOSE-DRIVEN PALETTES</span>
+          <h2 id="combinations-heading">5 Curated Color Combinations to Try</h2>
+        </div>
+        <p className="section-subtext">Tailored palettes for grocery, discounts, luxury podiums, mobile apps, and minimal product cards—anchored in Brand Yellow and Green.</p>
+      </div>
+
+      <div className="combinations-grid">
+        {colorCombinations.map((combo) => (
+          <article className="combination-card" key={combo.id}>
+            <div className="combination-card-header">
+              <span className="combination-badge">{combo.badge}</span>
+              <h3>{combo.title}</h3>
+            </div>
+            
+            <div className="combination-palette-strip" aria-label={`${combo.title} palette chips`}>
+              {combo.swatches.map((swatch) => {
+                const isDark = darkHexes.includes(swatch.hex);
+                return (
+                  <button
+                    type="button"
+                    key={swatch.hex}
+                    className="combination-chip"
+                    style={{
+                      background: swatch.hex,
+                      color: isDark ? '#FFFFFF' : '#111827'
+                    }}
+                    onClick={() => onCopy(swatch.hex)}
+                    title={`Click to copy ${swatch.name} (${swatch.hex})`}
+                    aria-label={`Copy ${swatch.name} ${swatch.hex}`}
+                  >
+                    <span className="chip-name">{swatch.name}</span>
+                    <code className="chip-hex">{swatch.hex}</code>
+                  </button>
+                );
+              })}
+            </div>
+
+            <div className="combination-meta">
+              <p className="combination-concept">
+                <strong>Visual inspiration:</strong> {combo.concept}
+              </p>
+              <div className="combination-best-for">
+                <span className="best-for-tag">BEST FOR</span>
+                <span>{combo.bestFor}</span>
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    {/* Section 2: Banner Gradient Ideas */}
+    <section className="banner-gradients-section" aria-labelledby="gradients-heading">
+      <div className="section-subheading">
+        <div>
+          <span className="small-caps">DYNAMIC CAMPAIGN BACKDROPS</span>
+          <h2 id="gradients-heading">5 Gradient Ideas for Banners</h2>
+        </div>
+        <p className="section-subtext">Signature two-stop linear gradients for digital web banners, in-app promotions, and festive social assets. Click any gradient or button to copy its CSS rule.</p>
+      </div>
+
+      <div className="gradients-grid">
+        {gradientIdeas.map((grad) => (
+          <article className="gradient-card" key={grad.id}>
+            <div
+              className="gradient-canvas"
+              style={{ background: grad.css }}
+              onClick={() => onCopy(`background: ${grad.css};`)}
+              title="Click to copy CSS gradient"
+              role="button"
+              tabIndex={0}
+              onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') onCopy(`background: ${grad.css};`); }}
+              aria-label={`Copy ${grad.title} CSS gradient`}
+            >
+              <div className="gradient-canvas-overlay">
+                <span className="gradient-stops-label">{grad.names}</span>
+                <span className="gradient-copy-hint"><Icon name="copy" size={14} /> Copy CSS</span>
+              </div>
+            </div>
+            
+            <div className="gradient-card-body">
+              <div className="gradient-card-title-row">
+                <h3>{grad.title}</h3>
+                <div className="gradient-stop-dots">
+                  {grad.stops.map(hex => (
+                    <span 
+                      key={hex} 
+                      className="stop-dot" 
+                      style={{ background: hex }} 
+                      title={hex}
+                    />
+                  ))}
+                </div>
+              </div>
+              <div className="gradient-hex-flow">
+                <code>{grad.stops[0]}</code>
+                <span className="arrow-flow">→</span>
+                <code>{grad.stops[1]}</code>
+              </div>
+              <p className="gradient-best-for">{grad.bestFor}</p>
+              <button 
+                type="button" 
+                className="gradient-copy-btn" 
+                onClick={() => onCopy(`background: ${grad.css};`)}
+              >
+                <Icon name="copy" size={14} />
+                <span>Copy gradient CSS</span>
+              </button>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    {/* Section 3: Which Palette Should You Use? Selection Matrix */}
+    <section className="palette-matrix-section" aria-labelledby="matrix-heading">
+      <div className="section-subheading">
+        <div>
+          <span className="small-caps">DECISION MATRIX</span>
+          <h2 id="matrix-heading">Which Palette Should You Use?</h2>
+        </div>
+        <p className="section-subtext">A quick application guide matching creative formats and retail categories to their ideal color combinations.</p>
+      </div>
+
+      <div className="table-wrap palette-matrix-table-wrap">
+        <table className="palette-matrix-table">
+          <thead>
+            <tr>
+              <th scope="col">Design Purpose</th>
+              <th scope="col">Best Combination</th>
+              <th scope="col">Palette Swatches &amp; HEX Codes</th>
+              <th scope="col">Application Context</th>
+            </tr>
+          </thead>
+          <tbody>
+            {paletteMatrix.map((row, idx) => (
+              <tr key={idx}>
+                <th scope="row" className="purpose-cell">
+                  <strong>{row.purpose}</strong>
+                </th>
+                <td data-label="Best Combination" className="combo-name-cell">
+                  <span className="combo-name-badge">{row.combination}</span>
+                </td>
+                <td data-label="Palette Swatches & HEX" className="hexes-cell">
+                  <div className="table-hex-chips">
+                    {row.hexes.map((hex) => {
+                      const isDark = darkHexes.includes(hex);
+                      return (
+                        <button
+                          type="button"
+                          key={hex}
+                          className="table-hex-chip"
+                          style={{
+                            background: hex,
+                            color: isDark ? '#FFFFFF' : '#111827'
+                          }}
+                          onClick={() => onCopy(hex)}
+                          title={`Click to copy ${hex}`}
+                          aria-label={`Copy ${hex}`}
+                        >
+                          <span>Aa</span>
+                          <code>{hex}</code>
+                        </button>
+                      );
+                    })}
+                  </div>
+                </td>
+                <td data-label="Application Context" className="context-cell">
+                  {row.context}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    {/* Section 4: Brand Identity Recommendation Callout */}
+    <aside className="brand-recommendation-card" aria-label="Brand design recommendation">
+      <div className="recommendation-accent-strip" />
+      <div className="recommendation-content">
+        <div className="recommendation-eyebrow">
+          <Icon name="spark" size={18} />
+          <span>BRAND DESIGN PRINCIPLE · CONSISTENCY WITH CREATIVE VARIETY</span>
+        </div>
+        <blockquote>
+          “{brandRecommendation.quote}”
+        </blockquote>
+        <div className="recommendation-footer">
+          <div className="recommendation-anchor-pill">
+            <span className="anchor-dot" />
+            <span>Permanent Brand Anchor: Brand Green (<strong>#39823C</strong>) &amp; Brand Gold (<strong>#F3CB2D</strong> / <strong>#F3CB2C</strong>)</span>
+          </div>
+          <small className="recommendation-source">Official Shubham K Mart Brand Identity Standard</small>
+        </div>
+      </div>
+    </aside>
+
     <div className="palette-rules-duo">
       <div className="note-box">
-        <strong>Canonical Core:</strong> Grounded in Brand Green (#39823C) and Brand Gold (#F3CB2D), balanced by warm Cream (#FBFAF4) and clean White (#FFFFFF) surfaces with high-contrast Ink (#192C20) typography.
+        <strong>Canonical Core:</strong> Grounded in Brand Green (#39823C) and Brand Gold (#F3CB2D / #F3CB2C), balanced by warm Cream (#FBFAF4) and clean White (#FFFFFF) surfaces with high-contrast Ink (#192C20) typography.
       </div>
       <div className="note-box note-box-complementary">
-        <strong>Complementary Rule:</strong> Category complementary colors belong on promotional category canvases. Every creative must retain the official Shubham K Mart brand anchor (yellow logo on Brand Green or green logo on Brand Gold).
+        <strong>Campaign &amp; Anchor Rule:</strong> Campaign, sale, and category colors belong on promotional canvases. Every creative must retain the official Shubham K Mart brand anchor (yellow logo on Brand Green or green logo on Brand Gold).
       </div>
     </div>
   </>;

@@ -8,14 +8,51 @@ Ink | #192C20 | Primary text
 Cream | #FBFAF4 | Warm surface
 White | #FFFFFF | Base surface
 
+Campaign & Promotion Inspiration Palette
+Tangerine Orange | #FF941A | Festive & Sale Promotions | Discounts, clearance banners and festive energy
+Crimson Sale Red | #E63946 | Bold Sale & Urgency | Limited-time discounts, flash deals and clearance alerts
+Soft Fresh Mint | #D9F7E5 | Fresh & Natural Grocery | Grocery, organic products, health, wellness and soft backgrounds
+Charcoal Slate | #111827 | High-Contrast Typography | Bold sale announcements, clearance headers and minimal UI
+Forest Deep Green | #1B5E20 | Premium & Elegant | Luxury product presentation, 3D cylinder podiums and brand campaigns
+Golden Cream | #FFF7D6 | Podium & Warm Glow | Podium surfaces, softer backgrounds and cosmetic presentation
+Digital Purple | #7C3AED | Trendy & Modern Digital | Youthful creatives, app promotions and digital tech graphics
+Digital Sky Blue | #38BDF8 | Modern Digital Accents | Youthful app highlights, digital rewards and modern banners
+Fresh Mint Green | #A7E3A1 | Fresh Mint Transitions | Gradient stops, nature transitions and fresh produce accents
+
 Category Complementary Palette (Promotional Canvas Only)
-undefined | undefined | undefined | undefined
-undefined | undefined | undefined | undefined
-undefined | undefined | undefined | undefined
-undefined | undefined | undefined | undefined
-undefined | undefined | undefined | undefined
-undefined | undefined | undefined | undefined
-undefined | undefined | undefined | undefined
+Chilli Red | #D8232A | Noodles, pasta & soups | Instant food flavor & warmth
+Sunrise Orange | #F37021 | Breakfast cereals & oats | Morning vitality & energy
+Confectionery Lilac | #9678B6 | Chocolates & sweets | Sweet gifting & indulgence
+Rich Cocoa | #3D1E16 | Confectionery & bakery | Deep cocoa rich backdrop
+Terracotta Earth | #C86D51 | Dry fruits & nuts | Natural harvest crunch
+Deep Plum | #3E162F | Seeds & superfoods | Wholesome seed mixes
+School Cyan | #00A3E0 | Stationery & notebooks | Student clarity & focus
+
+5 Curated Color Combinations
+Fresh & Natural (Grocery & Organic): Brand Green #39823C, Brand Gold #F3CB2C, Soft Mint #D9F7E5, Pure White #FFFFFF | Best for grocery, organic products, health and wellness.
+Bold Sale & Promotions (Sale & Offers): Brand Gold #F3CB2C, Tangerine Orange #FF941A, Crimson Red #E63946, Charcoal Slate #111827 | Best for discounts, limited-time offers and clearance banners.
+Premium & Elegant (Premium & Luxury): Forest Green #1B5E20, Brand Gold #F3CB2C, Charcoal Slate #111827, Golden Cream #FFF7D6 | Best for premium products, brand campaigns and elegant graphics.
+Trendy & Modern (Apps & Tech): Brand Green #39823C, Digital Purple #7C3AED, Brand Gold #F3CB2C, Sky Blue #38BDF8 | Best for youthful creatives, app promotions and digital campaigns.
+Minimal & Clean (Clean Layouts): Pure White #FFFFFF, Soft Mint #D9F7E5, Brand Green #39823C, Charcoal Slate #111827 | Best for clean layouts, product cards and professional website graphics.
+
+5 Banner Gradient Styles
+Signature brand gradient: Brand Gold → Brand Green (#F3CB2C → #39823C) | CSS: linear-gradient(135deg, #F3CB2C 0%, #39823C 100%) | Primary brand banners, hero backdrops and signature identity surfaces.
+Festive energy: Tangerine Orange → Crimson Red (#FF941A → #E63946) | CSS: linear-gradient(135deg, #FF941A 0%, #E63946 100%) | Festival campaigns, flash sale banners, clearance alerts and high-energy promotions.
+Fresh mint: Brand Green → Fresh Mint Green (#39823C → #A7E3A1) | CSS: linear-gradient(135deg, #39823C 0%, #A7E3A1 100%) | Fresh fruits & vegetables, organic groceries, dairy and morning wellness.
+Modern digital: Digital Purple → Sky Blue (#7C3AED → #38BDF8) | CSS: linear-gradient(135deg, #7C3AED 0%, #38BDF8 100%) | App promotions, tech accessories, digital payment rewards and youth campaigns.
+Golden premium: Brand Gold → Golden Cream (#F3CB2C → #FFF7D6) | CSS: linear-gradient(135deg, #F3CB2C 0%, #FFF7D6 100%) | Cosmetic product presentation, luxury gift packs, gourmet foods and 3D podiums.
+
+Which Palette Should You Use? Selection Matrix
+Everyday brand banners | Yellow + Green + White | #F3CB2C · #39823C · #FFFFFF | Core website banners, permanent app UI, standard retail headers.
+Grocery and fresh food | Green + Mint + Yellow | #39823C · #D9F7E5 · #F3CB2C | Fresh fruits, vegetables, dairy, grains and health & wellness.
+Festival campaigns | Yellow + Orange + Red + Dark Green | #F3CB2C · #FF941A · #E63946 · #1B5E20 | Diwali, festive season, celebration hampers and cultural promotions.
+Big sale announcements | Yellow + Red + Charcoal | #F3CB2C · #E63946 · #111827 | End-of-season clearance, mega discounts, flash sale countdowns.
+Premium product graphics | Dark Green + Gold + Cream | #1B5E20 · #F3CB2C · #FFF7D6 | Gourmet selections, 3D cylinder podiums, luxury cosmetic presentation.
+Modern app or tech graphics | Green + Purple + Sky Blue | #39823C · #7C3AED · #38BDF8 | Digital feature updates, mobile app promotions, youth campaigns.
+Minimal website sections | White + Mint + Green | #FFFFFF · #D9F7E5 · #39823C | Clean product cards, checkout flows, policy pages and uncluttered layouts.
+
+Brand Identity Recommendation
+Keep yellow and green consistent as your brand identity. Introduce orange and red for festive campaigns and sales, purple or blue for special creative concepts, and cream or mint for softer backgrounds. This gives you variety without making your brand look inconsistent.
 
 Welcome to the brand
 A familiar identity, wherever we show up. The shared design language for everyone building and creating for Shubham K Mart.
@@ -58,11 +95,13 @@ Open Graph / Social preview · 1200 × 630 px | Brand Green #39823C canvas with 
 Photography / mixed artwork | Create a solid Brand Green or Brand Gold panel for its matching transparent logo. | Align the brand plate to the content grid. | Never place the transparent mark directly over an image or unapproved surface.
 
 The colors of familiarity
-Green builds recognition. Gold brings energy. Warm neutrals give content room. Click any swatch to copy its HEX value. Retail category complementary colors bring appetite and mood to seasonal promotions.
-Primary canonical roles: Use brand green for brand surfaces and white text. Use gold as an accent with deep-green text.
-Supporting canonical roles: Use ink for body copy, cream for warm editorial surfaces and white for clean cards. (Pale green and old divider tint have been removed from the palette).
-Category complementary palette: Retail promotions use category-specific complementary colors: Chilli Red (instant foods), Sunrise Orange (breakfast), Confectionery Lilac & Cocoa (chocolates), Terracotta & Plum (dry fruits), and School Cyan (stationery).
-Brand anchor requirement: Complementary category colors belong on promotional category canvases. The official Shubham K Mart brand anchor (transparent yellow logo on Brand Green, or green logo on Brand Gold) must always be present.
+Green builds recognition. Gold brings energy. Warm neutrals give content room. Click any swatch to copy its HEX value. Explore campaign color combinations, banner gradients, and promotional guidelines below.
+Brand identity anchor: Keep yellow (#F3CB2D / #F3CB2C) and green (#39823C) consistent as your core brand identity across every consumer touchpoint.
+Campaign & promotional palette: Introduce Tangerine Orange (#FF941A) and Crimson Red (#E63946) for festive campaigns, clearance banners, and high-urgency promotional graphics.
+Category & soft backgrounds: Use Soft Fresh Mint (#D9F7E5) or Golden Cream (#FFF7D6) for softer backgrounds in grocery, organic, wellness, and luxury presentation.
+Modern digital accents: Introduce Digital Purple (#7C3AED) and Sky Blue (#38BDF8) for modern app graphics, tech accessories, digital payments, and youth-oriented creatives.
+Banner gradients: Use purposeful two-stop linear gradients (Signature Brand, Festive Energy, Fresh Mint, Modern Digital, Golden Premium) while preserving high contrast and legible typography.
+Brand anchor requirement: Every campaign creative, promotional banner, or category graphic must feature the official Shubham K Mart brand anchor with its designated background (yellow logo on Brand Green, or green logo on Brand Gold).
 
 Clear words. Confident type.
 Inter is the proposed shared family for Latin text. Primary headlines use Bold or ExtraBold. Secondary body copy uses Regular. UI labels use Medium or SemiBold. These are different roles within the same font family.
@@ -218,14 +257,28 @@ Design tokens
     },
     "text": {
       "primary": "#192C20",
-      "inverse": "#FFFFFF"
+      "inverse": "#FFFFFF",
+      "charcoal": "#111827"
     },
     "surface": {
       "base": "#FFFFFF",
-      "warm": "#FBFAF4"
+      "warm": "#FBFAF4",
+      "mint": "#D9F7E5",
+      "goldenCream": "#FFF7D6"
     },
     "border": {
       "default": "#E2E8DE"
+    },
+    "campaign": {
+      "orange": "#FF941A",
+      "red": "#E63946",
+      "mint": "#D9F7E5",
+      "charcoal": "#111827",
+      "forestGreen": "#1B5E20",
+      "goldenCream": "#FFF7D6",
+      "purple": "#7C3AED",
+      "skyBlue": "#38BDF8",
+      "mintBright": "#A7E3A1"
     },
     "category": {
       "chilliRed": "#D8232A",
