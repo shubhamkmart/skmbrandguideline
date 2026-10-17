@@ -147,7 +147,7 @@ function Visual({page,onCopy}){const [colorFilter,setColorFilter]=useState('all'
               <span>Aa</span>
             </span>
             <span className="swatch-info">
-              <span className={`swatch-badge ${color.type}`}>{color.tag}</span>
+              <span className={`swatch-badge swatch-badge-${color.type}`}>{color.tag}</span>
               <strong>{color.name}</strong>
               <code>{color.hex}</code>
               <small>{color.detail}</small>
